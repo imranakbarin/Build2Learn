@@ -1,0 +1,25 @@
+
+    {% extends "layout.html" %}
+        {% block title %}
+        Covid-19
+        {% endblock %}
+        {% block content %}
+      <br><br>
+<div class="card border-secondary mb-5" style="max-width: 50rem;">
+  <div class="card-header text-info display-4 font-weight-bolder"> {{State}} </div>
+  <div class="card-body text-secondary">
+    <h4 class="card-title text-md-left display-5">{{District}}</h4>
+    <p class="card-text"> <P class="text-md-left font-weight-bold">Active Cases: <span class="text-primary">{{data['active']}} </span></p>
+       <p class="text-md-left font-weight-bold">Confirmed Cases: <span class="text-warning">{{data['confirmed']}} </span></p>
+       <p class="text-md-left font-weight-bold">Deceased : <span class="text-danger"> {{data['deceased']}}</span> </p> 
+       <p class="text-md-left font-weight-bold">Recovered : <span class="text-success"> {{data['recovered']}} </span></p>
+  </div>
+  <div class="card-footer text-muted">
+    Data pulled from COVID19-India API
+  </div>
+</div>
+
+
+        {% endblock %}
+
+
