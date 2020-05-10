@@ -5,12 +5,11 @@ from covid import covid
 app = Flask(__name__) 
 
 @app.route("/")
-def covidHome():
-    State = "Tamil Nadu"
-    District = "Chennai"
-    covid19 =  covid(State,District)
+@app.route("/<State>")
+def covidHome(State="Tamil Nadu",District="Chennai"):
+    covid19 =  covid(State,None)
     data = covid19.getStateData()["districtData"]
-    return render_template("covidtable.html", Statedata = data, District=District, State =State)
+    return render_template("covidtable.html", Statedata = data, State =State)
 
 @app.route("/covid")
 def covidstat():
