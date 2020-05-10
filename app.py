@@ -9,8 +9,8 @@ def covidHome():
     State = "Tamil Nadu"
     District = "Chennai"
     covid19 =  covid(State,District)
-    data = covid19.getChennaiData()
-    return render_template("covid19.html", data = data, District=District, State =State)
+    data = covid19.getStateData()["districtData"]
+    return render_template("covidtable.html", Statedata = data, District=District, State =State)
 
 @app.route("/covid")
 def covidstat():
@@ -27,7 +27,6 @@ def covidstats(state,district):
     covid19 =  covid(State,District)
     data = covid19.getChennaiData()
     return render_template("covid19.html", data = data, District=District, State =State)
-
 
 # New functions
 @app.route("/about/")

@@ -1,0 +1,53 @@
+
+    {% extends "layout.html" %}
+        {% block title %}
+        {{State}} Covid-19 Stats
+        {% endblock %}
+        {% block content %}
+<BR><BR>
+ {% set totalactive = [0] -%}
+   {% set totalconfirmed = [0] -%}
+  {% set totaldeceased = [0] -%}
+  {% set totalrecovered = [0] -%}
+<h1 class="display-2">{{State}}</h1>
+<BR>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">District</th>
+      <th scope="col">Active</th>
+      <th scope="col">Confirmed</th>
+      <th scope="col">Deceased</th>
+      <th scope="col">Recovered</th>
+    </tr>
+  </thead>
+  <tbody>
+ 
+  {% for District in Statedata %}
+  {% set Dataval = District %}
+      <tr>
+      <th scope="row" class="text-sm-left"><h4 class="display-7">{{District}}</h4></th>
+      <td>{{Statedata[District]['active']}}</td>
+      <td>{{Statedata[District]['confirmed']}}</td>
+      <td>{{Statedata[District]['deceased']}}</td>
+      <td>{{Statedata[District]['recovered']}}</td>
+      {% if totalactive.append(totalactive.pop()+ Statedata[District]['active']) -%}{% endif %}
+      {% if totalconfirmed.append(totalconfirmed.pop()+ Statedata[District]['confirmed']) -%}{% endif %}
+      {% if totaldeceased.append(totaldeceased.pop()+ Statedata[District]['deceased']) -%}{% endif %}
+      {% if totalrecovered.append(totalrecovered.pop()+ Statedata[District]['recovered']) -%}{% endif %}
+      </tr>
+     {% endfor %}
+   <tr class="table-info">
+   <th scope="row">Total Cases</th>
+   <th scope="row">{{totalactive|join(' ')}}</th>
+   <th scope="row">{{totalconfirmed|join(' ')}}</th>
+   <th scope="row">{{totaldeceased|join(' ')}}</th>
+   <th scope="row">{{totalrecovered|join(' ')}}</th>
+    </tr>
+   </tbody>
+</table>
+
+
+        {% endblock %}
+
+
