@@ -21,14 +21,14 @@ class covid():
         return data
         #print(res.json())
 
-    def getTamilNaduData(self):
+    def getStateData(self):
         jsonData = self.covidStats(None)
         self.tndata = jsonData[self.state]
         return self.tndata
 #        print(self.tndata)
 
     def getChennaiData(self):
-         Chennaidata = self.getTamilNaduData()
+         Chennaidata = self.getStateData()
          return Chennaidata["districtData"][self.district]
         
 
