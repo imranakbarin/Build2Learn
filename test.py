@@ -7,6 +7,7 @@ def callApi(url,params):
     data = res.json()
     return data
 
+StatewiseData = None
 def covidStats():
     url = "https://api.covid19india.org/state_district_wise.json"
     data = callApi(url,params=None)
@@ -15,7 +16,4 @@ def covidStats():
       StatewiseData = tndata[data]
       print(f"District {data} Active {StatewiseData['active']} Confirmed {StatewiseData['confirmed']} Deceased {StatewiseData['deceased']} recovered {StatewiseData['recovered']}")
      
-
-
-
 covidStats()
