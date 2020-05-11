@@ -1,15 +1,25 @@
-from flask import Flask,render_template,request,redirect, url_for, jsonify
+from flask import Flask,render_template,request,redirect, url_for, jsonify, g
 from datetime import datetime
 from covid import covid
+import os
 
 app = Flask(__name__) 
 
+
+
+def file_loader():
+    if 'lines' not in g:
+        with open('indian_states.txt') as f:
+          g.lines = f.read().splitlines()
+    return g.lines
+
 @app.route("/")
-@app.route("/<State>")
-def covidHome(State="Tamil Nadu",District="Chennai"):
-    covid19 =  covid(State,None)
+def covidHome():
+    list_states = file_loader()
+    get_state = request.args.get('state', default='Tamil Nadu')
+    covid19 =  covid(get_state,None)
     data = covid19.getStateData()["districtData"]
-    return render_template("covidtable.html", Statedata = data, State =State)
+    return render_template("covidtable.html", Statedata = data, State = get_state, Statelist = list_states)
 
 @app.route("/covid")
 def covidstat():
