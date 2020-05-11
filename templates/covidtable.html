@@ -4,14 +4,13 @@
         {{State}} Covid-19 Stats
         {% endblock %}
         {% block content %}
-<BR><BR>
+<BR>
  {% set totalactive = [0] -%}
    {% set totalconfirmed = [0] -%}
   {% set totaldeceased = [0] -%}
   {% set totalrecovered = [0] -%}
-<h1 class="display-2">{{State}}</h1>
-<BR>
-<table class="table">
+<h1 class="display-6">{{State}}</h1>
+<table class="table table-responsive">
   <thead class="thead-light">
     <tr>
       <th scope="col">District</th>
@@ -22,11 +21,10 @@
     </tr>
   </thead>
   <tbody>
- 
   {% for District in Statedata %}
   {% set Dataval = District %}
       <tr>
-      <th scope="row" class="text-sm-left"><h4 class="display-7">{{District}}</h4></th>
+      <th scope="row" width="5%" class="text-sm-left">{{District}}</th>
       <td>{{Statedata[District]['active']}}</td>
       <td>{{Statedata[District]['confirmed']}}</td>
       <td>{{Statedata[District]['deceased']}}</td>
