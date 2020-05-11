@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<div class="text-center">
+		<h1 class="display-4 pt-5">404</h1>
+		<h1 class="text-danger">Page not found</h1>
+		<p class="">It seems that we can't find the page you were looking for. Click the button below to go to the main page.</p>
+		<a class="btn btn-info" href="{{ url_for('covidHome') }}">Go to the main page</a>
+	</div>
+
+{% endblock content %}

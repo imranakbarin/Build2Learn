@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,redirect, url_for, jsonify, g
+from flask import Flask,render_template,request,redirect, url_for, jsonify, g, send_from_directory
 from datetime import datetime
 from covid import covid
 import os
@@ -6,12 +6,15 @@ import os
 app = Flask(__name__) 
 
 
-
 def file_loader():
     if 'lines' not in g:
         with open('indian_states.txt') as f:
           g.lines = f.read().splitlines()
     return g.lines
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('error-404.html')
 
 @app.route("/")
 def covidHome():
@@ -45,6 +48,10 @@ def about():
 @app.route("/contact/")
 def contact():
     return render_template("contact.html")
+
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 
 if __name__ == "__main__":
