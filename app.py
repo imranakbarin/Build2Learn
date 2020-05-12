@@ -16,6 +16,11 @@ def file_loader():
 def page_not_found(e):
     return render_template('error-404.html')
 
+@app.route("/stayhome")
+def stayhome():
+    return render_template('stayhome.html') 
+
+
 @app.route("/")
 def covidHome():
     list_states = file_loader()
