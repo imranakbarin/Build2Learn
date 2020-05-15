@@ -7,10 +7,12 @@ app = Flask(__name__)
 
 #Load states from a text file once the app gets loaded
 lines = ''
+teamdetails= ''
 with app.app_context():
-    if 'lines' not in g:
-        with open('indian_states.txt') as f:
+    with open('indian_states.txt') as f,open("team_members.txt") as f2:
           lines = f.read().splitlines()
+          teamdetails = f2.read().splitlines()
+          print("Loaded")
           
 #Method whenever there is a error in page
 @app.errorhandler(404)
@@ -54,7 +56,7 @@ def covidstats(state,district):
 # About Page
 @app.route("/about/")
 def about():
-    return render_template("about.html")
+    return render_template("about.html", teamlist=teamdetails)
 
 #Contact Page
 @app.route("/contact/")

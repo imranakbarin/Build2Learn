@@ -17,7 +17,15 @@
  <p class="lead">
     <h1 class="mb-3 pt-5">We <i class="fa fa-fw fa-heart d-inline text-danger"></i> Ideas</h1>
   </p>
-
+  <p class="lead">
+  <h2 class="mb-1 pt-3">The Team</h2> 
+  <p class="my-2">
+       {% for member in teamlist %}
+        {{member}}  {{ " || " if not loop.last }}
+    {% endfor %}
+  </p> 
+  </ul>
+	
 
 </div>
  {% endblock %}

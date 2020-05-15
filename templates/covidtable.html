@@ -46,7 +46,7 @@
       <div class="card card-block border-warning">
       <h6 class="card-header p-0">Confirm</h6>
 {% if totalstats['deltaconfirmed'] > 0 %}
-      <div class="card-text text-center"><small><i class="material-icons">keyboard_arrow_up</i> {{totalstats['deltaconfirmed']}}   </small> <b>    {{totalstats['confirmed']}} </b> </div>
+      <div class="card-text text-center"><small><i class="material-icons d-inline text-danger">keyboard_arrow_up</i> {{totalstats['deltaconfirmed']}}   </small> <b>    {{totalstats['confirmed']}} </b> </div>
 {% else %}
      <div class="card-text text-center"> <b>    {{totalstats['confirmed']}} </b></div>
 {% endif %}
@@ -58,7 +58,7 @@
       <div class="card card-block border-danger">
       <h6 class="card-header p-0">Deaths</h6>
       {% if totalstats['deltadeceased'] > 0 %}
-        <div class="card-text text-center"><small><i class="material-icons">keyboard_arrow_up</i>{{totalstats['deltadeceased']}}   </small>
+        <div class="card-text text-center"><small><i class="material-icons d-inline text-danger">keyboard_arrow_up</i>{{totalstats['deltadeceased']}}   </small>
     <b>  {{totalstats['deceased']}} </b> </div>
       {% else %}
       <div class="card-text text-center"><b>    {{totalstats['deceased']}} </b></div>
@@ -70,7 +70,7 @@
       <div class="card card-block border-success">
       <h6 class="card-header p-0">Cured</h6>
        {% if totalstats['deltarecovered'] > 0 %}
-        <div class="card-text text-center"><small><i class="material-icons">keyboard_arrow_up</i> {{totalstats['deltarecovered']}}   </small>
+        <div class="card-text text-center"><small><i class="material-icons d-inline text-danger">keyboard_arrow_up</i> {{totalstats['deltarecovered']}}   </small>
     <b>  {{totalstats['recovered']}} </b> </div>
        {% else %}
      <div class="card-text text-center"> <b>    {{totalstats['recovered']}} </b></div>
