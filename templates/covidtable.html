@@ -17,15 +17,51 @@
 			</div>
 		</div>
 			
-		<!-- current country -->
- {% set totalactive = [0] -%}
+  		<!-- current country -->
+ <!--{% set totalactive = [0] -%}
    {% set totalconfirmed = [0] -%}
   {% set totaldeceased = [0] -%}
-  {% set totalrecovered = [0] -%}
+  {% set totalrecovered = [0] -%} -->
 <h1 class="display-6">{{State}}</h1>
 
-<div class="container-fluid table-responsive">
-<table class="table mt-3">
+ <!--   <div class="row h-2">
+   <div class="col-sm-12 my-auto">
+     <div class="card mb-2">Active {{totalstats['active']}} || Confirmed {{totalstats['confirmed']}} ||
+     Deceased {{totalstats['deceased']}}  || Recovered {{totalstats['recovered']}}</div>
+     </div>
+</div> -->
+
+<div class="row mb-2">
+   <div class="col-3 align-self-center">
+      <div class="card border-primary">
+      <h5 class="card-header p-0">Active</h5>
+      {{totalstats['active']}}
+      </div>
+   </div>
+    <div class="col-3 align-self-center">
+      <div class="card card-block border-warning">
+      <h5 class="card-header p-0">Confirm</h5>
+      {{totalstats['confirmed']}}
+      </div>
+   </div>
+    <div class="col-3 align-self-center">
+      <div class="card card-block border-danger">
+      <h5 class="card-header p-0">Deaths</h5>
+      {{totalstats['deceased']}}
+      </div>
+   </div>
+    <div class="col-3 align-self-center">
+      <div class="card card-block border-success">
+      <h5 class="card-header p-0">Cured</h5>
+      {{totalstats['recovered']}}
+      </div>
+   </div>
+  
+</div>
+
+
+<div class="table-responsive">  
+<table class="table">
   <thead class="thead-light">
     <tr>
       <th scope="col">District</th>
@@ -44,19 +80,19 @@
       <td>{{Statedata[District]['confirmed']}}</td>
       <td class="text-danger">{{Statedata[District]['deceased']}}</td>
       <td class="text-success">{{Statedata[District]['recovered']}}</td>
-      {% if totalactive.append(totalactive.pop()+ Statedata[District]['active']) -%}{% endif %}
+     <!-- {% if totalactive.append(totalactive.pop()+ Statedata[District]['active']) -%}{% endif %}
       {% if totalconfirmed.append(totalconfirmed.pop()+ Statedata[District]['confirmed']) -%}{% endif %}
       {% if totaldeceased.append(totaldeceased.pop()+ Statedata[District]['deceased']) -%}{% endif %}
-      {% if totalrecovered.append(totalrecovered.pop()+ Statedata[District]['recovered']) -%}{% endif %}
+      {% if totalrecovered.append(totalrecovered.pop()+ Statedata[District]['recovered']) -%}{% endif %} -->
       </tr>
      {% endfor %}
-   <tr class="table-info">
+  <!-- <tr class="table-info">
    <th scope="row">Total Cases</th>
    <th scope="row">{{totalactive|join(' ')}}</th>
    <th scope="row">{{totalconfirmed|join(' ')}}</th>
    <th scope="row">{{totaldeceased|join(' ')}}</th>
    <th scope="row">{{totalrecovered|join(' ')}}</th>
-    </tr>
+  </tr> -->
    </tbody>
  </table>
 </div>

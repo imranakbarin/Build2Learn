@@ -26,10 +26,12 @@ def stayhome():
 @app.route("/")
 def covidHome():
     list_states = lines
+    totaldictionary = {}
     get_state = request.args.get('state', default='Tamil Nadu')
     covid19 =  covid(get_state,None)
     data = covid19.getStateData()["districtData"]
-    return render_template("covidtable.html", Statedata = data, State = get_state, Statelist = list_states)
+    totaldictionary = covid19.totalstats(data)
+    return render_template("covidtable.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
 
 #Route for chennai related Stats
 @app.route("/covid")
@@ -63,6 +65,11 @@ def contact():
 @app.route('/sitemap.xml')
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
+
+#A tiny page with Stayhome message
+@app.route("/test")
+def test():
+    return render_template('hello_there.html') 
 
 
 if __name__ == "__main__":

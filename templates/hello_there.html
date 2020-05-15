@@ -1,16 +1,46 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Hello, Flask</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
-    </head>
-    <body>
-{%if name %}
-    <span class="message">Hello there, {{ name }}!</span>
-    <p> It's {{ date.strftime("%A, %d %B, %Y at %X") }}. </p>
-{% else %}
-    <span class="message">What's your name? Provide it after /hello/ in the URL.</span>
-{% endif %}
-    </body>
-</html>
+ {% extends "layout.html" %}
+ {% block title %}
+     Testing Card Layout
+        {% endblock %}
+        {% block content %}
+
+        <br><br>
+
+
+<div class="container p-5" >
+ <div class="row justify-content-md-center" >
+  <div class="column mr-5">
+    <div class="card">
+      <h4>Card 1</h4>
+      <p>Some text</p>
+
+    </div>
+  </div>
+
+  <div class="column mr-5">
+    <div class="card">
+      <h4>Card 2</h4>
+      <p>Some text</p>
+
+    </div>
+  </div>
+  
+  <div class="column mr-5">
+    <div class="card">
+      <h4>Card 3</h4>
+      <p>Some text</p>
+     
+    </div>
+  </div>
+  
+  <div class="column mr-5">
+    <div class="card">
+      <h4>Card h4</h4>
+      <p>Some text</p>
+  
+    </div>
+  </div>
+</div>
+</div>
+
+        {% endblock %}

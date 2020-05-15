@@ -1,7 +1,11 @@
 import requests
 import json
+import collections, functools, operator 
 
 tndata = None
+arcgisDistrictUrl = 'https://services9.arcgis.com/HwXIp55hAoiv6DE9/ArcGIS/rest/services/District_Wise_Covid_19_Status_view/FeatureServer/0/query';
+
+filterarcgis = '?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=standard&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=Name%2C+Positive_Cases%2C+Active_Cases%2C+Recovered%2C+Death%2C+Last_Updated_Date&returnGeometry=true&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=json&token='
 def callApi(url,params):
     res = requests.get(url, params)
     data = res.json()
@@ -11,12 +15,45 @@ StatewiseData = None
 def covidStats():
     url = "https://api.covid19india.org/state_district_wise.json"
     data = callApi(url,params=None)
-    print(data)
+    #print(data)
     tndata = data["Tamil Nadu"]['districtData']
+    print(type(tndata))
+    #print(tndata)
+   
+ 
+    #sumValue1 = sum(d['active'] for d in tndata.values() if d) 
+
+   # sumValue2 = sum(d['confirmed'] for d in tndata.values() if d)
+
+    #print(sumValue1) 
+   # print(sumValue2) 
+
+    #for data in tndata.values():
+      # print("Data ", data['active'])
+ 
+
+   # totalsum = dict()
+    #for k,v in tndata.items():
+        #totalsum[k]= v + totalsum.get(k,0)
+   #     totalsum[k] += v 
+   #     print("Key ",k)
+   #     print("Value ",v)
+ 
+    #print(totalsum)
+    totalsum ={'active':0,'confirmed':0,'deceased':0,'recovered':0,'deltaconfirmed':0,
+              'deltadeceased':0, 'deltarecovered':0 }
+   
     for data in tndata:
       StatewiseData = tndata[data]
+      totalsum['active'] += StatewiseData['active']
+      totalsum['confirmed'] += StatewiseData['confirmed']
+      totalsum['deceased'] += StatewiseData['deceased']
+      totalsum['recovered'] += StatewiseData['recovered']
       print(f"District {data} Active {StatewiseData['active']} Confirmed {StatewiseData['confirmed']} Deceased {StatewiseData['deceased']} recovered {StatewiseData['recovered']}")
-     
+      print(f" {StatewiseData['delta']} ")
+    print(f"total  Confirmed {totalsum['deltaconfirmed']} Deceased {totalsum['deltadeceased']} recovered {totalsum['deltadeceased']}")
+    
+
 
 
 def covidStateWise():
@@ -28,5 +65,9 @@ def covidStateWise():
         for datastate in data:
              print(datastate, file=f)
       
+token =''
+#print(callApi(arcgisDistrictUrl + filterarcgis + token,None ))
 
-covidStateWise()
+#covidStateWise()
+
+covidStats()
