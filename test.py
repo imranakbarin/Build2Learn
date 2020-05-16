@@ -70,4 +70,9 @@ token =''
 
 #covidStateWise()
 
-covidStats()
+def callingGlobal():
+    url = "https://covid19.mathdro.id/api/countries"
+    data = callApi(url,None)
+    print(data)
+    
+callingGlobal()

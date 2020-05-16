@@ -12,8 +12,7 @@ with app.app_context():
     with open('indian_states.txt') as f,open("team_members.txt") as f2:
           lines = f.read().splitlines()
           teamdetails = f2.read().splitlines()
-          print("Loaded")
-          
+                
 #Method whenever there is a error in page
 @app.errorhandler(404)
 def page_not_found(e):

@@ -25,6 +25,11 @@ class covid():
         return data
         # print(res.json())
 
+    def covidGlobal(self):
+        url = "https://covid19.mathdro.id/api/"
+        data = self.callApi(url, params=None)
+        return data
+        
     def totalstats(self,statedata):
          for data in statedata:
             StatewiseData = statedata[data]
