@@ -1,65 +1,145 @@
- {% extends "layout.html" %}
- {% block title %}
-     Testing Card Layout
-        {% endblock %}
-        {% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <br><br>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+</style>
+   </head>
 
+   <body>
+   
+      <div class="dropdown text-center">
+			<p class="text-center pt-3 mb-0"><small class="text-muted">Currently in:</small></p>
+			<a class="mb-0 p-0 dropdown-btn text-primary" data-toggle='dropdown'><i class="material-icons">expand_more</i></a>
+			<div class="dropdown-menu scrollable-menu dd-h">
+				<a class="dropdown-item" href="?state=Tamil Nadu">Tamil Nadu</a>
+				<div class="dropdown-divider"></div>
+			    {% for drop_state in Statelist %}
+			    <a class="dropdown-item" href="?state={{ drop_state }}">{{ drop_state }}</a>
+			    {% endfor %}
+			</div>
+		</div>
+ 			
+  		<!-- current country -->
 
-<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-<p><del>This line of text is meant to be treated as deleted text.</del></p>
-<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-<p><u>This line of text will render as underlined</u></p>
-<p><small>This line of text is meant to be treated as fine print.</small></p>
-<p><strong>This line rendered as bold text.</strong></p>
-<p><em>This line rendered as italicized text.</em></p>
+<h1 class="text-center">{{State}}</h1>
 
+ <!--   <div class="row h-2">
+   <div class="col-sm-12 my-auto">
+     <div class="card mb-2">Active {{totalstats['active']}} || Confirmed {{totalstats['confirmed']}} ||
+     Deceased {{totalstats['deceased']}}  || Recovered {{totalstats['recovered']}}</div>
+     </div>
+</div> -->
 
-<ul class="list-group list-group-flush">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
-
-
-<div class="container p-5" >
- <div class="row justify-content-md-center" >
-  <div class="column mr-5">
-    <div class="card">
-      <h4>Card 1</h4>
-      <p>Some text</p>
-
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One 
     </div>
-  </div>
-
-  <div class="column mr-5">
-    <div class="card">
-      <h4>Card 2</h4>
-      <p>Some text</p>
-
+    <div class="col-sm">
+      two
     </div>
-  </div>
-  
-  <div class="column mr-5">
-    <div class="card">
-      <h4>Card 3</h4>
-      <p>Some text</p>
-     
-    </div>
-  </div>
-  
-  <div class="column mr-5">
-    <div class="card">
-      <h4>Card h4</h4>
-      <p>Some text</p>
-  
+    <div class="col-sm">
+      three
     </div>
   </div>
 </div>
-</div>
 
-        {% endblock %}
+<div class="container p-1">
+<div class="row mb-1">
+   <div class="col-3 mr-0">
+      <div class="card border-primary">
+      <h6 class="card-header p-0">Active</h6>
+    <div class="card-text text-center"> <b>  {{totalstats['active']}}</b> </div>
+    <div class="card-footer bg-primary"></div>
+     </div>
+   </div>
+ 
+   <!-- <p><small><i class="material-icons">arrow_upward</i>{{totalstats['deltaconfirmed']}}</small></p> -->
+    <div class="col-3 mr-0">
+      <div class="card card-block border-warning">
+      <h6 class="card-header p-0">Confirm</h6>
+{% if totalstats['deltaconfirmed'] > 0 %}
+      <div class="card-text text-center"><small>[ +{{totalstats['deltaconfirmed']}}] </small> <b>  {{totalstats['confirmed']}} </b> </div>
+{% else %}
+     <div class="card-text text-center"> <b>    {{totalstats['confirmed']}} </b></div>
+{% endif %}
+<div class="card-footer bg-warning"></div>
+      
+      </div>
+   </div>
+    <div class="col-3 mr-0">
+      <div class="card card-block border-danger">
+      <h6 class="card-header p-0">Deaths</h6>
+      {% if totalstats['deltadeceased'] > 0 %}
+        <div class="card-text text-center"><small>[+{{totalstats['deltadeceased']}}]  </small>
+    <b> {{totalstats['deceased']}} </b> </div>
+      {% else %}
+      <div class="card-text text-center"><b>    {{totalstats['deceased']}} </b></div>
+      {% endif %}
+      <div class="card-footer bg-danger"></div>
+      </div>
+   </div>
+    <div class="col-3 mr-0">
+      <div class="card card-block border-success">
+      <h6 class="card-header p-0">Cured</h6>
+       {% if totalstats['deltarecovered'] > 0 %}
+        <div class="card-text text-center"><small> [+{{totalstats['deltarecovered']}}] </small>
+    <b> {{totalstats['recovered']}} </b> </div>
+       {% else %}
+     <div class="card-text text-center"> <b>    {{totalstats['recovered']}} </b></div>
+{% endif %}
+<div class="card-footer bg-success"></div>
+
+      </div>
+   </div>
+</div>
+</div>
+<div class="container">
+<div class="table-responsive">  
+<table class="table table-hover table-sm">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">District</th>
+      <th scope="col">Active</th>
+      <th scope="col">Confirmed</th>
+      <th scope="col">Deceased</th>
+      <th scope="col">Recovered</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for District in Statedata %}
+  {% set Dataval = District %}
+      <tr>
+      <th scope="row" class="text-sm-left">{{District}}</th>
+      <td>{{Statedata[District]['active']}}</td>
+      <td>{{Statedata[District]['confirmed']}}</td>
+      <td class="text-danger">{{Statedata[District]['deceased']}}</td>
+      <td class="text-success">{{Statedata[District]['recovered']}}</td>
+       </tr>
+     {% endfor %}
+
+   </tbody>
+ </table>
+</div>
+</div>
+		<div class="alert alert-primary pb-0 align-left" role="alert">
+		  <p><strong>Note: </strong>Recovered data is subject to further verification.</p>
+		</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

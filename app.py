@@ -71,7 +71,14 @@ def static_from_root():
 #A tiny page with Stayhome message
 @app.route("/test")
 def test():
-    return render_template('hello_there.html') 
+    list_states = lines
+    totaldictionary = {}
+    get_state = request.args.get('state', default='Tamil Nadu')
+    covid19 =  covid(get_state,None)
+    data = covid19.getStateData()["districtData"]
+    totaldictionary = covid19.totalstats(data)
+    return render_template("hello_there.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
+
 
 
 if __name__ == "__main__":
