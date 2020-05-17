@@ -1,6 +1,7 @@
 import requests
 import json
 import collections, functools, operator 
+from datetime import datetime
 
 tndata = None
 arcgisDistrictUrl = 'https://services9.arcgis.com/HwXIp55hAoiv6DE9/ArcGIS/rest/services/District_Wise_Covid_19_Status_view/FeatureServer/0/query';
@@ -71,8 +72,10 @@ token =''
 #covidStateWise()
 
 def callingGlobal():
-    url = "https://covid19.mathdro.id/api/countries"
+    url = "https://covid19.mathdro.id/api/"
     data = callApi(url,None)
+    print(f"Confirmed {data['confirmed']['value']} Recovered {data['recovered']['value']}  Deaths {data['deaths']['value']}")
+   # print(datetime.strptime(data['lastUpdate'], "%Y-%m-%dT%H:%M:%S.%fZ"))
     print(data)
     
 callingGlobal()

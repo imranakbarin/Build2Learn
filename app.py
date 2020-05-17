@@ -55,6 +55,7 @@ def covidstats(state,district):
 # About Page
 @app.route("/about/")
 def about():
+    #sort the teamdetails
     return render_template("about.html", teamlist=teamdetails)
 
 #Contact Page

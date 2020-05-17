@@ -22,7 +22,7 @@
    {% set totalconfirmed = [0] -%}
   {% set totaldeceased = [0] -%}
   {% set totalrecovered = [0] -%} -->
-<h1 class="display-6">{{State}}</h1>
+<h1 class="display-4 text-center">{{State}}</h1>
 
  <!--   <div class="row h-2">
    <div class="col-sm-12 my-auto">
@@ -36,7 +36,6 @@
       <div class="card border-primary">
       <h6 class="card-header p-0">Active</h6>
     <div class="card-text text-center"> <b>  {{totalstats['active']}}</b> </div>
-
     <div class="card-footer bg-primary"></div>
      </div>
    </div>
@@ -89,8 +88,8 @@
       <th scope="col">District</th>
       <th scope="col">Active</th>
       <th scope="col">Confirmed</th>
-      <th  scope="col">Deceased</th>
-      <th  scope="col">Recovered</th>
+      <th scope="col">Deceased</th>
+      <th scope="col">Recovered</th>
     </tr>
   </thead>
   <tbody>
@@ -120,7 +119,7 @@
 </div>
 </div>
 		<div class="alert alert-primary pb-0 align-left" role="alert">
-		  <p><strong>Info! </strong>Recovered data is subject to further verification.</p>
+		  <p><strong>Note: </strong>Recovered data is subject to further verification.</p>
 		</div>
         {% endblock %}
 
