@@ -1,9 +1,13 @@
-from flask import Flask,render_template,request,redirect, url_for, jsonify, g, send_from_directory
+from flask import Flask,render_template,request,redirect, url_for, jsonify, g, send_from_directory, flash
 from datetime import datetime
 from covid import covid
+from forms import LoginForm, RegistrationForm
 import os
 
 app = Flask(__name__) 
+
+SECRET_KEY = os.urandom(32)
+app.config['SECRET_KEY'] = SECRET_KEY
 
 #Load states from a text file once the app gets loaded
 lines = ''
@@ -68,7 +72,7 @@ def contact():
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
 
-#A tiny page with Stayhome message
+#testing some features in this route
 @app.route("/test")
 def test():
     list_states = lines
@@ -79,6 +83,24 @@ def test():
     totaldictionary = covid19.totalstats(data)
     return render_template("hello_there.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
 
+@app.route("/Login", methods=['GET','POST'])
+def Login():
+    form = LoginForm()  
+    if form.validate_on_submit():
+        if form.UserName.data == 'Alagappan' and form.Password.data == '123456':
+            flash('You have been logged in!', 'success')
+            return redirect(url_for('covidHome'))            
+        else:
+            flash('Login Unsuccessful. Please check username and password', 'danger')
+
+    return render_template("Login.html", title='Login', form=form)
+
+@app.route("/Register",methods=['GET','POST'])
+def Register():
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        return redirect(url_for('Login'))
+    return render_template("Register.html", title='Register', form=form)
 
 
 if __name__ == "__main__":

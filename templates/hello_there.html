@@ -8,16 +8,45 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<style>
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/site.css')}}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{ url_for('static', filename='images/site.webmanifest')}}">
+
+
    </head>
 
    <body>
-   
-      <div class="dropdown text-center">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top" >
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('covidHome') }}">Build2Learn</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('covidHome') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('covidstat') }}">Chennai Covid 19</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('contact') }}">Enroll</a>
+          </li>
+         </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <div class="container">
+
+     <div class="dropdown text-center">
 			<p class="text-center pt-3 mb-0"><small class="text-muted">Currently in:</small></p>
 			<a class="mb-0 p-0 dropdown-btn text-primary" data-toggle='dropdown'><i class="material-icons">expand_more</i></a>
 			<div class="dropdown-menu scrollable-menu dd-h">
@@ -31,7 +60,7 @@
  			
   		<!-- current country -->
 
-<h1 class="text-center">{{State}}</h1>
+<h1 class="text-center m-0">{{State}}</h1>
 
  <!--   <div class="row h-2">
    <div class="col-sm-12 my-auto">
@@ -41,70 +70,148 @@
 </div> -->
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm">
-      One 
+<div class="row">
+<div class="col">
+<div class="table-responsive">    
+ <table class="table table-sm">
+    <tbody>
+     <tr class="bg-light p-0 text-left">
+        <th>Active</th>
+        <th>Confirm</th>
+        <th>Deceased</th>
+        <th>Recovered</th>
+      </tr>
+      <tr class="text-center">
+        <td class="bg-primary"><b>{{totalstats['active']}}<b></td>
+        <td class="bg-warning">
+         {% if totalstats['deltaconfirmed'] > 0 %}
+      <small>[+{{totalstats['deltaconfirmed']}}]</small> 
+      <b> {{totalstats['confirmed']}} </b> 
+    {% else %}
+      <b> {{totalstats['confirmed']}} </b>
+    {% endif %}
+        </td>
+        <td class="bg-danger"> {% if totalstats['deltadeceased'] > 0 %}
+        <small>[+{{totalstats['deltadeceased']}}]  </small>
+    <b> {{totalstats['deceased']}} </b> 
+      {% else %}
+      <b>  {{totalstats['deceased']}} </b>
+      {% endif %}</td>
+     
+    <td class="bg-success">
+        {% if totalstats['deltarecovered'] > 0 %}
+        <small> [+{{totalstats['deltarecovered']}}]</small>
+    <b> {{totalstats['recovered']}} </b> </div>
+       {% else %}
+      <b>    {{totalstats['recovered']}} </b></div>
+{% endif %}
+</td>
+      </tr>
+      </tbody>
+  </table>
+ </div>
+  </div>
+</div>
+</div>
+<!--
+<div class="row container"> 
+            <div class="col align-center"> 
+  
+             
+                <div class="row justify-content-md-center"> 
+                    <div class="col-md-2 col-xs-2 col-sm-3 m-1" 
+                         style="background-color: yellow;"> 
+                        <p class="text-center p-2">Active :  {{totalstats['active']}} </p> 
+                    </div> 
+                    <div class="col-md-2 col-xs-2 col-sm-3 m-1" 
+                         style="background-color: yellowgreen;"> 
+                        <p class="text-center p-2">Confirmed :  {{totalstats['confirmed']}} </p> 
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-sm-3 m-1" 
+                         style="background-color: yellowgreen;"> 
+                        <p class="text-center p-2">Deceased :  {{totalstats['deceased']}} </p> 
+                    </div> 
+                    <div class="col-md-2 col-xs-2 col-sm-3 m-1" 
+                         style="background-color: yellowgreen;"> 
+                        <p class="text-center p-2">Recovered :  {{totalstats['recovered']}} </p> 
+                    </div>  
+                </div> 
+            </div> 
+          
+        </div> 
+
+
+<div class="container mb-2">
+<div class="row">
+  <div class="col-sm ">
+     <div class="card border-primary text-center">
+      <h6 class="card-header p-0">Active</h6>
+    <div class="stats"> <b>  {{totalstats['active']}}</b> </div>
+    <div class="card-footer bg-primary"></div>
+  </div> 
+  
+  </div>
+  
+  <div class="col-sm">
+    <div class="card border-warning">
+      <h6 class="card-header p-0">Confirm</h6>
+{% if totalstats['deltaconfirmed'] > 0 %}
+      <div class="stats"><small>[ +{{totalstats['deltaconfirmed']}}] </small> <b>  {{totalstats['confirmed']}} </b> </div>
+{% else %}
+     <div class="stats"> <b>    {{totalstats['confirmed']}} </b></div>
+{% endif %}
+<div class="card-footer bg-warning"> </div>
+  </div>
+  </div>
+
+  <div class="col-sm">
+    <div class="card border-danger">
+      <h6 class="card-header p-0">Deaths</h6>
+      {% if totalstats['deltadeceased'] > 0 %}
+        <div class="stats"><small>[+{{totalstats['deltadeceased']}}]  </small>
+        <b> {{totalstats['deceased']}} </b> </div>
+      {% else %}
+        <div class="stats"><b>    {{totalstats['deceased']}} </b></div>
+      {% endif %}
+      <div class="card-footer bg-danger"></div>
     </div>
-    <div class="col-sm">
-      two
-    </div>
-    <div class="col-sm">
-      three
+  </div>
+  
+  <div class="col-sm">
+    <div class="card border-success">
+      <h6 class="card-header p-0">Cured</h6>
+       {% if totalstats['deltarecovered'] > 0 %}
+        <div class="stats"><small> [+{{totalstats['deltarecovered']}}] </small>
+            <b> {{totalstats['recovered']}} </b> </div>
+       {% else %}
+        <div class="stats"> <b>    {{totalstats['recovered']}} </b></div>
+      {% endif %}
+      <div class="card-footer bg-success"></div></div>
     </div>
   </div>
 </div>
 
-<div class="container p-1">
-<div class="row mb-1">
-   <div class="col-3 mr-0">
-      <div class="card border-primary">
-      <h6 class="card-header p-0">Active</h6>
-    <div class="card-text text-center"> <b>  {{totalstats['active']}}</b> </div>
-    <div class="card-footer bg-primary"></div>
-     </div>
-   </div>
+-->
+
+      
  
    <!-- <p><small><i class="material-icons">arrow_upward</i>{{totalstats['deltaconfirmed']}}</small></p> -->
-    <div class="col-3 mr-0">
-      <div class="card card-block border-warning">
-      <h6 class="card-header p-0">Confirm</h6>
-{% if totalstats['deltaconfirmed'] > 0 %}
-      <div class="card-text text-center"><small>[ +{{totalstats['deltaconfirmed']}}] </small> <b>  {{totalstats['confirmed']}} </b> </div>
-{% else %}
-     <div class="card-text text-center"> <b>    {{totalstats['confirmed']}} </b></div>
-{% endif %}
-<div class="card-footer bg-warning"></div>
-      
-      </div>
-   </div>
-    <div class="col-3 mr-0">
-      <div class="card card-block border-danger">
-      <h6 class="card-header p-0">Deaths</h6>
-      {% if totalstats['deltadeceased'] > 0 %}
-        <div class="card-text text-center"><small>[+{{totalstats['deltadeceased']}}]  </small>
-    <b> {{totalstats['deceased']}} </b> </div>
-      {% else %}
-      <div class="card-text text-center"><b>    {{totalstats['deceased']}} </b></div>
-      {% endif %}
-      <div class="card-footer bg-danger"></div>
-      </div>
-   </div>
-    <div class="col-3 mr-0">
-      <div class="card card-block border-success">
-      <h6 class="card-header p-0">Cured</h6>
-       {% if totalstats['deltarecovered'] > 0 %}
-        <div class="card-text text-center"><small> [+{{totalstats['deltarecovered']}}] </small>
-    <b> {{totalstats['recovered']}} </b> </div>
-       {% else %}
-     <div class="card-text text-center"> <b>    {{totalstats['recovered']}} </b></div>
-{% endif %}
-<div class="card-footer bg-success"></div>
 
-      </div>
-   </div>
-</div>
-</div>
-<div class="container">
+    
+
+  
+
+
+  
+      
+
+ 
+
+
+
+
+
+<div class="container text-center">
 <div class="table-responsive">  
 <table class="table table-hover table-sm">
   <thead class="thead-light">
@@ -135,11 +242,13 @@
 		<div class="alert alert-primary pb-0 align-left" role="alert">
 		  <p><strong>Note: </strong>Recovered data is subject to further verification.</p>
 		</div>
-
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <!-- <script src="{{ url_for('static', filename='js/jquery.countup.js')}}"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
   </body>
 </html>

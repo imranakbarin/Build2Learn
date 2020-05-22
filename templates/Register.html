@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+            <h3>Welcome</h3>
+            <p></p>
+            <a href="{{ url_for('Login') }}"><input type="submit" name="" value="Login"/></a><br/>
+        </div>
+        <div class="col-md-9 register-right"> 
+            <h3 class="register-heading">Ready for Learning</h3>
+            <form method="POST" action="">
+                {{form.hidden_tag()}}
+                <div class="row register-form">                            
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            {{ form.FirstName(class='form-control', placeholder='First Name') }}
+                        </div>
+                        <div class="form-group">
+                            {{ form.email(class='form-control', placeholder='Mail Id') }}
+                        </div>
+                        <div class="form-group">
+                            {{ form.Password(class='form-control', placeholder='Password') }}
+                        </div>                                        
+                        <div class="form-group">                                            
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            {{ form.LastName(class='form-control', placeholder='Last Name') }}
+                        </div>
+                        <div class="form-group">
+                            {{ form.PhoneNumber(class='form-control', placeholder='Mobile Number') }}
+                        </div>
+                        <div class="form-group">
+                            {{ form.ConfirmPassword(class='form-control', placeholder='Confirm Password') }}
+                        </div>
+                        <div class="form-group">                                                
+                        </div>
+                        {{ form.submit(class="btnRegister")}}  
+                    </div>                            
+                </div>
+            </form>  
+        </div>
+    </div>
+{% endblock %}
