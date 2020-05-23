@@ -27,17 +27,6 @@ def page_not_found(e):
 def stayhome():
     return render_template('stayhome.html') 
 
-#Main route for loading the First page, it loads default state first
-@app.route("/")
-def covidHome():
-    list_states = lines
-    totaldictionary = {}
-    get_state = request.args.get('state', default='Tamil Nadu')
-    covid19 =  covid(get_state,None)
-    data = covid19.getStateData()["districtData"]
-    totaldictionary = covid19.totalstats(data)
-    return render_template("covidtable.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
-
 #Route for chennai related Stats
 @app.route("/covid")
 def covidstat():
@@ -82,6 +71,29 @@ def test():
     data = covid19.getStateData()["districtData"]
     totaldictionary = covid19.totalstats(data)
     return render_template("hello_there.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
+
+
+@app.route("/")
+def statewisereport():
+    covid19 = covid(None,None)
+    statewisedata = covid19.getstatewiseresults()
+    return render_template('statewisereport.html',statedatalist = statewisedata)
+    
+
+#Main route for loading the First page, it loads default state first
+@app.route("/district")
+def covidHome():
+    list_states = lines
+    totaldictionary = {}
+    get_state = request.args.get('state', default='Tamil Nadu')
+    covid19 =  covid(get_state,None)
+    data = covid19.getStateData()["districtData"]
+    totaldictionary = covid19.totalstats(data)
+    return render_template("covidtable.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
+
+
+
+
 
 @app.route("/Login", methods=['GET','POST'])
 def Login():

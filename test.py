@@ -2,6 +2,7 @@ import requests
 import json
 import collections, functools, operator 
 from datetime import datetime
+from statecodes import ConstCodes
 
 tndata = None
 arcgisDistrictUrl = 'https://services9.arcgis.com/HwXIp55hAoiv6DE9/ArcGIS/rest/services/District_Wise_Covid_19_Status_view/FeatureServer/0/query';
@@ -72,10 +73,25 @@ token =''
 #covidStateWise()
 
 def callingGlobal():
-    url = "https://covid19.mathdro.id/api/"
+    url = "https://covid19.mathdro.id/api/countries/india"
     data = callApi(url,None)
     print(f"Confirmed {data['confirmed']['value']} Recovered {data['recovered']['value']}  Deaths {data['deaths']['value']}")
    # print(datetime.strptime(data['lastUpdate'], "%Y-%m-%dT%H:%M:%S.%fZ"))
+    timestamp = datetime.fromtimestamp(1590058974)
+    print(timestamp.strftime('%Y-%m-%d %H:%M:%S'))
     print(data)
     
-callingGlobal()
+    
+def getstatewiseresults():
+    url ="https://api.covid19india.org/data.json"
+    data = callApi(url,None)
+    #print(f"{data['statewise']}")
+    for everystate in data['statewise']:
+        print(f"\r {everystate['state']}")
+    
+    
+    
+    
+    
+getstatewiseresults()
+#print(ConstCodes.getstatecodes())

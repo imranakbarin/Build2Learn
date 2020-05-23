@@ -53,3 +53,9 @@ class covid():
     def getChennaiData(self):
         Chennaidata = self.getStateData()
         return Chennaidata["districtData"][self.district]
+    
+    
+    def getstatewiseresults(self):
+        url ="https://api.covid19india.org/data.json"
+        data = self.callApi(url,None)
+        return data['statewise']

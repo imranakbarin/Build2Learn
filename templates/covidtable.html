@@ -88,15 +88,15 @@
       <th scope="col">District</th>
       <th scope="col">Active</th>
       <th scope="col">Confirmed</th>
-      <th scope="col">Deceased</th>
-      <th scope="col">Recovered</th>
+      <th scope="col">Deaths</th>
+      <th scope="col">Cured</th>
     </tr>
   </thead>
   <tbody>
   {% for District in Statedata %}
   {% set Dataval = District %}
       <tr>
-      <th scope="row" class="text-sm-left">{{District}}</th>
+      <th scope="row" class="text-left text-lg-justify">{{District}}</th>
       <td>{{Statedata[District]['active']}}</td>
       <td>{{Statedata[District]['confirmed']}}</td>
       <td class="text-danger">{{Statedata[District]['deceased']}}</td>

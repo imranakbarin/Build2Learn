@@ -1,37 +1,57 @@
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, sans-serif;
-            background-color: #fff;
-        }
-        
-        .gradient-multiline {
-            position: relative;
-            width: 300px;
-            margin: 40px auto;
-            background-color: #fff;
-            text-align: center;
-            line-height: 1.5em;
-            overflow: hidden;
-        }
-        
-        .gradient-multiline span {
-            color: #fff;
-            background-color: #000;
-            padding: 0.225rem 0.5rem;
-            /* Needs prefixing */
-            -webkit-box-decoration-break: clone;
-            box-decoration-break: clone;
-        }
-        
-        @supports(mix-blend-mode: lighten) {
-            .gradient-multiline::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                pointer-events: none;
-                background: linear-gradient(60deg, #3629a2, #00ceff);
-                mix-blend-mode: lighten;
-            }
-        }
+       @font-face {
+           font-family: 'Archia Regular';
+           font-style: normal;
+           font-weight: normal;
+           src: local('Archia Regular'), url('Archia-Regular.woff') format('woff');
+       }
+       /*   body {
+           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, sans-serif;
+           background-color: #fff;
+       } */
+       
+       body {
+           font-family: Archia Regular;
+           background-color: #fff;
+       }
+       
+       .gradient-multiline {
+           position: relative;
+           width: 300px;
+           margin: 40px auto;
+           background-color: #fff;
+           text-align: center;
+           line-height: 1.5em;
+           overflow: hidden;
+       }
+       
+       .gradient-multiline span {
+           color: #fff;
+           background-color: #000;
+           padding: 0.225rem 0.5rem;
+           /* Needs prefixing */
+           -webkit-box-decoration-break: clone;
+           box-decoration-break: clone;
+       }
+       
+       @supports(mix-blend-mode: lighten) {
+           .gradient-multiline::after {
+               position: absolute;
+               content: '';
+               top: 0;
+               right: 0;
+               bottom: 0;
+               left: 0;
+               pointer-events: none;
+               background: linear-gradient(60deg, #3629a2, #00ceff);
+               mix-blend-mode: lighten;
+           }
+       }
+       
+       @media (max-width: 767px) {
+           .table {
+               font-size: 0.60rem;
+               font-weight: 300;
+               line-height: 1.5;
+               padding: 0.4rem;
+           }
+       }

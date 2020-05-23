@@ -1,0 +1,76 @@
+  {% extends "layout.html" %}
+        {% block title %}
+        {{State}} Covid-19 India
+        {% endblock %}
+        {% block content %}
+
+<h1 class="text-center display-3 m-0">India</h1>
+
+
+<!--Start Here-->
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="table-responsive">    
+ <table class="table table-sm">
+    <tbody>
+     <tr class="bg-light p-0 text-left">
+        <th>Active</th>
+        <th>Confirm</th>
+        <th>Deceased</th>
+        <th>Recovered</th>
+      </tr>
+      <tr class="text-center">
+        <td class="bg-primary"><b>{{statedatalist[0]['active']}}<b></td>
+        <td class="bg-warning">
+
+      <b> {{statedatalist[0]['confirmed']}} </b>
+  
+        </td>
+        <td class="bg-danger">
+      <b>  {{statedatalist[0]['deaths']}} </b>
+      </td>
+     
+    <td class="bg-success">
+     
+      <b>    {{statedatalist[0]['recovered']}} </b></div>
+
+</td>
+      </tr>
+      </tbody>
+  </table>
+ </div>
+  </div>
+</div>
+</div>
+<!--End Here-->
+
+
+<table class="table table-hover table-sm">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">State</th>
+      <th scope="col">Active</th>
+      <th scope="col">Confirmed</th>
+      <th scope="col">Deceased</th>
+      <th scope="col">Recovered</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for state in statedatalist %}
+    {% if state['statecode'] != 'TT'%}
+      <tr>
+      <th scope="row" class="text-left">{{state['state']}}</th>
+      <td>{{state['active']}}</td>
+      <td>{{state['confirmed']}}</td>
+      <td class="text-danger">{{state['deaths']}}</td>
+      <td class="text-success">{{state['recovered']}}</td>
+       </tr>
+       {%endif%}
+     {% endfor %}
+
+   </tbody>
+ </table>
+
+
+         {% endblock %}
