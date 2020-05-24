@@ -4,7 +4,7 @@
         {% endblock %}
         {% block content %}
 
-<h1 class="text-center display-3 m-0">India</h1>
+<h2 class="text-center display-4 m-0">India</h2>
 
 
 <!--Start Here-->
@@ -21,19 +21,19 @@
         <th>Recovered</th>
       </tr>
       <tr class="text-center">
-        <td class="bg-primary"><b>{{statedatalist[0]['active']}}<b></td>
+        <td class="bg-primary"><b>{{ statedatalist[0]['active'] | comafy}}<b></td>
         <td class="bg-warning">
 
-      <b> {{statedatalist[0]['confirmed']}} </b>
+      <b> {{statedatalist[0]['confirmed'] | comafy}} </b>
   
         </td>
         <td class="bg-danger">
-      <b>  {{statedatalist[0]['deaths']}} </b>
+      <b>  {{statedatalist[0]['deaths'] | comafy }} </b>
       </td>
      
     <td class="bg-success">
      
-      <b>    {{statedatalist[0]['recovered']}} </b></div>
+      <b>    {{statedatalist[0]['recovered'] | comafy }} </b></div>
 
 </td>
       </tr>
@@ -61,10 +61,10 @@
     {% if state['statecode'] != 'TT'%}
       <tr>
       <th scope="row" class="text-left">{{state['state']}}</th>
-      <td>{{state['active']}}</td>
-      <td>{{state['confirmed']}}</td>
-      <td class="text-danger">{{state['deaths']}}</td>
-      <td class="text-success">{{state['recovered']}}</td>
+      <td>{{state['active'] | comafy }}</td>
+      <td>{{state['confirmed'] | comafy }}</td>
+      <td class="text-danger">{{state['deaths'] | comafy }}</td>
+      <td class="text-success">{{state['recovered'] | comafy }}</td>
        </tr>
        {%endif%}
      {% endfor %}

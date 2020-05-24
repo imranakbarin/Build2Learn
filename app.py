@@ -27,6 +27,14 @@ def page_not_found(e):
 def stayhome():
     return render_template('stayhome.html') 
 
+
+#Formatting Filter
+@app.template_filter()
+def comafy(value):
+    value = int(value)
+    return "{:,}".format(value)
+
+
 #Route for chennai related Stats
 @app.route("/covid")
 def covidstat():
