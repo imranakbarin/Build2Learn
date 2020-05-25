@@ -103,9 +103,9 @@
       <tr>
       <th scope="row" class="text-left text-lg-justify">{{District}}</th>
       <td>{{Statedata[District]['active'] | comafy }}</td>
-      <td>{{Statedata[District]['confirmed']}}</td>
-      <td class="text-danger">{{Statedata[District]['deceased']}}</td>
-      <td class="text-success">{{Statedata[District]['recovered']}}</td>
+      <td>{{Statedata[District]['confirmed'] | comafy  }}</td>
+      <td class="text-danger">{{Statedata[District]['deceased'] | comafy  }}</td>
+      <td class="text-success">{{Statedata[District]['recovered'] | comafy  }}</td>
      <!-- {% if totalactive.append(totalactive.pop()+ Statedata[District]['active']) -%}{% endif %}
       {% if totalconfirmed.append(totalconfirmed.pop()+ Statedata[District]['confirmed']) -%}{% endif %}
       {% if totaldeceased.append(totaldeceased.pop()+ Statedata[District]['deceased']) -%}{% endif %}
