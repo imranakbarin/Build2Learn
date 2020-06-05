@@ -2,12 +2,14 @@ from flask import Flask,render_template,request,redirect, url_for, jsonify, g, s
 from datetime import datetime
 from covid import covid
 from forms import LoginForm, RegistrationForm
+from newsapi import NewsApiClient
 import os
 
 app = Flask(__name__) 
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
+NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
 
 #Load states from a text file once the app gets loaded
 lines = ''
@@ -100,8 +102,18 @@ def covidHome():
     return render_template("covidtable.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
 
 
+#News API
 
-
+@app.route("/news")
+def newspage():
+    try:
+        api = NewsApiClient(api_key=NEWS_API_KEY)
+        top_headlines = api.get_top_headlines(country='in',
+                                            language='en')
+        print(top_headlines)
+        return render_template('news.html', headlines = top_headlines)
+    except:
+        return "<H2> Issue Fetching News - We will Look into it soon </H2>"
 
 @app.route("/Login", methods=['GET','POST'])
 def Login():
@@ -121,6 +133,9 @@ def Register():
     if form.validate_on_submit():
         return redirect(url_for('Login'))
     return render_template("Register.html", title='Register', form=form)
+
+
+
 
 
 if __name__ == "__main__":

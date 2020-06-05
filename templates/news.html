@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}News{% endblock %}
+
+  {% block content %}
+  
+<div class="container">
+<div class="display-4 text-center mb-0">News</div>
+<hr>
+
+	<!-- Popular movie section  -->
+       
+        {% for article_row in headlines['articles'] | batch(4)%}
+
+	        <div class="row">
+	       
+		        {% for article in article_row %}
+
+		        	<div class="col-md-3 mb-3">
+
+                    <div class="card">
+                     <a href="{{article['url']}}" target="_blank">   <img src="{{article['urlToImage']}}"  class="card-img-top" alt="{{article['title'] | truncate(20)}}"></a>
+                        <div class="card-body">
+                        <p class="card-title font-weight-bold">{{article['title'] | truncate(40) }}</p>
+                        <p class="card-text">{{article['description'] | truncate(80)}} <a href="{{article['url']}}" target="_blank">Read More</a></p>
+                      
+                      
+                       
+                      
+                        </div>
+                    </div>
+             	</div>
+			     	
+		        {% endfor %}
+	        
+	        </div>
+         
+        {% endfor %}
+        
+	
+</div>
+
+
+
+    
+{% endblock %}
