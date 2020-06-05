@@ -16,26 +16,26 @@
 <div class="row">
 <div class="col">
 <div class="table-responsive">    
- <table class="table table-sm">
+ <table class="table table-sm text-center">
     <tbody>
-     <tr class="bg-light p-0 text-left">
-        <th>Active</th>
-        <th>Confirm</th>
-        <th>Deceased</th>
-        <th>Recovered</th>
+     <tr class="bg-light pr-3">
+        <th class="bg-primary">Active</th>
+        <th class="bg-warning">Confirm</th>
+        <th class="bg-danger">Deceased</th>
+        <th class="bg-success">Recovered</th>
       </tr>
-      <tr class="text-center">
-        <td class="bg-primary"><b>{{ statedatalist[0]['active'] | comafy}}<b></td>
-        <td class="bg-warning">
+      <tr class="">
+        <td><b>{{ statedatalist[0]['active'] | comafy}}<b></td>
+        <td>
 
       <b> {{statedatalist[0]['confirmed'] | comafy}} </b>
   
         </td>
-        <td class="bg-danger">
+        <td>
       <b>  {{statedatalist[0]['deaths'] | comafy }} </b>
       </td>
      
-    <td class="bg-success">
+    <td>
      
       <b>    {{statedatalist[0]['recovered'] | comafy }} </b></div>
 
