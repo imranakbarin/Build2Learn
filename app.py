@@ -101,6 +101,19 @@ def covidHome():
     totaldictionary = covid19.totalstats(data)
     return render_template("covidtable.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
 
+#Hiral Global Covid Stats Changes
+@app.route("/global")
+def countrywisereport():
+    covid19 = covid(None, None)
+    data = covid19.covidGlobal()
+    globalDataList = data["Global"]
+    countrywisedata = data["Countries"]
+    return render_template('countrywisereport.html', globalData = globalDataList, countrydatalist=countrywisedata)
+
+
+#End of Global stats changes
+
+
 
 #News API
 
@@ -110,7 +123,6 @@ def newspage():
         api = NewsApiClient(api_key=NEWS_API_KEY)
         top_headlines = api.get_top_headlines(country='in',
                                             language='en')
-        print(top_headlines)
         return render_template('news.html', headlines = top_headlines)
     except:
         return "<H2> Issue Fetching News - We will Look into it soon </H2>"
@@ -133,10 +145,6 @@ def Register():
     if form.validate_on_submit():
         return redirect(url_for('Login'))
     return render_template("Register.html", title='Register', form=form)
-
-
-
-
 
 if __name__ == "__main__":
     app.run(threaded=True,host='0.0.0.0')

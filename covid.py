@@ -26,7 +26,7 @@ class covid():
         # print(res.json())
 
     def covidGlobal(self):
-        url = "https://covid19.mathdro.id/api/"
+        url = "https://api.covid19api.com/summary"
         data = self.callApi(url, params=None)
         return data
         

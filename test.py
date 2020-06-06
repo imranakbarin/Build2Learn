@@ -41,6 +41,8 @@ def covidStats():
    #     print("Key ",k)
    #     print("Value ",v)
  
+#  $env:NEWS_API_KEY='b96f7eb8844a4cb08d8f31ab2dc40f3a'
+ 
     #print(totalsum)
     totalsum ={'active':0,'confirmed':0,'deceased':0,'recovered':0,'deltaconfirmed':0,
               'deltadeceased':0, 'deltarecovered':0 }
