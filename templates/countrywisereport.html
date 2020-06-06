@@ -53,7 +53,7 @@
     </tr>
   </thead>
   <tbody>
-  {% for country in countrydatalist %}
+  {% for country in countrydatalist | sort(attribute='TotalConfirmed',reverse=true) %}
       <tr>
       <th scope="row" class="text-left">{{country['Country']}}</th>
       <td>{{(country['TotalConfirmed'] - country['TotalDeaths'] - country['TotalRecovered']) | comafy }}</td>
@@ -66,7 +66,7 @@
    </tbody>
  </table>
   
-  		<div class="alert alert-primary pb-0 align-left" role="alert">
-		  <p><strong>Note: </strong>Recovered data is subject to further verification.</p>
+	  <div class="alert alert-primary align-left" role="alert">
+		  <small><strong> Note:  </strong>Recovered data is subject to further verification.</small>
 		</div>
          {% endblock %}

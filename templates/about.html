@@ -24,11 +24,9 @@
   </p>
   <p class="lead">
   <h2 class="mb-1 pt-2">The Team</h2> 
-  <p class="my-2">
-       {% for member in teamlist %}
-        {{member}}  {{ " || " if not loop.last }}
-    {% endfor %}
-  </p> 
+  <small class="text-muted">
+    {{ teamlist | join(' | ') }}
+  </small> 
   </ul>
 	
 
