@@ -48,6 +48,11 @@ class covid():
  #       if self.tndata:
  #           self.totalstats(self.tndata["districtData"])
         return self.tndata
+    
+    def stateWiseData(self):
+        url = "https://api.covid19india.org/v2/state_district_wise.json"
+        response = self.callApi(url, params=None)
+        return response
 
 
     def getChennaiData(self):
