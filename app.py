@@ -108,6 +108,8 @@ def countrywisereport():
     data = covid19.covidGlobal()
     globalDataList = data["Global"]
     countrywisedata = data["Countries"]
+    for countries in countrywisedata:
+        countries['TotalActive']=(countries['TotalConfirmed'] - countries['TotalDeaths'] - countries['TotalRecovered'])
     return render_template('countrywisereport.html', globalData = globalDataList, countrydatalist=countrywisedata)
 
 

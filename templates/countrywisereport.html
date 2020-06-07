@@ -53,10 +53,10 @@
     </tr>
   </thead>
   <tbody>
-  {% for country in countrydatalist | sort(attribute='TotalConfirmed',reverse=true) %}
+  {% for country in countrydatalist | sort(attribute='TotalActive',reverse=true) %}
       <tr>
       <th scope="row" class="text-left"><span class="flag-icon flag-icon-{{country['CountryCode'] | lower}}"></span>    {{country['Country']}}</th>
-      <td>{{(country['TotalConfirmed'] - country['TotalDeaths'] - country['TotalRecovered']) | comafy }}</td>
+      <td>{{(country['TotalActive']) | comafy }}</td>
       <td>{{country['TotalConfirmed'] | comafy }}</td>
       <td class="text-danger">{{country['TotalDeaths'] | comafy }}</td>
       <td class="text-success">{{country['TotalRecovered'] | comafy }}</td>
