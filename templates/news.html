@@ -19,14 +19,12 @@
 		        	<div class="col-md-3 mb-3">
 
                     <div class="card">
-                     <a href="{{article['url']}}" target="_blank">   <img src="{{article['urlToImage']}}"  class="card-img-top" alt="{{article['title'] | truncate(20)}}"></a>
+                     <a href="{{article['url']}}" target="_blank">   <img src="{{article['urlToImage']}}"  class="card-img-top img-thumbnail" alt="{{article['title'] | truncate(20)}}"></a>
                         <div class="card-body">
-                        <p class="card-title font-weight-bold">{{article['title'] | truncate(40) }}</p>
-                        <p class="card-text">{{article['description'] | truncate(80)}} <a href="{{article['url']}}" target="_blank">Read More</a></p>
-                      
-                      
-                       
-                      
+                        <p class="card-title font-weight-bold text-left"> <a href="{{article['url']}}" target="_blank">  {{article['title'] | truncate(40) if article['title'] != None else 'Title Unknown' }} </a></p>
+                        <p class="font-weight-light text-left" style="font-size: 10px">{{ article['description'] | truncate(100, True) if article['description'] != None else 'Description Not available for the headlines' }} </p>
+                        <a href="{{article['url']}}" class="btn btn-primary btn-sm" target="_blank">Read More</a>   
+                                     
                         </div>
                     </div>
              	</div>
