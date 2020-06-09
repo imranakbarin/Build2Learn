@@ -105,13 +105,16 @@ def covidHome():
 @app.route("/global")
 def countrywisereport():
     covid19 = covid(None, None)
-    data = covid19.covidGlobal()
-    globalDataList = data["Global"]
-    countrywisedata = data["Countries"]
-    for countries in countrywisedata:
-        countries['TotalActive']=(countries['TotalConfirmed'] - countries['TotalDeaths'] - countries['TotalRecovered'])
-    return render_template('countrywisereport.html', globalData = globalDataList, countrydatalist=countrywisedata)
-
+    try:
+        data = covid19.covidGlobal()
+        globalDataList = data["Global"]
+        countrywisedata = data["Countries"]
+        for countries in countrywisedata:
+            countries['TotalActive']=(countries['TotalConfirmed'] - countries['TotalDeaths'] - countries['TotalRecovered'])
+        return render_template('countrywisereport.html', globalData = globalDataList, countrydatalist=countrywisedata)
+    except Exception as e:
+		# return 404 page if error occurs 
+	    return render_template("error-404.html")
 
 #End of Global stats changes
 
