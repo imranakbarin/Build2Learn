@@ -3,6 +3,8 @@ from datetime import datetime
 from covid import covid
 from forms import LoginForm, RegistrationForm
 from newsapi import NewsApiClient
+from collections import OrderedDict 
+from operator import getitem 
 import os
 
 app = Flask(__name__) 
@@ -86,20 +88,29 @@ def test():
 @app.route("/")
 def statewisereport():
     covid19 = covid(None,None)
-    statewisedata = covid19.getstatewiseresults()
+    # Sorting state wise data according to the active cases
+    statewisedata = (sorted(covid19.getstatewiseresults(), key = lambda i: int(i['active']),reverse=True))
     return render_template('statewisereport.html',statedatalist = statewisedata)
     
 
-#Main route for loading the First page, it loads default state first
+#StateWise Page Route
 @app.route("/district")
 def covidHome():
+   
     list_states = lines
     totaldictionary = {}
-    get_state = request.args.get('state', default='Tamil Nadu')
-    covid19 =  covid(get_state,None)
-    data = covid19.getStateData()["districtData"]
-    totaldictionary = covid19.totalstats(data)
-    return render_template("covidtable.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
+    try:
+        get_state = request.args.get('state', default='Tamil Nadu')
+        covid19 =  covid(get_state,None)
+        data = covid19.getStateData()["districtData"]
+        # Data Sorting as per the number of active cases
+        sorted_data = OrderedDict(sorted(data.items(), 
+        key = lambda x: getitem(x[1], 'active'), reverse=True)) 
+        totaldictionary = covid19.totalstats(data)
+        return render_template("covidtable.html", Statedata = sorted_data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
+    except Exception as e:
+		# return 404 page if error occurs 
+	    return render_template("error-404.html")
 
 #Hiral Global Covid Stats Changes
 @app.route("/global")
