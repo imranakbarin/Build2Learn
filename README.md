@@ -47,3 +47,5 @@ flask run
 ```
 
 #### Thank you :)
+
+### Thanks to Covid19 India for APIs https://api.covid19india.org/
