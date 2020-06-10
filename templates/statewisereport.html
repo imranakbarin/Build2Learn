@@ -62,7 +62,14 @@
   {% for state in statedatalist %}
     {% if state['statecode'] != 'TT'%}
       <tr>
-      <th scope="row" class="text-left">{{state['state']}}</th>
+      
+      <th scope="row" class="text-left">
+      {{state['state'] }}
+      {% if state['statenotes'] %}
+      <i class="fa fa-info" data-toggle="tooltip" data-placement="top" aria-hidden="true" 
+      data-html="true" title="{{state['statenotes']}}"></i>
+      {% endif %}
+      </th>
       <td>{{state['active'] | comafy }}</td>
       <td>{{state['confirmed'] | comafy }}</td>
       <td class="text-danger">{{state['deaths'] | comafy }}</td>
