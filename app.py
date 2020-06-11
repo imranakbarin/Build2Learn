@@ -143,24 +143,5 @@ def newspage():
     except:
         return "<H2> Issue Fetching News - We will Look into it soon </H2>"
 
-@app.route("/Login", methods=['GET','POST'])
-def Login():
-    form = LoginForm()  
-    if form.validate_on_submit():
-        if form.UserName.data == 'Alagappan' and form.Password.data == '123456':
-            flash('You have been logged in!', 'success')
-            return redirect(url_for('covidHome'))            
-        else:
-            flash('Login Unsuccessful. Please check username and password', 'danger')
-
-    return render_template("Login.html", title='Login', form=form)
-
-@app.route("/Register",methods=['GET','POST'])
-def Register():
-    form = RegistrationForm()
-    if form.validate_on_submit():
-        return redirect(url_for('Login'))
-    return render_template("Register.html", title='Register', form=form)
-
 if __name__ == "__main__":
     app.run(threaded=True,host='0.0.0.0')

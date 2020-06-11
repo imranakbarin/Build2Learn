@@ -92,8 +92,18 @@ def getstatewiseresults():
         print(f"\r {everystate['state']}")
     
     
+def getChennaizones():
+    url = "https://v2-api.sheety.co/be53bea9995480777df56e14adcfd93b/covid19Chennai/cases"
+    data = callApi(url,None)
+    # print(data)
+    sorted_date = sorted(data['cases'], key=lambda x: datetime.strptime(x['date'].strip(), '%Y-%m-%d'), reverse = True)
+    print(sorted_date)
     
+    # for zone in data['cases']:
+    #     print("**********************")
+    #     print(zone)
+  
+getChennaizones() 
     
-    
-getstatewiseresults()
+# getstatewiseresults()
 #print(ConstCodes.getstatecodes())
