@@ -76,14 +76,26 @@ def static_from_root():
 #testing some features in this route
 @app.route("/test")
 def test():
-    list_states = lines
-    totaldictionary = {}
-    get_state = request.args.get('state', default='Tamil Nadu')
-    covid19 =  covid(get_state,None)
-    data = covid19.getStateData()["districtData"]
-    totaldictionary = covid19.totalstats(data)
-    return render_template("hello_there.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
+    # list_states = lines
+    # totaldictionary = {}
+    # get_state = request.args.get('state', default='Tamil Nadu')
+    # covid19 =  covid(get_state,None)
+    # data = covid19.getStateData()["districtData"]
+    # totaldictionary = covid19.totalstats(data)
+    # return render_template("hello_there.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
+    return render_template("chennaizonewise.html")
 
+@app.route("/chennai")
+def chennaizonalreport():
+    covid19 = covid(None,None)
+    try:
+        response = covid19.getChennaizones()
+        #Fetching the Date from first key
+        FormattedDate = datetime.strptime(response[0]['date'].strip(), "%Y-%m-%d").strftime("%A, %d %b %Y")
+        return render_template('chennaizonewise.html', chennaidata = response, formatteddate = FormattedDate)
+    except Exception as e:
+		# return 404 page if error occurs 
+	    return render_template("error-404.html")
 
 @app.route("/")
 def statewisereport():

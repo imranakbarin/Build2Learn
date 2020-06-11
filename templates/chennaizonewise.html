@@ -1,0 +1,43 @@
+  {% extends "layout.html" %}
+        {% block title %}
+       Chennai Zonal Stats
+
+        {% endblock %}
+        {% block content %}
+
+<h3 class="display-4">Chennai</h3>
+<small class="text-muted">Cases as of {{formatteddate}}</small>
+<div class="table-responsive">    
+ <table class="table table-sm">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">ZoneNo</th>
+      <th scope="col" >ZoneName</th>
+      <th scope="col">Confirm</th>
+      <th scope="col">Cured</th>
+      <th scope="col">Admitted</th>
+      <th scope="col">Death</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+     {% for zones in chennaidata %}
+      {% if loop.index <=15 %}
+      <tr>
+      <td>{{zones['zoneNo']}}</td>
+      <th scope="row">{{(zones['zoneName']) }}</th>
+      <td>{{zones['confirmedCases'] | comafy }}</td>
+      <td class="text-success">{{zones['recovered'] | comafy }}</td>
+      <td class="text-warning">{{zones['hospitalized'] | comafy }}</td>
+      <td class="text-danger">{{zones['deceased'] | comafy }}</td>
+      </tr>
+      {% endif %}
+     {%- endfor %}
+  </div>
+  </tbody>
+
+
+</table>
+
+<p class="bg-info">Stay home, stay safe – the only medicine found till now for coronavirus.</p>
+     {% endblock %}

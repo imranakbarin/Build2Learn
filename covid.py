@@ -1,5 +1,6 @@
 import requests
 import requests_cache
+from datetime import datetime
 
 requests_cache.install_cache(expire_after=60)
 
@@ -64,3 +65,13 @@ class covid():
         url ="https://api.covid19india.org/data.json"
         data = self.callApi(url,None)
         return data['statewise']
+    
+    
+#Chennai Zonal Wise Data
+
+    def getChennaizones(self):
+        url = "https://v2-api.sheety.co/be53bea9995480777df56e14adcfd93b/covid19Chennai/cases"
+        data = self.callApi(url,None)
+        #Sorting data using date
+        sorted_data = sorted(data['cases'], key=lambda x: datetime.strptime(x['date'].strip(), '%Y-%m-%d'), reverse = True)
+        return sorted_data
