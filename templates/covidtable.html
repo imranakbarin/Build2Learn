@@ -90,15 +90,15 @@
   <i class="fa fa-ambulance d-inline" aria-hidden="true"></i>
 <strong>New Cases:  </strong> There are 
   {% if totalstats['deltaconfirmed'] %}
-  <b> {{totalstats['deltaconfirmed'] }} </b> confirmed, 
+  <b> {{totalstats['deltaconfirmed'] | comafy }} </b> confirmed, 
   {% endif %}
     {% if totalstats['deltadeceased'] == 1 %}
     <b>{{totalstats['deltadeceased'] }}</b> death,
     {% elif totalstats['deltadeceased'] > 1%}
-     <b>{{totalstats['deltadeceased'] }}</b> deaths, 
+     <b>{{totalstats['deltadeceased'] | comafy }}</b> deaths, 
   {% endif %}
   {% if totalstats['deltarecovered'] %}
-    <b>{{totalstats['deltarecovered']}}</b> recovered.
+    <b>{{totalstats['deltarecovered'] | comafy }}</b> recovered.
     {% endif %}
 </div>
 {% endif %}
