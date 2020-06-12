@@ -76,14 +76,14 @@ def static_from_root():
 #testing some features in this route
 @app.route("/test")
 def test():
-    # list_states = lines
-    # totaldictionary = {}
-    # get_state = request.args.get('state', default='Tamil Nadu')
-    # covid19 =  covid(get_state,None)
-    # data = covid19.getStateData()["districtData"]
-    # totaldictionary = covid19.totalstats(data)
-    # return render_template("hello_there.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
-    return render_template("chennaizonewise.html")
+    list_states = lines
+    totaldictionary = {}
+    get_state = request.args.get('state', default='Tamil Nadu')
+    covid19 =  covid(get_state,None)
+    data = covid19.getStateData()["districtData"]
+    totaldictionary = covid19.totalstats(data)
+    return render_template("hello_there.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
+    # return render_template("chennaizonewise.html")
 
 @app.route("/chennai")
 def chennaizonalreport():
@@ -108,7 +108,6 @@ def statewisereport():
 #StateWise Page Route
 @app.route("/district")
 def covidHome():
-   
     list_states = lines
     totaldictionary = {}
     try:
@@ -141,8 +140,6 @@ def countrywisereport():
 
 #End of Global stats changes
 
-
-
 #News API
 
 @app.route("/news")
@@ -153,7 +150,7 @@ def newspage():
                                             language='en')
         return render_template('news.html', headlines = top_headlines)
     except:
-        return "<H2> Issue Fetching News - We will Look into it soon </H2>"
+        return render_template("error-404.html")
 
 if __name__ == "__main__":
     app.run(threaded=True,host='0.0.0.0')

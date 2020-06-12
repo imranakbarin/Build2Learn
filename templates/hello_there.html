@@ -113,6 +113,27 @@
   </div>
 </div>
 </div>
+
+
+{% if (totalstats['deltaconfirmed'] != 0 or totalstats['deltadeceased'] != 0 or totalstats['deltarecovered'] != 0) %}
+  <div class="alert alert-success text-center">
+  <strong><i class="fas fa-shield-virus"></i> New Cases!  </strong> There are 
+  {% if totalstats['deltaconfirmed'] %}
+  <b> {{totalstats['deltaconfirmed'] }} </b> confirmed 
+  {% endif %}
+    {% if totalstats['deltadeceased'] == 1 %}
+    <b>{{totalstats['deltadeceased'] }}</b> death
+    {% elif totalstats['deltadeceased'] > 1%}
+     <b>{{totalstats['deltadeceased'] }}</b> deaths 
+  {% endif %}
+  {% if totalstats['deltarecovered'] %}
+    <b>{{totalstats['deltarecovered']}}</b> recovered.
+    {% endif %}
+</div>
+{% endif %}
+
+
+
 <!--
 <div class="row container"> 
             <div class="col align-center"> 
