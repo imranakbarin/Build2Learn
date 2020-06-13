@@ -14,8 +14,8 @@
       <th scope="col">ZNo</th>
       <th scope="col" >ZoneName</th>
       <th scope="col">Confirm</th>
-      <th scope="col">Cured</th>
       <th scope="col">Active</th>
+      <th scope="col">Cured</th>
       <th scope="col">Deaths</th>
     </tr>
   </thead>
@@ -26,10 +26,10 @@
       <tr>
       <td>{{zones['zoneNo']}}</td>
       <th scope="row">{{(zones['zoneName']) }}</th>
-      <td>{{zones['confirmedCases'] | comafy }}</td>
-      <td class="text-success">{{zones['recovered'] | comafy }}</td>
-      <td class="text-warning">{{zones['hospitalized'] | comafy }}</td>
-      <td class="text-danger">{{zones['deceased'] | comafy }}</td>
+      <td class="text-secondary">{{zones['confirmedCases'] | comafy }}</td>
+      <td class=""><b>{{zones['hospitalized'] | comafy }}</b></td>
+      <td class="text-success"><b>{{zones['recovered'] | comafy }}</b></td>
+      <td class="text-danger"><b>{{zones['deceased'] | comafy }}</b></td>
       </tr>
       {% endif %}
      {%- endfor %}

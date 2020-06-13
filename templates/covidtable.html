@@ -33,13 +33,6 @@
 
 <div class="d-flex justify-content-center mb-2">
 
-   <div class="col-3" style="padding-left: 8px;padding-right: 8px;">
-      <div class="card border-primary">
-      <h6 class="card-header p-0" style="font-size: 13px;">Active</h6>
-    <div class="card-text text-center"> <b>  {{totalstats['active'] | comafy }}</b> </div>
-    <div class="card-footer bg-primary"></div>
-   </div>
-   </div>
 
 
     <!-- <p><small><i class="material-icons">arrow_upward</i>{{totalstats['deltaconfirmed']}}</small></p> -->
@@ -56,6 +49,32 @@
       
       </div>
    </div>
+
+
+   <div class="col-3" style="padding-left: 8px;padding-right: 8px;">
+      <div class="card border-primary">
+      <h6 class="card-header p-0" style="font-size: 13px;">Active</h6>
+    <div class="card-text text-center"> <b>  {{totalstats['active'] | comafy }}</b> </div>
+    <div class="card-footer bg-primary"></div>
+   </div>
+   </div>
+
+       <div class="col-3" style="padding-left: 8px;padding-right: 8px;">
+      <div class="card card-block border-success">
+      <h6 class="card-header p-0" style="font-size: 13px;">Cured</h6>
+  <!--     {% if totalstats['deltarecovered'] > 0 %}
+        <div class="card-text text-center"><small> [+{{totalstats['deltarecovered']}}] </small>
+    <b> {{totalstats['recovered']}} </b> </div>
+       {% else %}
+     <div class="card-text text-center"> <b>    {{totalstats['recovered']}} </b></div>
+{% endif %} -->
+        <div class="card-text text-center"> <b>    {{totalstats['recovered'] | comafy}}  </b></div>
+        <div class="card-footer bg-success"></div>
+
+      </div>
+   </div>
+
+
     <div class="col-3" style="padding-left: 8px;padding-right: 8px;">
       <div class="card card-block border-danger">
       <h6 class="card-header p-0" style="font-size: 13px;">Deaths</h6>
@@ -69,20 +88,7 @@
       <div class="card-footer bg-danger"></div>
       </div>
    </div>
-    <div class="col-3" style="padding-left: 8px;padding-right: 8px;">
-      <div class="card card-block border-success">
-      <h6 class="card-header p-0" style="font-size: 13px;">Cured</h6>
-  <!--     {% if totalstats['deltarecovered'] > 0 %}
-        <div class="card-text text-center"><small> [+{{totalstats['deltarecovered']}}] </small>
-    <b> {{totalstats['recovered']}} </b> </div>
-       {% else %}
-     <div class="card-text text-center"> <b>    {{totalstats['recovered']}} </b></div>
-{% endif %} -->
-<div class="card-text text-center"> <b>    {{totalstats['recovered'] | comafy}}  </b></div>
-<div class="card-footer bg-success"></div>
 
-      </div>
-   </div>
 </div>
 
 {% if (totalstats['deltaconfirmed'] != 0 or totalstats['deltadeceased'] != 0 or totalstats['deltarecovered'] != 0) %}
@@ -111,10 +117,10 @@
   <thead class="thead-light">
     <tr>
       <th scope="col">District</th>
-      <th scope="col">Active</th>
       <th scope="col">Confirm</th>
+      <th scope="col">Active</th>
+      <th scope="col">Cured</th>      
       <th scope="col">Deaths</th>
-      <th scope="col">Cured</th>
     </tr>
   </thead>
   <tbody>
@@ -122,10 +128,11 @@
   {% set Dataval = District %}
       <tr>
       <th scope="row" class="text-left text-lg-justify">{{District}}</th>
+      <td class="text-secondary">{{Statedata[District]['confirmed'] | comafy  }}</td>
       <td>{{Statedata[District]['active'] | comafy }}</td>
-      <td>{{Statedata[District]['confirmed'] | comafy  }}</td>
-      <td class="text-danger">{{Statedata[District]['deceased'] | comafy  }}</td>
       <td class="text-success">{{Statedata[District]['recovered'] | comafy  }}</td>
+      <td class="text-danger">{{Statedata[District]['deceased'] | comafy  }}</td>
+     
      <!-- {% if totalactive.append(totalactive.pop()+ Statedata[District]['active']) -%}{% endif %}
       {% if totalconfirmed.append(totalconfirmed.pop()+ Statedata[District]['confirmed']) -%}{% endif %}
       {% if totaldeceased.append(totaldeceased.pop()+ Statedata[District]['deceased']) -%}{% endif %}

@@ -17,27 +17,17 @@
  <table class="table table-sm text-center">
     <tbody>
      <tr class="bg-light pr-3">
+        <th class="bg-warning">Confirmed</th>
         <th class="bg-primary">Active</th>
-        <th class="bg-warning">Confirm</th>
-        <th class="bg-danger">Deceased</th>
         <th class="bg-success">Recovered</th>
+        <th class="bg-danger">Deceased</th>
+        
       </tr>
       <tr class="">
+        <td><b> {{statedatalist[0]['confirmed'] | comafy}} </b></td>
         <td><b>{{ statedatalist[0]['active'] | comafy}}<b></td>
-        <td>
-
-      <b> {{statedatalist[0]['confirmed'] | comafy}} </b>
-  
-        </td>
-        <td>
-      <b>  {{statedatalist[0]['deaths'] | comafy }} </b>
-      </td>
-     
-    <td>
-     
-      <b>    {{statedatalist[0]['recovered'] | comafy }} </b></div>
-
-</td>
+        <td><b> {{statedatalist[0]['recovered'] | comafy }} </b></div></td>
+        <td><b>{{statedatalist[0]['deaths'] | comafy }} </b> </td>
       </tr>
       </tbody>
   </table>
@@ -52,10 +42,11 @@
   <thead class="thead-light">
     <tr>
       <th scope="col">State</th>
-      <th scope="col">Active</th>
       <th scope="col">Confirmed</th>
-      <th scope="col">Deceased</th>
+      <th scope="col">Active</th>
       <th scope="col">Recovered</th>
+      <th scope="col">Deceased</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -70,10 +61,11 @@
       data-html="true" title="{{state['statenotes']}}"></i>
       {% endif %}
       </th>
+      <td class="text-secondary">{{state['confirmed'] | comafy }}</td>
       <td>{{state['active'] | comafy }}</td>
-      <td>{{state['confirmed'] | comafy }}</td>
-      <td class="text-danger">{{state['deaths'] | comafy }}</td>
       <td class="text-success">{{state['recovered'] | comafy }}</td>
+      <td class="text-danger">{{state['deaths'] | comafy }}</td>
+      
        </tr>
        {%endif%}
      {% endfor %}

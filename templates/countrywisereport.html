@@ -14,23 +14,26 @@
  <table class="table table-sm">
     <tbody>
      <tr class="bg-light p-0 text-left">
+        
+        <th>Confirmed</th>
         <th>Active</th>
-        <th>Confirm</th>
-        <th>Deceased</th>
         <th>Recovered</th>
+        <th>Deceased</th>
       </tr>
       <tr class="text-center">
+       <td class="bg-warning" id ="value2">
+            <b>{{globalData['TotalConfirmed'] | comafy  }} </b>
+        </td>
+
         <td class="bg-primary">
              <b>{{ (globalData['TotalConfirmed'] - globalData['TotalDeaths'] - globalData['TotalRecovered']) | comafy }}</b>
         </td>
-        <td class="bg-warning" id ="value2">
-            <b>{{globalData['TotalConfirmed'] | comafy  }} </b>
+       
+        <td class="bg-success">
+            <b>    {{globalData['TotalRecovered'] | comafy  }} </b>
         </td>
         <td class="bg-danger">
             <b>  {{globalData['TotalDeaths'] | comafy  }} </b>
-        </td>
-        <td class="bg-success">
-            <b>    {{globalData['TotalRecovered'] | comafy  }} </b>
         </td>
       </tr>
       </tbody>
@@ -46,20 +49,23 @@
   <thead class="thead-light">
     <tr>
       <th scope="col">Country</th>
-      <th scope="col">Active</th>
       <th scope="col">Confirmed</th>
-      <th scope="col">Deceased</th>
+      <th scope="col">Active</th>
       <th scope="col">Recovered</th>
+      <th scope="col">Deceased</th>
+      
     </tr>
   </thead>
   <tbody>
   {% for country in countrydatalist | sort(attribute='TotalActive',reverse=true) %}
       <tr>
       <th scope="row" class="text-left"><span class="flag-icon flag-icon-{{country['CountryCode'] | lower}}"></span>    {{country['Country']}}</th>
+      
+      <td class="text-secondary">{{country['TotalConfirmed'] | comafy }}</td>
       <td>{{(country['TotalActive']) | comafy }}</td>
-      <td>{{country['TotalConfirmed'] | comafy }}</td>
-      <td class="text-danger">{{country['TotalDeaths'] | comafy }}</td>
       <td class="text-success">{{country['TotalRecovered'] | comafy }}</td>
+      <td class="text-danger">{{country['TotalDeaths'] | comafy }}</td>
+      
       </tr>
      {% endfor %}
 
