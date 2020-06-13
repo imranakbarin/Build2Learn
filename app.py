@@ -32,12 +32,32 @@ def stayhome():
     return render_template('stayhome.html') 
 
 
+
+
+def format_as_indian(input):
+    input_list = list(str(input))
+    if len(input_list) <= 1:
+        formatted_input = input
+    else:
+        first_number = input_list.pop(0)
+        last_number = input_list.pop()
+        formatted_input = first_number + (
+            (''.join(l + ',' * (n % 2 == 1) for n, l in enumerate(reversed(input_list)))[::-1] + last_number)
+        )
+
+        if len(input_list) % 2 == 0:
+            formatted_input.lstrip(',')
+
+    return formatted_input
+
 #Formatting Filter
 @app.template_filter()
 def comafy(value):
-    value = int(value)
-    return "{:,}".format(value)
-
+    try:
+        value = int(value)
+        return format_as_indian(value)
+    except:
+        return "{:,}".format(value)
 
 #Route for chennai related Stats
 @app.route("/covid")
