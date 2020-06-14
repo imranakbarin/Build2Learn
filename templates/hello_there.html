@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/site.css')}}" />
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/css/sortable-theme-bootstrap.min.css" integrity="sha256-S9t86HqhPL8nNR85dIjDQCJMPd9RULmRAub6xBksk9M=" crossorigin="anonymous" />-->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png')}}">
@@ -234,14 +235,14 @@
 
 <div class="container text-center">
 <div class="table-responsive">  
-<table class="table table-hover table-sm">
+<table class="table table-hover table-sm" data-sortable id="covidTable">
   <thead class="thead-light">
     <tr>
       <th scope="col">District</th>
-      <th scope="col">Active</th>
-      <th scope="col">Confirmed</th>
-      <th scope="col">Deceased</th>
-      <th scope="col">Recovered</th>
+      <th class="" scope="col">Active</th>
+      <th class="" scope="col">Confirmed</th>
+      <th class="" scope="col">Deceased</th>
+      <th class="" scope="col">Recovered</th>
     </tr>
   </thead>
   <tbody>
@@ -270,6 +271,6 @@
    <!-- <script src="{{ url_for('static', filename='js/jquery.countup.js')}}"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/js/sortable.min.js" integrity="sha256-gCtdA1cLK2EhQZCMhhvGzUsWM/fsxtJ2IImUJ+4UOP8=" crossorigin="anonymous"></script>
   </body>
 </html>
