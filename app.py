@@ -112,10 +112,11 @@ def chennaizonalreport():
         response = covid19.getChennaizones()
         #Fetching the Date from first key
         FormattedDate = datetime.strptime(response[0]['date'].strip(), "%Y-%m-%d").strftime("%A, %d %b %Y")
-        return render_template('chennaizonewise.html', chennaidata = response, formatteddate = FormattedDate)
+        return render_template('chennaizonewise.html', chennaidata = response[:15], formatteddate = FormattedDate)
     except Exception as e:
-		# return 404 page if error occurs 
-	    return render_template("error-404.html")
+		# return 404 page if error occurs
+        print("error in chennai route " + e)         
+        return render_template("error-404.html")
 
 @app.route("/")
 def statewisereport():

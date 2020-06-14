@@ -22,7 +22,7 @@
   <tbody>
    
      {% for zones in chennaidata %}
-      {% if loop.index <=15 %}
+    
       <tr>
       <td>{{zones['zoneNo']}}</td>
       <th scope="row">{{(zones['zoneName']) }}</th>
@@ -31,7 +31,7 @@
       <td class="text-success"><b>{{zones['recovered'] | comafy }}</b></td>
       <td class="text-danger"><b>{{zones['deceased'] | comafy }}</b></td>
       </tr>
-      {% endif %}
+    
      {%- endfor %}
   </div>
   </tbody>
