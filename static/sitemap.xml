@@ -8,189 +8,204 @@
 
 
 <url>
-  <loc>https://build2learn.herokuapp.com/</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
+  <loc>http://www.buildnlearn.in/</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/covid</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
+  <loc>http://www.buildnlearn.in/district</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/about/</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
+  <loc>http://www.buildnlearn.in/global</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/contact/</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
+  <loc>http://www.buildnlearn.in/chennai</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Tamil%20Nadu</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
+  <loc>http://www.buildnlearn.in/news</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Andaman%20and%20Nicobar%20Islands</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
+  <loc>http://www.buildnlearn.in/about/</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Andhra%20Pradesh</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
+  <loc>http://www.buildnlearn.in/contact/</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Arunachal%20Pradesh</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Tamil%20Nadu</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Assam</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Andaman%20and%20Nicobar%20Islands</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Bihar</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Andhra%20Pradesh</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Chandigarh</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Arunachal%20Pradesh</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Chhattisgarh</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Assam</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Delhi</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Bihar</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Dadra%20and%20Nagar%20Haveli%20and%20Daman%20and%20Diu</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Chandigarh</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Goa</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Chhattisgarh</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Gujarat</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Delhi</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Himachal%20Pradesh</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Dadra%20and%20Nagar%20Haveli%20and%20Daman%20and%20Diu</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Haryana</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Goa</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Jharkhand</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Gujarat</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Jammu%20and%20Kashmir</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Himachal%20Pradesh</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Karnataka</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Haryana</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Kerala</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Jharkhand</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Ladakh</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Jammu%20and%20Kashmir</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Maharashtra</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Karnataka</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Meghalaya</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Kerala</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Manipur</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Ladakh</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Madhya%20Pradesh</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Maharashtra</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Mizoram</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Meghalaya</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Odisha</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Manipur</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Punjab</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Madhya%20Pradesh</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Puducherry</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Mizoram</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Rajasthan</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Odisha</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Telangana</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Punjab</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Tripura</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Puducherry</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Uttar%20Pradesh</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Rajasthan</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=Uttarakhand</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Telangana</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://build2learn.herokuapp.com/?state=West%20Bengal</loc>
-  <lastmod>2020-05-11T21:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://www.buildnlearn.in/district?state=Tripura</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.buildnlearn.in/district?state=Uttar%20Pradesh</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.buildnlearn.in/district?state=Uttarakhand</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.buildnlearn.in/district?state=West%20Bengal</loc>
+  <lastmod>2020-06-15T14:12:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
