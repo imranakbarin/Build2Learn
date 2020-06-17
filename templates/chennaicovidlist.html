@@ -15,8 +15,9 @@
   <input type="text" class="form-control light-table-filter" aria-label="Search"  data-table="order-table" aria-describedby="inputGroup-sizing-sm">
 </div>
 
-<table class="table order-table">
-   <thead>
+<div class="table-responsive">    
+ <table class="table table-sm order-table">
+  <thead class="thead-light">
     <tr>
       <th scope="col">Zone</th>
       <th scope="col">Ward</th>
@@ -36,6 +37,7 @@
     </tr>
      {% endfor %}
    </tbody>
+   </div>
 </table>
 
 
