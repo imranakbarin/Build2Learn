@@ -6,7 +6,8 @@
         {% block content %}
 
 <h3 class="display-4">Chennai</h3>
-<small class="text-muted">Cases as of {{formatteddate}}</small>
+<small class="text-muted">Chennai Street wise report available <a href="{{ url_for('chennaistreetwise') }}">here</a></small>
+<p><small class="text-muted">Cases as of {{formatteddate}}</small></p>
 <div class="table-responsive">    
  <table class="table table-sm">
   <thead class="thead-light">

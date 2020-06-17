@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+        {% block title %}
+        Chennai affected Street wise 
+        {% endblock %}
+        {% block content %}
+        
+<h5 class="display-6 mt-1">Chennai Streets reporting with Positive Cases(16-06-2020)</h5>
+      <br>
+<small class="text-muted">Chennai Zonal Stats <a href="{{ url_for('chennaizonalreport') }}">report</a></small>
+
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+  </div>
+  <input type="text" class="form-control light-table-filter" aria-label="Search"  data-table="order-table" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+<table class="table order-table">
+   <thead>
+    <tr>
+      <th scope="col">Zone</th>
+      <th scope="col">Ward</th>
+      <th scope="col">Area</th>
+      <th scope="col">Location</th>
+      <th scope="col">Street</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for street in chennailist %}
+    <tr>
+      <td>{{street['Zone']}}</td>
+      <td>{{street['Ward']}}</td>
+      <td>{{street['Area']}}</td>
+      <td>{{street['Location']}}</td>
+      <td>{{street['Street']}}</td>
+    </tr>
+     {% endfor %}
+   </tbody>
+</table>
+
+
+
+{% endblock %}

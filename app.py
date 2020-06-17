@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,redirect, url_for, jsonify, g, send_from_directory, flash
+from flask import Flask,render_template,request,redirect, url_for, jsonify, send_from_directory, flash, json
 from datetime import datetime
 from covid import covid
 from forms import LoginForm, RegistrationForm
@@ -6,6 +6,7 @@ from newsapi import NewsApiClient
 from collections import OrderedDict 
 from operator import getitem 
 import os
+import codecs
 
 app = Flask(__name__) 
 
@@ -16,10 +17,12 @@ NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
 #Load states from a text file once the app gets loaded
 lines = ''
 teamdetails= ''
+
 with app.app_context():
     with open('indian_states.txt') as f,open("team_members.txt") as f2:
           lines = f.read().splitlines()
           teamdetails = f2.read().splitlines()
+
                 
 #Method whenever there is a error in page
 @app.errorhandler(404)
@@ -171,6 +174,18 @@ def newspage():
                                             language='en')
         return render_template('news.html', headlines = top_headlines)
     except:
+        return render_template("error-404.html")
+    
+    
+    
+#Chennai Street wise
+@app.route("/chennaicovidlist")
+def chennaistreetwise():
+     try:
+        with codecs.open('static/json/data_chennai.json','r', 'utf-8-sig') as f:
+            chennaidata = json.load(f)
+        return render_template('chennaicovidlist.html', chennailist = chennaidata['chennaidata'])      
+     except:
         return render_template("error-404.html")
 
 if __name__ == "__main__":
