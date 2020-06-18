@@ -19,8 +19,6 @@
  <table class="table table-sm order-table">
   <thead class="thead-light">
     <tr>
-      <th scope="col">Zone</th>
-      <th scope="col">Ward</th>
       <th scope="col">Area</th>
       <th scope="col">Location</th>
       <th scope="col">Street</th>
@@ -29,8 +27,6 @@
   <tbody>
   {% for street in chennailist %}
     <tr>
-      <td>{{street['Zone']}}</td>
-      <td>{{street['Ward']}}</td>
       <td>{{street['Area']}}</td>
       <td>{{street['Location']}}</td>
       <td>{{street['Street']}}</td>
@@ -40,6 +36,8 @@
    </div>
 </table>
 
-
+<div class="alert alert-info" role="alert">
+  <small>Data extracted from <a href="https://twitter.com/chennaicorp" target="_blank" rel="noopener noreferrer"> Greater Chennai Corporation </a>twitter feed 
+</div>
 
 {% endblock %}
