@@ -185,7 +185,8 @@ def chennaistreetwise():
         with codecs.open('static/json/data_chennai.json','r', 'utf-8-sig') as f:
             chennaidata = json.load(f)
         return render_template('chennaicovidlist.html', chennailist = chennaidata['chennaidata'])      
-     except:
+     except Exception as e:
+        print(e)
         return render_template("error-404.html")
 
 if __name__ == "__main__":

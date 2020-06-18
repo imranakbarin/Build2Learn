@@ -5,10 +5,10 @@
         {% block content %}
         
 <h5 class="display-6 mt-1">Chennai Streets reporting with Positive Cases(16-06-2020)</h5>
-      <br>
-<small class="text-muted">Chennai Zonal Stats <a href="{{ url_for('chennaizonalreport') }}">report</a></small>
+   
+<small class="text-muted mt-1">Chennai Zonal Stats <a href="{{ url_for('chennaizonalreport') }}">report</a></small>
 
-<div class="input-group input-group-sm mb-3">
+<div class="input-group input-group-sm mt-1 mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
   </div>
@@ -16,7 +16,7 @@
 </div>
 
 <div class="table-responsive">    
- <table class="table table-sm order-table">
+ <table class="table table-striped order-table table-sm">
   <thead class="thead-light">
     <tr>
       <th scope="col">Area</th>
@@ -25,11 +25,11 @@
     </tr>
   </thead>
   <tbody>
-  {% for street in chennailist %}
+  {% for street in chennailist  %}
     <tr>
-      <td>{{street['Area']}}</td>
-      <td>{{street['Location']}}</td>
-      <td>{{street['Street']}}</td>
+      <td>{{street['Area'] | capitalize}}</td>
+      <td>{{street['Location'] | capitalize}}</td>
+      <td>{{street['Street'] | capitalize}}</td>
     </tr>
      {% endfor %}
    </tbody>
