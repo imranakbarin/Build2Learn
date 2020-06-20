@@ -26,7 +26,7 @@
     
       <tr>
       <td>{{zones['zoneNo']}}</td>
-      <th scope="row">{{(zones['zoneName']) }}</th>
+      <th scope="row">{{(zones['zoneName'] | capitalize) }}</th>
       <td class="text-secondary">{{zones['confirmedCases'] | comafy }}</td>
       <td class=""><b>{{zones['hospitalized'] | comafy }}</b></td>
       <td class="text-success"><b>{{zones['recovered'] | comafy }}</b></td>
@@ -52,7 +52,7 @@
       var mychart = document.getElementById("barChart").getContext("2d");
        var myChart = new Chart(mychart,{
           type: 'bar',
-          data:{ labels: {{zones_list | safe}},
+          data:{ labels: {{zones_list | safe | capitalize}},
           datasets: [{ label: 'No of Active Cases',data: {{active_list}},
           backgroundColor: colours
           
@@ -74,6 +74,6 @@
     }
     });
     </script>
-
+<BR>
     <p class="bg-light text-muted">Stay home, stay safe – the only cure found till now for coronavirus.</p>
      {% endblock %}
