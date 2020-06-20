@@ -117,7 +117,7 @@ def chennaizonalreport():
         FormattedDate = datetime.strptime(response[0]['date'].strip(), "%Y-%m-%d").strftime("%A, %d %b %Y")
         zones_chennai = response[:15]
         #  zones_list = list(zones_chennai['zoneName'].values())
-        zones_list = [zones_list['zoneName'] for zones_list in zones_chennai]
+        zones_list = [zones_list['zoneName'].capitalize() for zones_list in zones_chennai]
         active_list = [active_list['hospitalized'] for active_list in zones_chennai]
         recovered_list = [recovered_list['recovered'] for recovered_list in zones_chennai]
         deceased_list =  [deceased_list['deceased'] for deceased_list in zones_chennai]

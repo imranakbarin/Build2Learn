@@ -52,7 +52,7 @@
       var mychart = document.getElementById("barChart").getContext("2d");
        var myChart = new Chart(mychart,{
           type: 'bar',
-          data:{ labels: {{zones_list | safe | capitalize}},
+          data:{ labels: {{zones_list | safe}},
           datasets: [{ label: 'No of Active Cases',data: {{active_list}},
           backgroundColor: colours
           
