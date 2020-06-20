@@ -115,7 +115,15 @@ def chennaizonalreport():
         response = covid19.getChennaizones()
         #Fetching the Date from first key
         FormattedDate = datetime.strptime(response[0]['date'].strip(), "%Y-%m-%d").strftime("%A, %d %b %Y")
-        return render_template('chennaizonewise.html', chennaidata = response[:15], formatteddate = FormattedDate)
+        zones_chennai = response[:15]
+        #  zones_list = list(zones_chennai['zoneName'].values())
+        zones_list = [zones_list['zoneName'] for zones_list in zones_chennai]
+        active_list = [active_list['hospitalized'] for active_list in zones_chennai]
+        recovered_list = [recovered_list['recovered'] for recovered_list in zones_chennai]
+        deceased_list =  [deceased_list['deceased'] for deceased_list in zones_chennai]
+        
+        return render_template('chennaizonewise.html', chennaidata = zones_chennai, formatteddate = FormattedDate,
+                               zones_list=zones_list,active_list=active_list,recovered_list=recovered_list,deceased_list=deceased_list)
     except Exception as e:
 		# return 404 page if error occurs
         print("error in chennai route " + e)         
