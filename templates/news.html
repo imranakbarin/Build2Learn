@@ -10,13 +10,13 @@
 
 	<!-- Popular movie section  -->
        
-        {% for article_row in headlines['articles'] | batch(4)%}
+        {% for article_row in headlines['articles'] | batch(3)%}
 
 	        <div class="row">
 	       
 		        {% for article in article_row %}
 
-		        	<div class="col-md-3 mb-3">
+		        	<div class="col-md-4 mb-3">
 
                     <div class="card">
                      <a href="{{article['url']}}" target="_blank">   <img src="{{article['urlToImage']}}"  class="card-img-top img-thumbnail" alt="{{article['title'] | truncate(20)}}"></a>
