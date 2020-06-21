@@ -40,6 +40,12 @@
 
 </table>
 
+<hr>
+   <div class="">
+    <button type="active" class="btn btn-info btn-xs align-left" onclick="myFunction('active')">Active</button>
+    <button type="recovered" class="btn btn-success btn-xs" onclick="myFunction('recovered')">Recovered</button>
+    <button type="deceased" class="btn btn-danger btn-xs" onclick="myFunction('deceased')">Deceased</button>
+</div>
 
     <canvas id="barChart"></canvas>
 
@@ -73,6 +79,25 @@
         responsive:true
     }
     });
+
+    function myFunction(flag) {
+	//		var zero = Math.random() < 0.2 ? true : false;
+      var datasetA;
+      if (flag == 'active') {
+        //  block of code to be executed if condition1 is true
+         datasetA = {{active_list}}
+      } else if (flag == 'recovered') {
+        //  block of code to be executed if the condition1 is false and condition2 is true
+        datasetA = {{recovered_list}}
+      } else {
+        datasetA = {{deceased_list}}
+      }
+        var case_type = flag.charAt(0).toUpperCase() + flag.slice(1)
+		    myChart.config.data.datasets[0].data = datasetA;
+        myChart.config.data.datasets[0].label = case_type + " cases"
+        myChart.config.options.title.text = "Chennai "+ case_type +" Cases"
+				myChart.update();
+		};
     </script>
 <BR>
     <p class="bg-light text-muted">Stay home, stay safe – the only cure found till now for coronavirus.</p>
