@@ -56,10 +56,7 @@
       
       <th scope="row" class="text-left">
       {{state['state'] }}
-      {% if state['statenotes'] %}
-      <i class="fa fa-info" data-toggle="tooltip" data-placement="top" aria-hidden="true" 
-      data-html="true" title="{{state['statenotes']}}"></i>
-      {% endif %}
+  
       </th>
       <td class="text-secondary">{{state['confirmed'] | comafy }}</td>
       <td>{{state['active'] | comafy }}</td>
