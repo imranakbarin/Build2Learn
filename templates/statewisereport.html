@@ -7,8 +7,10 @@
 <!--<div>
 <img src="{{ url_for('static', filename='images/india-flag-button-round-icon-64.png')}}" class ="img-fluid" alt="India Flag"> 
 </div> -->
-<div class="flag-icon flag-icon-in"></div><h3 class="display-4 m-0">India</h3>
-
+<div class="row align-items-center justify-content-center mt-3">
+<div class="flag-icon flag-icon-in"></div>
+</div>
+<h3 class="display-4 m-0 text-center">India</h3>
 <!--Start Here-->
 <div class="container">
 <div class="row">
@@ -38,7 +40,7 @@
 <!--End Here-->
 
 
-<table class="table table-striped table-sm">
+<table class="table table-striped table-sm text-md-center text-lg-center">
   <thead class="thead-light">
     <tr>
       <th scope="col">State</th>
@@ -70,8 +72,8 @@
    </tbody>
  </table>
 
-	<div class="alert alert-primary align-left" role="alert">
+	<div class="alert alert-primary align-center">
 		  <small><strong> Note:  </strong>Recovered data is subject to further verification.</small>
-		</div>
+ 	</div>
 
          {% endblock %}
