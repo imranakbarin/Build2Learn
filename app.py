@@ -152,8 +152,10 @@ def covidHome():
         totaldictionary = covid19.totalstats(data)
         return render_template("covidtable.html", Statedata = sorted_data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
     except Exception as e:
-		# return 404 page if error occurs 
-	    return render_template("error-404.html")
+        print(e)
+        return render_template("error-404.html")
+
+
 
 #Hiral Global Covid Stats Changes
 @app.route("/global")
@@ -190,7 +192,7 @@ def newspage():
 @app.route("/chennaicovidlist")
 def chennaistreetwise():
      try:
-        with codecs.open('static/json/chennai_data_22.json','r', 'utf-8-sig') as f:
+        with codecs.open('static/json/chennai_data_29.json','r', 'utf-8-sig') as f:
             chennaidata = json.load(f)
         return render_template('chennaicovidlist.html', chennailist = chennaidata['chennaidata'])      
      except Exception as e:
