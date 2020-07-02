@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,redirect, url_for, jsonify, send_from_directory, flash, json
 from datetime import datetime
 from covid import covid
-from forms import LoginForm, RegistrationForm
+# from forms import LoginForm, RegistrationForm
 from newsapi import NewsApiClient
 from collections import OrderedDict 
 from operator import getitem 
@@ -33,9 +33,6 @@ def page_not_found(e):
 @app.route("/stayhome")
 def stayhome():
     return render_template('stayhome.html') 
-
-
-
 
 def format_as_indian(input):
     input_list = list(str(input))
@@ -126,7 +123,7 @@ def chennaizonalreport():
                                zones_list=zones_list,active_list=active_list,recovered_list=recovered_list,deceased_list=deceased_list)
     except Exception as e:
 		# return 404 page if error occurs
-        print("error in chennai route " + e)         
+        # print("error in chennai route " + e)         
         return render_template("error-404.html")
 
 @app.route("/")
@@ -154,8 +151,6 @@ def covidHome():
     except Exception as e:
         print(e)
         return render_template("error-404.html")
-
-
 
 #Hiral Global Covid Stats Changes
 @app.route("/global")
@@ -186,13 +181,12 @@ def newspage():
     except:
         return render_template("error-404.html")
     
-    
-    
+  
 #Chennai Street wise
 @app.route("/chennaicovidlist")
 def chennaistreetwise():
      try:
-        with codecs.open('static/json/chennai_data_29.json','r', 'utf-8-sig') as f:
+        with codecs.open('static/json/chennai_data_02.json','r', 'utf-8-sig') as f:
             chennaidata = json.load(f)
         return render_template('chennaicovidlist.html', chennailist = chennaidata['chennaidata'])      
      except Exception as e:
