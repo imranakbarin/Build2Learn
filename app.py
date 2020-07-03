@@ -7,6 +7,7 @@ from collections import OrderedDict
 from operator import getitem 
 import os
 import codecs
+from itertools import groupby
 
 app = Flask(__name__) 
 
@@ -112,7 +113,15 @@ def chennaizonalreport():
         response = covid19.getChennaizones()
         #Fetching the Date from first key
         FormattedDate = datetime.strptime(response[0]['date'].strip(), "%Y-%m-%d").strftime("%A, %d %b %Y")
-        zones_chennai = response[:15]
+        zones_chennai = response[:16]
+        Last_twentydays = response[:16*20]
+        dict_list = {}
+        
+        Last_twentydays.sort(key=lambda x:x['zoneName'])
+    
+        for k,v in groupby(Last_twentydays,key=lambda x:x['zoneName']):
+             dict_list[k] = sorted(list(v),key=lambda x: datetime.strptime(x['date'].strip(), '%Y-%m-%d'))
+
         #  zones_list = list(zones_chennai['zoneName'].values())
         zones_list = [zones_list['zoneName'].capitalize() for zones_list in zones_chennai]
         active_list = [active_list['hospitalized'] for active_list in zones_chennai]
@@ -120,7 +129,8 @@ def chennaizonalreport():
         deceased_list =  [deceased_list['deceased'] for deceased_list in zones_chennai]
         
         return render_template('chennaizonewise.html', chennaidata = zones_chennai, formatteddate = FormattedDate,
-                               zones_list=zones_list,active_list=active_list,recovered_list=recovered_list,deceased_list=deceased_list)
+                               zones_list=zones_list,active_list=active_list,recovered_list=recovered_list,
+                               deceased_list=deceased_list,fivedaysstat = dict_list)
     except Exception as e:
 		# return 404 page if error occurs
         # print("error in chennai route " + e)         

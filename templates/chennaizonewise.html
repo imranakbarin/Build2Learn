@@ -5,6 +5,7 @@
         {% endblock %}
         {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="{{ url_for('static', filename='js/genericchart.js') }}"></script>
 <h3 class="display-4 text-center">Chennai</h3>
 <div class="row align-items-center justify-content-center">
 <small class="text-muted text-center">Chennai Street wise report available <a href="{{ url_for('chennaistreetwise') }}">here</a></small>
@@ -53,11 +54,16 @@
 
     <canvas id="barChart"></canvas>
 
-
+    <div class="row align-items-center justify-content-center"> Last 20 days Trends in Chennai Zones 
+    <select id="selectNumber" onchange="functionToTriggerClick(this.value)">
+            <option> {{zones_list[0] | safe}}</option>
+      </select>
+</div>
+    <canvas id="LineChartSeries"  width="600" height="400"></canvas>
      <script>
      //      var colours =['#00429d', '#325da9', '#4e78b5', '#6694c1', '#80b1cc', '#9dced6', '#c0eade', '#ffffe0', '#ffdac4', '#ffb3a7', '#fb8a8c', '#eb6574', '#d5405e', '#b81b4a', '#93003a']
 
-      var colours =['#4e4a7f', '#555887', '#5d668f', '#657396', '#6e819d', '#798fa3', '#859da7', '#e59348', '#97e5c3', '#b8cab0', '#ceaf9d', '#db938c', '#e3767c', '#e3586f', '#cf4969']
+      var colours =['#4e4a7f', '#555887', '#5d668f', '#657396', '#6e819d', '#798fa3', '#859da7', '#e59348', '#97e5c3', '#b8cab0', '#ceaf9d', '#db938c', '#e3767c', '#e3586f', '#cf4969','#944ee6']
       // get bar chart canvas
       var mychart = document.getElementById("barChart").getContext("2d");
        var myChart = new Chart(mychart,{
@@ -114,6 +120,33 @@
         myChart.config.options.title.text = "Chennai "+ case_type +" Cases"
 				myChart.update();
 		};
+
+  var ListofZonedata = {{fivedaysstat | safe}}
+  var select = document.getElementById("selectNumber"); 
+  var ZoneSelected = select.options[select.selectedIndex].value.toUpperCase();
+  var test = ListofZonedata[ZoneSelected];
+  assignvalues();
+  plotChartSeries();
+
+  var options = {{zones_list | safe}}; 
+
+for(var i = 1; i < options.length; i++) {
+    var opt = options[i];
+    var el = document.createElement("option");
+    el.textContent = opt;
+    el.value = opt;
+    select.appendChild(el);
+}
+
+
+function functionToTriggerClick(data) {
+     if(data != ''){
+        test = ListofZonedata[data.toUpperCase()];
+        UpdateChart(data);
+        }
+    }  
+
+
     </script>
 <BR>
     <p class="bg-light text-muted">Stay home, stay safe – the only cure found till now for coronavirus.</p>
