@@ -50,12 +50,16 @@
            font-family: Archia Regular;
        } */
        
-       @media (max-width: 767px) {
+       @media (max-width: 425px) {
            .table {
                font-size: 11px;
                font-weight: 600;
                line-height: 1.5;
                padding: 0.75rem;
+           }
+           .applefixcss {
+               /* font-size: 0.8rem; */
+               font-size: 0.8rem;
            }
            .th {
                font-size: 12px;
