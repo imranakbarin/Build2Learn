@@ -52,14 +52,14 @@
     <button type="deceased" class="btn btn-danger btn-sm" onclick="myFunction('deceased')">Deceased</button>
 
 
-    <canvas id="barChart"></canvas>
-
-    <div class="row align-items-center justify-content-center"> Last 20 days Trends in Chennai Zones 
+    <canvas id="barChart" width="400" height="250"></canvas>
+<hr>
+    <div class="row"><small> Last 20 days Trends in Chennai Zones   
     <select id="selectNumber" onchange="functionToTriggerClick(this.value)">
             <option> {{zones_list[0] | safe}}</option>
-      </select>
+      </select></small>
 </div>
-    <canvas id="LineChartSeries"  width="600" height="400"></canvas>
+    <canvas id="LineChartSeries" width="400" height="250" ></canvas>
      <script>
      //      var colours =['#00429d', '#325da9', '#4e78b5', '#6694c1', '#80b1cc', '#9dced6', '#c0eade', '#ffffe0', '#ffdac4', '#ffb3a7', '#fb8a8c', '#eb6574', '#d5405e', '#b81b4a', '#93003a']
 
@@ -149,5 +149,5 @@ function functionToTriggerClick(data) {
 
     </script>
 <BR>
-    <p class="bg-light text-muted">Stay home, stay safe – the only cure found till now for coronavirus.</p>
+    <p class="bg-light text-muted text-center">Stay home, stay safe</p>
      {% endblock %}

@@ -30,7 +30,7 @@ function plotChartSeries() {
         data: {
             labels: arr,
             datasets: [{
-                    label: 'Active Cases',
+                    label: 'Active',
                     data: activecasesli,
                     backgroundColor: "#0a8af2",
                     steppedLine: false,
@@ -38,14 +38,14 @@ function plotChartSeries() {
                     fill: false,
                 },
                 {
-                    label: 'Recovered Cases',
+                    label: 'Recovered',
                     data: recoveredcasesli,
                     backgroundColor: "#228734",
                     steppedLine: false,
                     borderColor: "#228734",
                     fill: false,
                 }, {
-                    label: 'Deceased Cases',
+                    label: 'Deceased',
                     data: deceasedcasesli,
                     backgroundColor: "#ff1226",
                     steppedLine: false,
@@ -56,10 +56,11 @@ function plotChartSeries() {
         },
 
         options: {
+            responsive: true,
             legend: {
                 display: true,
                 labels: {
-                    fontColor: 'rgb(255, 99, 132)'
+                    fontColor: '#221d24'
                 },
 
             },
