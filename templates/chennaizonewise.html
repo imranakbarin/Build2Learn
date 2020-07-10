@@ -1,11 +1,11 @@
   {% extends "layout.html" %}
         {% block title %}
-       Chennai Zonal Stats
-
+       Chennai Zone wise corona cases Stats
         {% endblock %}
         {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="{{ url_for('static', filename='js/genericchart.js') }}"></script>
+<script src="{{ url_for('static', filename='js/chennai.js') }}"></script>
 <h3 class="display-4 text-center">Chennai</h3>
 <div class="row align-items-center justify-content-center">
 <small class="text-muted text-center">Chennai Street wise report available <a href="{{ url_for('chennaistreetwise') }}">here</a></small>
@@ -44,7 +44,8 @@
 
 
 </table>
-
+<hr>
+    <canvas id="ChartChennai" width="400" height="250" ></canvas>
 <hr>
 
     <button type="active" class="btn btn-info btn-sm" onclick="myFunction('active')">Active</button>
@@ -54,22 +55,23 @@
 
     <canvas id="barChart" width="400" height="250"></canvas>
 <hr>
-    <div class="row"><small> Last 20 days Trends in Chennai Zones   
+    <div class="row ml-2"><small>Last 20 days Trends in Chennai Zones   
     <select id="selectNumber" onchange="functionToTriggerClick(this.value)">
             <option> {{zones_list[0] | safe}}</option>
       </select></small>
 </div>
     <canvas id="LineChartSeries" width="400" height="250" ></canvas>
+    
      <script>
      //      var colours =['#00429d', '#325da9', '#4e78b5', '#6694c1', '#80b1cc', '#9dced6', '#c0eade', '#ffffe0', '#ffdac4', '#ffb3a7', '#fb8a8c', '#eb6574', '#d5405e', '#b81b4a', '#93003a']
 
-      var colours =['#4e4a7f', '#555887', '#5d668f', '#657396', '#6e819d', '#798fa3', '#859da7', '#e59348', '#97e5c3', '#b8cab0', '#ceaf9d', '#db938c', '#e3767c', '#e3586f', '#cf4969','#944ee6']
+      var colours =['#4e4a7f', '#555887', '#5d668f', '#657396', '#6e819d', '#798fa3', '#859da7', '#e59348', '#97e5c3', '#b8cab0', '#ceaf9d', '#db938c', '#e3767c', '#e3586f', '#cf4969','#659aa3']
       // get bar chart canvas
       var mychart = document.getElementById("barChart").getContext("2d");
        var myChart = new Chart(mychart,{
           type: 'bar',
           data:{ labels: {{zones_list | safe}},
-          datasets: [{ label: 'No of Active Cases',data: {{active_list}},
+          datasets: [{ label: 'No. of Active cases',data: {{active_list}},
           backgroundColor: colours
           
             }]
@@ -84,7 +86,7 @@
         
         },title: {
             display: true,
-            text: 'Chennai Active Cases'
+            text: 'Chennai zone wise Active cases'
         },
         responsive:true,
         scales: {
@@ -117,7 +119,7 @@
         var case_type = flag.charAt(0).toUpperCase() + flag.slice(1)
 		    myChart.config.data.datasets[0].data = datasetA;
         myChart.config.data.datasets[0].label = case_type + " cases"
-        myChart.config.options.title.text = "Chennai "+ case_type +" Cases"
+        myChart.config.options.title.text = "Chennai zone wise "+ case_type +" cases"
 				myChart.update();
 		};
 
@@ -127,6 +129,9 @@
   var test = ListofZonedata[ZoneSelected];
   assignvalues();
   plotChartSeries();
+
+var data_Chennai = {{onlychennai_data |safe}}
+plotChennaiChartSeries(data_Chennai)
 
   var options = {{zones_list | safe}}; 
 

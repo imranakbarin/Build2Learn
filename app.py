@@ -115,8 +115,35 @@ def chennaizonalreport():
         FormattedDate = datetime.strptime(response[0]['date'].strip(), "%Y-%m-%d").strftime("%A, %d %b %Y")
         zones_chennai = response[:16]
         Last_twentydays = response[:16*20]
-        dict_list = {}
+        #Chennai Data Charts
         
+        Chennai_dict = {}
+        chennai_date = []
+        chennai_confirmed = []
+        chennai_recovered = []
+        chennai_hospitalized = []
+        chennai_deceased =[]
+        for k,v in groupby(Last_twentydays,key=lambda x:x['date'].strip()):
+                tot1 =tot2 = tot3 = tot4 = 0
+            #  Chennai_dict[k] = sorted(list(v),key=lambda x: datetime.strptime(x['date'].strip(), '%Y-%m-%d'))
+                for item in v:
+                    tot1 += item['confirmedCases']
+                    tot2 += item['recovered']
+                    tot3 += item['hospitalized']
+                    tot4 += item['deceased']
+                chennai_confirmed.append(tot1)
+                chennai_recovered.append(tot2)
+                chennai_hospitalized.append(tot3)
+                chennai_deceased.append(tot4)
+                chennai_date.append(k) 
+            
+        Chennai_dict['date'] = chennai_date[::-1]
+        Chennai_dict['confirmedCases'] = chennai_confirmed[::-1]
+        Chennai_dict['recovered'] = chennai_recovered[::-1]
+        Chennai_dict['hospitalized'] = chennai_hospitalized[::-1]
+        Chennai_dict['deceased'] = chennai_deceased[::-1]
+       #Area Wise Charts data 
+        dict_list = {}        
         Last_twentydays.sort(key=lambda x:x['zoneName'])
     
         for k,v in groupby(Last_twentydays,key=lambda x:x['zoneName']):
@@ -128,7 +155,7 @@ def chennaizonalreport():
         recovered_list = [recovered_list['recovered'] for recovered_list in zones_chennai]
         deceased_list =  [deceased_list['deceased'] for deceased_list in zones_chennai]
         
-        return render_template('chennaizonewise.html', chennaidata = zones_chennai, formatteddate = FormattedDate,
+        return render_template('chennaizonewise.html', onlychennai_data = Chennai_dict,chennaidata = zones_chennai, formatteddate = FormattedDate,
                                zones_list=zones_list,active_list=active_list,recovered_list=recovered_list,
                                deceased_list=deceased_list,fivedaysstat = dict_list)
     except Exception as e:
