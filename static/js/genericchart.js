@@ -36,6 +36,7 @@ function plotChartSeries() {
                     steppedLine: false,
                     borderColor: "#0a8af2",
                     fill: false,
+                    borderWidth: 1
                 },
                 {
                     label: 'Recovered',
@@ -44,6 +45,7 @@ function plotChartSeries() {
                     steppedLine: false,
                     borderColor: "#228734",
                     fill: false,
+                    borderWidth: 1
                 }, {
                     label: 'Deceased',
                     data: deceasedcasesli,
@@ -51,6 +53,7 @@ function plotChartSeries() {
                     steppedLine: false,
                     borderColor: "#ff1226",
                     fill: false,
+                    borderWidth: 1
                 }
             ]
         },

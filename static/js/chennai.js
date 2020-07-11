@@ -7,20 +7,23 @@ function plotChennaiChartSeries(dict_Chennai) {
         type: 'line',
         data: {
             labels: dict_Chennai['date'],
-            datasets: [{
-                    label: 'Total',
-                    data: dict_Chennai['confirmedCases'],
-                    backgroundColor: "#d1971b",
-                    steppedLine: false,
-                    borderColor: "#d1971b",
-                    fill: false,
-                }, {
+            datasets: [
+                /*{
+                                    label: 'Total',
+                                    data: dict_Chennai['confirmedCases'],
+                                    backgroundColor: "#d1971b",
+                                    steppedLine: false,
+                                    borderColor: "#d1971b",
+                                    fill: false,
+                                },*/
+                {
                     label: 'Hospitalized',
                     data: dict_Chennai['hospitalized'],
-                    backgroundColor: "#cf6d38",
+                    backgroundColor: "#0a8af2",
                     steppedLine: false,
-                    borderColor: "#cf6d38",
+                    borderColor: "#0a8af2",
                     fill: false,
+                    borderWidth: 1
                 },
                 {
                     label: 'Recovered',
@@ -29,6 +32,8 @@ function plotChennaiChartSeries(dict_Chennai) {
                     steppedLine: false,
                     borderColor: "#228734",
                     fill: false,
+                    borderWidth: 1,
+
                 }, {
                     label: 'Deceased',
                     data: dict_Chennai['deceased'],
@@ -36,12 +41,15 @@ function plotChennaiChartSeries(dict_Chennai) {
                     steppedLine: false,
                     borderColor: "#e61515",
                     fill: false,
-                }
+                    borderWidth: 1
+                },
+
 
             ]
         },
 
         options: {
+            responsive: true,
             legend: {
                 display: true,
                 labels: {
@@ -52,19 +60,24 @@ function plotChennaiChartSeries(dict_Chennai) {
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero: true,
+                        beginAtZero: false,
                     },
                     gridLines: {
                         display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Count'
                     }
                 }],
                 xAxes: [{
                     //  barPercentage: 0.4,
-                    barThickness: 25,
-                    maxBarThickness: 40,
-                    minBarLength: 20,
                     gridLines: {
                         display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Date'
                     }
                 }]
             },
@@ -74,7 +87,7 @@ function plotChennaiChartSeries(dict_Chennai) {
             },
             elements: {
                 point: {
-                    // pointStyle: 'star'
+                    pointStyle: 'cross'
                 }
             }
         }
