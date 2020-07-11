@@ -23,7 +23,8 @@ function plotChennaiChartSeries(dict_Chennai) {
                     steppedLine: false,
                     borderColor: "#0a8af2",
                     fill: false,
-                    borderWidth: 1
+                    borderWidth: 1,
+                    pointHitRadius: 30,
                 },
                 {
                     label: 'Recovered',
@@ -32,6 +33,7 @@ function plotChennaiChartSeries(dict_Chennai) {
                     steppedLine: false,
                     borderColor: "#228734",
                     fill: false,
+                    pointHitRadius: 30,
                     borderWidth: 1,
 
                 }, {
@@ -41,6 +43,7 @@ function plotChennaiChartSeries(dict_Chennai) {
                     steppedLine: false,
                     borderColor: "#e61515",
                     fill: false,
+                    pointHitRadius: 30,
                     borderWidth: 1
                 },
 
@@ -60,25 +63,36 @@ function plotChennaiChartSeries(dict_Chennai) {
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero: false,
+                        fontSize: 9,
+                        fontFamily: "'Roboto', sans-serif",
+                        fontColor: '#000',
+                        fontStyle: '500'
                     },
+
                     gridLines: {
                         display: false
                     },
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Count'
-                    }
+                    // scaleLabel: {
+                    //     display: true,
+                    //     labelString: 'Count'
+                    // }
                 }],
                 xAxes: [{
                     //  barPercentage: 0.4,
+
+                    ticks: {
+                        fontSize: 9,
+                        fontFamily: "'Roboto', sans-serif",
+                        fontColor: '#000',
+                        fontStyle: '500'
+                    },
                     gridLines: {
                         display: false
                     },
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Date'
-                    }
+                    // scaleLabel: {
+                    //     display: true,
+                    //     labelString: 'Date'
+                    // }
                 }]
             },
             title: {

@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="BuildNLearn Team" />
-  	<meta name="keywords" content="Corona, Tamilnadu, Tracker, Covid-19, Coronavirus, team, covid19india,covid19tamilnadu">
+  	<meta name="keywords" content="Corona, Tamilnadu, Tracker, Covid-19, Coronavirus, team, covid19india,covid19tamilnadu, chennai, tamil, Covid19chennai, Dashboard, BuildNLearn, python, contribute">
      <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png')}}">
     <link rel="manifest" href="{{ url_for('static', filename='images/site.webmanifest')}}">
     <meta
       name="description"
-      content="An effort to Build & Learn"
+      content="Page developed during Covid19 times, Opensourced Page(Source code in github) if you are willing to join & Contribute. please let us know"
     />
         <title>{% block title %}{% endblock %}</title>
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -44,23 +44,23 @@
     <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top" >
     <div class="container">
-      <a class="navbar-brand" href="{{ url_for('statewisereport') }}">BuildnLearn - Covid19</a>
+      <a class="navbar-brand" href="{{ url_for('statewisereport') }}">BuildnLearn - Covid19 Dashboard</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('statewisereport') }}">Home</a>
+            <a class="nav-link" href="{{ url_for('statewisereport') }}">India</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('covidHome') }}">District Wise Stats</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('countrywisereport') }}">Global Stats</a>
+            <a class="nav-link" href="{{ url_for('chennaizonalreport') }}">Chennai Stats</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('chennaizonalreport') }}">Chennai Stats</a>
+            <a class="nav-link" href="{{ url_for('countrywisereport') }}">Global Stats</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('newspage') }}">News</a>

@@ -71,6 +71,10 @@ function plotChartSeries() {
                 yAxes: [{
                     ticks: {
                         beginAtZero: true,
+                        fontSize: 8,
+                        fontFamily: "'Roboto', sans-serif",
+                        fontColor: '#000',
+                        fontStyle: '500'
                     },
                     gridLines: {
                         display: false
@@ -78,9 +82,13 @@ function plotChartSeries() {
                 }],
                 xAxes: [{
                     //  barPercentage: 0.4,
-                    barThickness: 25,
-                    maxBarThickness: 40,
-                    minBarLength: 20,
+                    ticks: {
+                        beginAtZero: true,
+                        fontSize: 8,
+                        fontFamily: "'Roboto', sans-serif",
+                        fontColor: '#000',
+                        fontStyle: '500'
+                    },
                     gridLines: {
                         display: false
                     }
