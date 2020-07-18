@@ -114,9 +114,9 @@ def chennaizonalreport():
         #Fetching the Date from first key
         FormattedDate = datetime.strptime(response[0]['date'].strip(), "%Y-%m-%d").strftime("%A, %d %b %Y")
         zones_chennai = response[:16]
+        zones_chennaiOneday = response[16:32]
         Last_twentydays = response[:16*20]
         #Chennai Data Charts
-        
         Chennai_dict = {}
         chennai_date = []
         chennai_confirmed = []
@@ -136,7 +136,7 @@ def chennaizonalreport():
                 chennai_hospitalized.append(tot3)
                 chennai_deceased.append(tot4)
                 chennai_date.append(k) 
-            
+        #To Reverse  
         Chennai_dict['date'] = chennai_date[::-1]
         Chennai_dict['confirmedCases'] = chennai_confirmed[::-1]
         Chennai_dict['recovered'] = chennai_recovered[::-1]
@@ -155,12 +155,19 @@ def chennaizonalreport():
         recovered_list = [recovered_list['recovered'] for recovered_list in zones_chennai]
         deceased_list =  [deceased_list['deceased'] for deceased_list in zones_chennai]
         
+        # active_list1, recovered_list1, deceased_list1 = [] 
+        active_list1 = [active_list1['hospitalized'] for active_list1 in zones_chennaiOneday]
+        recovered_list1 = [recovered_list1['recovered'] for recovered_list1 in zones_chennaiOneday]
+        deceased_list1 =  [deceased_list1['deceased'] for deceased_list1 in zones_chennaiOneday]
+        
+        
         return render_template('chennaizonewise.html', onlychennai_data = Chennai_dict,chennaidata = zones_chennai, formatteddate = FormattedDate,
                                zones_list=zones_list,active_list=active_list,recovered_list=recovered_list,
-                               deceased_list=deceased_list,fivedaysstat = dict_list)
+                               deceased_list=deceased_list,fivedaysstat = dict_list, active_list1 = active_list1, 
+                           recovered_list1 = recovered_list1, deceased_list1 = deceased_list1   )
     except Exception as e:
 		# return 404 page if error occurs
-        # print("error in chennai route " + e)         
+        print("error in chennai route " + e)         
         return render_template("error-404.html")
 
 @app.route("/")

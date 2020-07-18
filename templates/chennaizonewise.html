@@ -66,18 +66,27 @@
      //      var colours =['#00429d', '#325da9', '#4e78b5', '#6694c1', '#80b1cc', '#9dced6', '#c0eade', '#ffffe0', '#ffdac4', '#ffb3a7', '#fb8a8c', '#eb6574', '#d5405e', '#b81b4a', '#93003a']
 
       var colours =['#4e4a7f', '#555887', '#5d668f', '#657396', '#6e819d', '#798fa3', '#859da7', '#e59348', '#97e5c3', '#b8cab0', '#ceaf9d', '#db938c', '#e3767c', '#e3586f', '#cf4969','#659aa3']
+      var colours2 = ['#00429d', '#3e57a2', '#5c6da7', '#7484ad', '#8b9cb4', '#a0b5bc', '#b4cec6', '#c8e7d6', '#abdfe5', '#c9c3cc', '#daa7b2', '#e38a98', '#e56d7e', '#e25064', '#d9304a', '#cb0030']
       // get bar chart canvas
       var mychart = document.getElementById("barChart").getContext("2d");
        var myChart = new Chart(mychart,{
           type: 'bar',
           data:{ labels: {{zones_list | safe}},
-          datasets: [{ label: 'No. of Active cases',data: {{active_list}},
-          backgroundColor: colours
+          datasets: [
+          { 
+             label: 'No. of Active cases',data: {{active_list}},
+             backgroundColor: colours
           
-            }]
+            },{
+              label: 'No. of Active cases',data: {{active_list1}},
+              backgroundColor: colours2
+            }
+            
+            ]
           },
 
     options: {
+    
         legend: {
             display: false,
             labels: {
@@ -86,7 +95,7 @@
         
         },title: {
             display: true,
-            text: 'Chennai zone wise Active cases'
+            text: 'Last 2 days Chennai zone wise Active cases'
         },
         responsive:true,
         scales: {
@@ -107,19 +116,24 @@
     function myFunction(flag) {
 	//		var zero = Math.random() < 0.2 ? true : false;
       var datasetA;
+      var datasetB;
       if (flag == 'active') {
         //  block of code to be executed if condition1 is true
          datasetA = {{active_list}}
+         datasetB = {{active_list1}}
       } else if (flag == 'recovered') {
         //  block of code to be executed if the condition1 is false and condition2 is true
         datasetA = {{recovered_list}}
+        datasetB = {{recovered_list1}}
       } else {
         datasetA = {{deceased_list}}
+        datasetB = {{deceased_list1}}
       }
         var case_type = flag.charAt(0).toUpperCase() + flag.slice(1)
 		    myChart.config.data.datasets[0].data = datasetA;
+        myChart.config.data.datasets[1].data = datasetB;
         myChart.config.data.datasets[0].label = case_type + " cases"
-        myChart.config.options.title.text = "Chennai zone wise "+ case_type +" cases"
+        myChart.config.options.title.text = "Last 2 days Chennai zone wise "+ case_type +" cases"
 				myChart.update();
 		};
 
