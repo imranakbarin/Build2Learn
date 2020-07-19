@@ -141,10 +141,11 @@
   var select = document.getElementById("selectNumber"); 
   var ZoneSelected = select.options[select.selectedIndex].value.toUpperCase();
   var test = ListofZonedata[ZoneSelected];
+  var data_Chennai = {{onlychennai_data |safe}}
   assignvalues();
   plotChartSeries();
 
-var data_Chennai = {{onlychennai_data |safe}}
+
 plotChennaiChartSeries(data_Chennai)
 
   var options = {{zones_list | safe}}; 

@@ -10,7 +10,7 @@ function assignvalues() {
     recoveredcasesli = [];
 
     for (var key in test) {
-        arr.push(test[key]['date']);
+        // arr.push(test[key]['date']);
         activecasesli.push(test[key]['hospitalized']);
         deceasedcasesli.push(test[key]['deceased']);
         recoveredcasesli.push(test[key]['recovered']);
@@ -28,7 +28,7 @@ function plotChartSeries() {
     myChart5 = new Chart(mychartsFive, {
         type: 'line',
         data: {
-            labels: arr,
+            labels: data_Chennai['date'],
             datasets: [{
                     label: 'Active',
                     data: activecasesli,
