@@ -135,7 +135,8 @@ def chennaizonalreport():
                 chennai_recovered.append(tot2)
                 chennai_hospitalized.append(tot3)
                 chennai_deceased.append(tot4)
-                chennai_date.append(k) 
+                chennai_date.append(datetime.strptime(k.strip(), "%Y-%m-%d").strftime("%b %d")) 
+                
         #To Reverse  
         Chennai_dict['date'] = chennai_date[::-1]
         Chennai_dict['confirmedCases'] = chennai_confirmed[::-1]
