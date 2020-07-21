@@ -55,7 +55,7 @@
 
     <canvas id="barChart" width="400" height="250"></canvas>
 <hr>
-    <div class="row ml-2"><small>Last 20 days Trends in Chennai Zones   
+    <div class="row ml-2"><small>Last 20 days Trends   
     <select id="selectNumber" onchange="functionToTriggerClick(this.value)">
             <option> {{zones_list[0] | safe}}</option>
       </select></small>
@@ -65,8 +65,8 @@
      <script>
      //      var colours =['#00429d', '#325da9', '#4e78b5', '#6694c1', '#80b1cc', '#9dced6', '#c0eade', '#ffffe0', '#ffdac4', '#ffb3a7', '#fb8a8c', '#eb6574', '#d5405e', '#b81b4a', '#93003a']
 
-      var colours =['#4e4a7f', '#555887', '#5d668f', '#657396', '#6e819d', '#798fa3', '#859da7', '#e59348', '#97e5c3', '#b8cab0', '#ceaf9d', '#db938c', '#e3767c', '#e3586f', '#cf4969','#659aa3']
-      var colours2 = ['#00429d', '#3e57a2', '#5c6da7', '#7484ad', '#8b9cb4', '#a0b5bc', '#b4cec6', '#c8e7d6', '#abdfe5', '#c9c3cc', '#daa7b2', '#e38a98', '#e56d7e', '#e25064', '#d9304a', '#cb0030']
+      var colours =['#00429d', '#555887', '#5c6da7', '#7484ad', '#abdfe5', '#798fa3', '#b4cec6', '#e59348', '#97e5c3', '#b8cab0', '#ceaf9d', '#db938c', '#e3767c', '#e3586f', '#cf4969','#659aa3']
+      //var colours2 = ['#00429d', '#3e57a2', '#5c6da7', '#7484ad', '#8b9cb4', '#a0b5bc', '#b4cec6', '#c8e7d6', '#abdfe5', '#c9c3cc', '#daa7b2', '#e38a98', '#e56d7e', '#e25064', '#d9304a', '#cb0030']
       // get bar chart canvas
       var mychart = document.getElementById("barChart").getContext("2d");
        var myChart = new Chart(mychart,{
@@ -79,7 +79,7 @@
           
             },{
               label: 'No. of Active cases',data: {{active_list1}},
-              backgroundColor: colours2
+              backgroundColor: colours
             }
             
             ]
