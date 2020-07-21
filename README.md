@@ -1,5 +1,5 @@
 # BuildNLearn
-Build2Learn Community
+BuildNLearn Community
 
 ## Getting Started
 Install git locally to clone the project, alternatively you can download directly from above without installing git. 
