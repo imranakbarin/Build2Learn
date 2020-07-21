@@ -46,6 +46,9 @@ pip install -r requirements.txt
 flask run
 ```
 
+For News API to work, get api key from https://newsapi.org/ 
+
+
 #### Thank you :)
 
 ### Thanks to Covid19 India for APIs https://api.covid19india.org/
