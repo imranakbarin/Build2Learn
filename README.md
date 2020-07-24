@@ -1,5 +1,5 @@
-# Build2Learn
-Build2Learn Community CMB
+# BuildNLearn
+BuildNLearn Community
 
 ## Getting Started
 Install git locally to clone the project, alternatively you can download directly from above without installing git. 
@@ -45,6 +45,9 @@ pip install -r requirements.txt
 ```
 flask run
 ```
+
+For News API to work, get api key from https://newsapi.org/ 
+
 
 #### Thank you :)
 
