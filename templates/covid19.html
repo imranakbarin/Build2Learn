@@ -9,8 +9,8 @@
   <div class="card-header text-info display-4 font-weight-bolder"> {{State}} </div>
   <div class="card-body text-secondary">
     <h4 class="card-title text-md-left display-5">{{District}}</h4>
-    <p class="card-text"> <P class="text-md-left font-weight-bold">Active Cases: <span class="text-primary">{{data['active']}} </span></p>
-       <p class="text-md-left font-weight-bold">Confirmed Cases: <span class="text-warning">{{data['confirmed']}} </span></p>
+    <p class="card-text"> <P class="text-md-left font-weight-bold">Active: <span class="text-primary">{{data['active']}} </span></p>
+       <p class="text-md-left font-weight-bold">Confirmed: <span class="text-warning">{{data['confirmed']}} </span></p>
        <p class="text-md-left font-weight-bold">Deceased : <span class="text-danger"> {{data['deceased']}}</span> </p> 
        <p class="text-md-left font-weight-bold">Recovered : <span class="text-success"> {{data['recovered']}} </span></p>
   </div>
@@ -18,6 +18,111 @@
     Data pulled from COVID19-India API
   </div>
 </div>
+
+<div class="card panels-card">
+  <div class="rounded-top grey lighten-2 dark-grey-text">
+    <ul class="list-inline float-right my-0 py-1 pr-3">
+      <li class="list-inline-item">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </li>
+      <li class="list-inline-item">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </li>
+      <li class="list-inline-item">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="card-body grey lighten-5 rounded-bottom">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-6 p-1">
+
+        <div class="card grey lighten-2">
+          <div class="card-body pb-0">
+            <i class="fas fa-cloud fa-3x pb-4"></i>
+            <div class="d-flex justify-content-between">
+              <p class="mb-0 h5">15&deg;</p>
+              <p class="mb-0 hour">12:15 PM</p>
+            </div>
+          </div>
+          <hr>
+          <div class="card-body pt-0">
+            <h6 class="font-weight-bold mb-1">San Francisco</h6>
+            <p class="mb-0">Cloudy</p>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+
+<div class="col main pt-5 mt-3">
+            <h1 class="display-4 d-none d-sm-block">
+            Bootstrap 4 Dashboard
+            </h1>
+            <p class="lead d-none d-sm-block">Plus off-canvas sidebar, based on Bootstrap v4</p>
+
+            <div class="alert alert-warning fade collapse" role="alert" id="myAlert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <strong>Holy guacamole!</strong> It's free.. this is an example theme.
+            </div>
+            <div class="row mb-3">
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body bg-success">
+                            <div class="rotate">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Users</h6>
+                            <h1 class="display-4">134</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card text-white bg-danger h-100">
+                        <div class="card-body bg-danger">
+                            <div class="rotate">
+                                <i class="fa fa-list fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Posts</h6>
+                            <h1 class="display-4">87</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card text-white bg-info h-100">
+                        <div class="card-body bg-info">
+                            <div class="rotate">
+                                <i class="fa fa-twitter fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Tweets</h6>
+                            <h1 class="display-4">125</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 py-2">
+                    <div class="card text-white bg-warning h-100">
+                        <div class="card-body">
+                            <div class="rotate">
+                                <i class="fa fa-share fa-4x"></i>
+                            </div>
+                            <h6 class="text-uppercase">Shares</h6>
+                            <h1 class="display-4">36</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
 
 
         {% endblock %}
