@@ -13,6 +13,34 @@
 <div class="row align-items-center justify-content-center">
 <p><small class="text-muted text-center">Cases as of {{formatteddate}}</small></p>
 </div>
+
+
+<!--Start Here-->
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="table-responsive">    
+ <table class="table table-sm text-center">
+    <tbody>
+     <tr class="bg-light pr-3">
+     
+        <th class="bg-primary">Active</th>
+        <th class="bg-success">Recovered</th>
+        <th class="bg-danger">Deceased</th>
+        
+      </tr>
+      <tr class="">
+        <td><b>{{ onlychennai_data['hospitalized'][19] | safe | comafy}}<b></td>
+        <td><b> {{onlychennai_data['recovered'][19] | safe | comafy}} </b></div></td>
+        <td><b>{{onlychennai_data['deceased'][19] | safe | comafy}} </b> </td>
+      </tr>
+      </tbody>
+  </table>
+ </div>
+  </div>
+</div>
+</div>
+
 <div class="table-responsive">    
  <table class="table table-striped table-sm  text-md-center text-lg-center">
   <thead class="thead-light">
@@ -169,5 +197,10 @@ function functionToTriggerClick(data) {
 
     </script>
 <BR>
+    
+
+    		<div class="alert alert-primary align-center" role="alert">
+		  <small>Recovered data is subject to further verification, there could be a slight variation with the data available in here and district page,the data of this page gets updated once a day</small>
+		</div>
     <p class="bg-light text-muted text-center">Stay home, stay safe</p>
      {% endblock %}

@@ -35,6 +35,7 @@ def page_not_found(e):
 def stayhome():
     return render_template('stayhome.html') 
 
+#Below Method does formating of numbers to Indian Numbering format
 def format_as_indian(input):
     input_list = list(str(input))
     if len(input_list) <= 1:
@@ -106,6 +107,7 @@ def test():
     return render_template("hello_there.html", Statedata = data, State = get_state, totalstats = totaldictionary, Statelist = list_states)
     # return render_template("chennaizonewise.html")
 
+#Route for Chennai Page
 @app.route("/chennai")
 def chennaizonalreport():
     covid19 = covid(None,None)
