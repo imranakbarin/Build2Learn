@@ -233,7 +233,7 @@ def newspage():
 @app.route("/chennaicovidlist")
 def chennaistreetwise():
      try:
-        with codecs.open('static/json/chennai_data_25.json','r', 'utf-8-sig') as f:
+        with codecs.open('static/json/chennai_data_26.json','r', 'utf-8-sig') as f:
             chennaidata = json.load(f)
         return render_template('chennaicovidlist.html', chennailist = chennaidata['chennaidata'])      
      except Exception as e:
