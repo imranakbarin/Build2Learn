@@ -1,0 +1,3579 @@
+﻿{
+    "chennaidata": [
+        {
+            "SNo": "1",
+            "Zone": "1",
+            "Ward": "1",
+            "Area": "KATHIVAKKAM",
+            "Location": "THIRUVALLUVAR NAGAR",
+            "Street": "THIRUVALLUVAR NAGAR I ST"
+        },
+        {
+            "SNo": "2",
+            "Zone": "1",
+            "Ward": "1",
+            "Area": "KATHIVAKKAM",
+            "Location": "KAMARAJ NAGAR",
+            "Street": "KAMARAJ NAGAR II ST"
+        },
+        {
+            "SNo": "3",
+            "Zone": "1",
+            "Ward": "1",
+            "Area": "KATHIVAKKAM",
+            "Location": "KAMARAJ NAGAR",
+            "Street": "KAMARAJ NAGAR VIII ST"
+        },
+        {
+            "SNo": "4",
+            "Zone": "1",
+            "Ward": "2",
+            "Area": "KATHIVAKKAM",
+            "Location": "KAMARAJ NAGAR",
+            "Street": "KAMARAJ NAGAR 5TH ST"
+        },
+        {
+            "SNo": "5",
+            "Zone": "1",
+            "Ward": "3",
+            "Area": "ERNAVOOR",
+            "Location": "ALL INDIA RADIO NAGAR",
+            "Street": "TAMILNADU SLUM CLEARANCE BOARD BLOCK 4"
+        },
+        {
+            "SNo": "6",
+            "Zone": "1",
+            "Ward": "3",
+            "Area": "ENNORE",
+            "Location": "ANNAI SIVAGAMI NAGAR",
+            "Street": "ANNAI SIVAGAMI NAGAR 1ST STREET"
+        },
+        {
+            "SNo": "7",
+            "Zone": "1",
+            "Ward": "4",
+            "Area": "ERNAVOOR",
+            "Location": "Kannilal layout",
+            "Street": "Kannilal layout 1st main road"
+        },
+        {
+            "SNo": "8",
+            "Zone": "1",
+            "Ward": "4",
+            "Area": "TIRUVOTTRIYUR",
+            "Location": "SHANMUGAPURAM",
+            "Street": "SHANMUGAPURAM 8TH STREET"
+        },
+        {
+            "SNo": "9",
+            "Zone": "1",
+            "Ward": "5",
+            "Area": "AJAX",
+            "Location": "JEEVANLAL NAGAR",
+            "Street": "JEEVANLAL NAGAR 7TH STREET"
+        },
+        {
+            "SNo": "10",
+            "Zone": "1",
+            "Ward": "5",
+            "Area": "WIMCO NAGAR",
+            "Location": "SAKTHIPURAM",
+            "Street": "SAKTHIPURAM"
+        },
+        {
+            "SNo": "11",
+            "Zone": "1",
+            "Ward": "6",
+            "Area": "TIRUVOTTRIYUR",
+            "Location": "JOTHI NAGAR",
+            "Street": "JOTHI NAGAR 8TH STREET"
+        },
+        {
+            "SNo": "12",
+            "Zone": "1",
+            "Ward": "6",
+            "Area": "TIRUVOTTRIYUR",
+            "Location": "DR KALAIGNAR NAGAR",
+            "Street": "DR KALAIGNAR NAGAR 1ST ST EXTENSION"
+        },
+        {
+            "SNo": "13",
+            "Zone": "1",
+            "Ward": "8",
+            "Area": "TIRUVOTTRIYUR",
+            "Location": "PERIYAR NAGAR",
+            "Street": "GANGAI NAGAR"
+        },
+        {
+            "SNo": "14",
+            "Zone": "1",
+            "Ward": "8",
+            "Area": "TIRUVOTTRIYUR",
+            "Location": "PERIYAR NAGAR",
+            "Street": "SRINIVASA  PERUMAL  KOIL STREET"
+        },
+        {
+            "SNo": "15",
+            "Zone": "1",
+            "Ward": "10",
+            "Area": "TIRUVOTTRIYUR",
+            "Location": "NETHAJI NAGAR",
+            "Street": "NETHAJI NAGAR 3RD STREET"
+        },
+        {
+            "SNo": "16",
+            "Zone": "1",
+            "Ward": "13",
+            "Area": "TIRUVOTTRIYUR",
+            "Location": "SATHANGADU",
+            "Street": "PADMANABHA COLONY 1ST STREET"
+        },
+        {
+            "SNo": "17",
+            "Zone": "2",
+            "Ward": "15",
+            "Area": "EDYANCHAVADI",
+            "Location": "NEW NAPPALAYAM",
+            "Street": "NEW NAPPALAYAM PERUMAL KOIL STREET"
+        },
+        {
+            "SNo": "18",
+            "Zone": "2",
+            "Ward": "15",
+            "Area": "EDYANCHAVADI",
+            "Location": "SAKTHI KOIL",
+            "Street": "EDYANCHAVADI 1ST STREET SAKTHI KOIL STREET"
+        },
+        {
+            "SNo": "19",
+            "Zone": "2",
+            "Ward": "17",
+            "Area": "VADAPERUMBAKKAM",
+            "Location": "CHETTIMEDU",
+            "Street": "PERUMAL KOIL STREET"
+        },
+        {
+            "SNo": "20",
+            "Zone": "2",
+            "Ward": "18",
+            "Area": "MANALI",
+            "Location": "ZAHEER HUSAIN STREET",
+            "Street": "ZAHEER HUSAIN 2ND STREET 2ND LANE"
+        },
+        {
+            "SNo": "21",
+            "Zone": "2",
+            "Ward": "18",
+            "Area": "MANALI",
+            "Location": "CPCL COMPANY",
+            "Street": "CPCL LAYOUT 2ND MAIN ROAD"
+        },
+        {
+            "SNo": "22",
+            "Zone": "2",
+            "Ward": "19",
+            "Area": "MATHUR",
+            "Location": "KALYANI MAHAL",
+            "Street": "KAMARAJAR SALAI"
+        },
+        {
+            "SNo": "23",
+            "Zone": "2",
+            "Ward": "19",
+            "Area": "MATHUR",
+            "Location": "MMDA",
+            "Street": "MMDA 32ND STREET"
+        },
+        {
+            "SNo": "24",
+            "Zone": "2",
+            "Ward": "19",
+            "Area": "MATHUR",
+            "Location": "MMDA",
+            "Street": "MMDA 2ND MAIN ROAD"
+        },
+        {
+            "SNo": "25",
+            "Zone": "2",
+            "Ward": "19",
+            "Area": "MATHUR",
+            "Location": "MMDA",
+            "Street": "MMDA 66TH STREET"
+        },
+        {
+            "SNo": "26",
+            "Zone": "2",
+            "Ward": "19",
+            "Area": "MATHUR",
+            "Location": "MMDA",
+            "Street": "MMDA 27TH STREET"
+        },
+        {
+            "SNo": "27",
+            "Zone": "2",
+            "Ward": "19",
+            "Area": "MATHUR",
+            "Location": "MASILAMANI NAGAR",
+            "Street": "MASILAMANI NAGAR 1ST STREET"
+        },
+        {
+            "SNo": "28",
+            "Zone": "2",
+            "Ward": "19",
+            "Area": "MATHUR",
+            "Location": "MMDA",
+            "Street": "MMDA 30TH STREET"
+        },
+        {
+            "SNo": "29",
+            "Zone": "2",
+            "Ward": "21",
+            "Area": "MANALI",
+            "Location": "KANNIAMMAN KOIL",
+            "Street": "THAMARAIKULAM STREET"
+        },
+        {
+            "SNo": "30",
+            "Zone": "2",
+            "Ward": "21",
+            "Area": "MANALI",
+            "Location": "MANALI HIGHER SECONDARY SCHOOL",
+            "Street": "PADASALAI STREET"
+        },
+        {
+            "SNo": "31",
+            "Zone": "3",
+            "Ward": "22",
+            "Area": "PUZHAL",
+            "Location": "Near Panchayat Office",
+            "Street": "Gandhi Main Street"
+        },
+        {
+            "SNo": "32",
+            "Zone": "3",
+            "Ward": "22",
+            "Area": "KAVANKARAI",
+            "Location": "EAST KAVANKARAI",
+            "Street": "SIVA VISHNU NAGAR"
+        },
+        {
+            "SNo": "33",
+            "Zone": "3",
+            "Ward": "22",
+            "Area": "PUZHAL",
+            "Location": "Sakthivel Nagar",
+            "Street": "Sakthivel Nagar 31st  Street"
+        },
+        {
+            "SNo": "34",
+            "Zone": "3",
+            "Ward": "22",
+            "Area": "PUZHAL",
+            "Location": "PUZHAL",
+            "Street": "MACRO MALVEL"
+        },
+        {
+            "SNo": "35",
+            "Zone": "3",
+            "Ward": "23",
+            "Area": "PUZHAL",
+            "Location": "Punitha Anthoniyar  Nagar",
+            "Street": "Punitha Anthoniyar 1st Street"
+        },
+        {
+            "SNo": "36",
+            "Zone": "3",
+            "Ward": "24",
+            "Area": "Soorapattu",
+            "Location": "Sivaprakasam Nagar",
+            "Street": "SIVA PRAKASAM NAGAR 1ST  CROSS STREET"
+        },
+        {
+            "SNo": "37",
+            "Zone": "3",
+            "Ward": "24",
+            "Area": "Puthagaram",
+            "Location": "Near Union School",
+            "Street": "BALA VINAYAKAR KOIL 5TH STREET"
+        },
+        {
+            "SNo": "38",
+            "Zone": "3",
+            "Ward": "24",
+            "Area": "Puthagaram",
+            "Location": "Near Union School",
+            "Street": "MADHAVAN NAGAR 5TH STREET"
+        },
+        {
+            "SNo": "39",
+            "Zone": "3",
+            "Ward": "26",
+            "Area": "PONNIAMMANMEDU- MADHAVARAM",
+            "Location": "THANIKACHALAM NAGAR F BLK",
+            "Street": "THANIKACHALAM NAGAR F BLK 2ND ST"
+        },
+        {
+            "SNo": "40",
+            "Zone": "3",
+            "Ward": "26",
+            "Area": "PONNIAMMANMEDU- MADHAVARAM",
+            "Location": "THIRUMALAI NAGAR",
+            "Street": "Thirumalai Ngr Main Road"
+        },
+        {
+            "SNo": "41",
+            "Zone": "3",
+            "Ward": "26",
+            "Area": "VINAYAGAPURAM - MADHAVARAM",
+            "Location": "REDHILLS ROAD, VINAYAGAPURAM",
+            "Street": "SUBRAMANIAM NAGAR"
+        },
+        {
+            "SNo": "42",
+            "Zone": "3",
+            "Ward": "26",
+            "Area": "LAKSHMIPURAM - MADHAVARAM",
+            "Location": "VINAYAGAPURAM",
+            "Street": "GANESH  NAGAR"
+        },
+        {
+            "SNo": "43",
+            "Zone": "3",
+            "Ward": "27",
+            "Area": "MADHAVARAM MILK COLONY",
+            "Location": "EDAIMA NAGAR",
+            "Street": "EDAIMA NAGAR 11th Street"
+        },
+        {
+            "SNo": "44",
+            "Zone": "3",
+            "Ward": "27",
+            "Area": "MADHAVARAM MILK COLONY",
+            "Location": "Kumarappapuram",
+            "Street": "Assisi Nagar to Kumarappapuram Main Rd."
+        },
+        {
+            "SNo": "45",
+            "Zone": "3",
+            "Ward": "27",
+            "Area": "MADHAVARAM",
+            "Location": "Perumal Koil St",
+            "Street": "JJ NAGAR"
+        },
+        {
+            "SNo": "46",
+            "Zone": "3",
+            "Ward": "27",
+            "Area": "MADHAVARAM MILK COLONY",
+            "Location": "ALEX NAGAR",
+            "Street": "ALEX NAGAR A COLONY"
+        },
+        {
+            "SNo": "47",
+            "Zone": "3",
+            "Ward": "28",
+            "Area": "MADHAVARAM",
+            "Location": "K K Thazhai",
+            "Street": "BHAVANI NAGAR 1ST CROSS STREET"
+        },
+        {
+            "SNo": "48",
+            "Zone": "3",
+            "Ward": "28",
+            "Area": "MADHAVARAM",
+            "Location": "PERYASEKADU",
+            "Street": "SUBAM NAGAR"
+        },
+        {
+            "SNo": "49",
+            "Zone": "3",
+            "Ward": "29",
+            "Area": "Chinnasekkadu",
+            "Location": "Balji Palayam",
+            "Street": "PERUMAL KOIL STBalji Palayam"
+        },
+        {
+            "SNo": "50",
+            "Zone": "3",
+            "Ward": "29",
+            "Area": "Chinnasekkadu",
+            "Location": "Chinnasekkadu North",
+            "Street": "Devarajan Street"
+        },
+        {
+            "SNo": "51",
+            "Zone": "3",
+            "Ward": "31",
+            "Area": "MADHAVARAM",
+            "Location": "AMBEDHKAR NAGAR",
+            "Street": "AMBEDHKAR NAGAR 3RD MAIN ROAD"
+        },
+        {
+            "SNo": "52",
+            "Zone": "3",
+            "Ward": "33",
+            "Area": "PONNIAMMANMEDU- MADHAVARAM",
+            "Location": "PERIYASALAI",
+            "Street": "PERIYA SALAI 4TH CROSS ST"
+        },
+        {
+            "SNo": "53",
+            "Zone": "3",
+            "Ward": "33",
+            "Area": "PONNIAMMANMEDU-\r\nMADHAVARAM",
+            "Location": "Prakash Nagar",
+            "Street": "Thanikachalam nagar E BLK Rajaji Nagar"
+        },
+        {
+            "SNo": "54",
+            "Zone": "3",
+            "Ward": "33",
+            "Area": "PONNIAMMANMEDU- MADHAVARAM",
+            "Location": "BRINDAVAN GARDEN",
+            "Street": "BRINDAVAN GARDEN,PONNIAMMANMEDU"
+        },
+        {
+            "SNo": "55",
+            "Zone": "4",
+            "Ward": "34",
+            "Area": "Kodungaiyur",
+            "Location": "Kodungaiyur",
+            "Street": "Kattabomman 7th Street Lane"
+        },
+        {
+            "SNo": "56",
+            "Zone": "4",
+            "Ward": "34",
+            "Area": "Kodungaiyur",
+            "Location": "Goyyathoppu Gandhi Nagar",
+            "Street": "Goyyathoppu Gandhi Nagar 4th Street"
+        },
+        {
+            "SNo": "57",
+            "Zone": "4",
+            "Ward": "34",
+            "Area": "Tondiarpet",
+            "Location": "Kodungaiyur",
+            "Street": "Kummalamman Koil Street"
+        },
+        {
+            "SNo": "58",
+            "Zone": "4",
+            "Ward": "34",
+            "Area": "Kodungaiyur",
+            "Location": "Narasimma Reddiyar Nagar",
+            "Street": "Narayanaswamy Garden 3rd Street"
+        },
+        {
+            "SNo": "59",
+            "Zone": "4",
+            "Ward": "34",
+            "Area": "Kodungaiyur",
+            "Location": "Gandhi Nagar",
+            "Street": "Gandhi Nagar 4th Street"
+        },
+        {
+            "SNo": "60",
+            "Zone": "4",
+            "Ward": "34",
+            "Area": "Kodungaiyur",
+            "Location": "Narasimma Reddiyar Nagar",
+            "Street": "Narayana Swamy Garden 1st Main Road"
+        },
+        {
+            "SNo": "61",
+            "Zone": "4",
+            "Ward": "35",
+            "Area": "Kodungaiyur",
+            "Location": "Muthamil Nagar",
+            "Street": "Muthamil Nagar I Block 11th Street"
+        },
+        {
+            "SNo": "62",
+            "Zone": "4",
+            "Ward": "35",
+            "Area": "Kodungaiyur",
+            "Location": "Muthamil Nagar",
+            "Street": "Muthamil Nagar I Block 18th  Street"
+        },
+        {
+            "SNo": "63",
+            "Zone": "4",
+            "Ward": "35",
+            "Area": "Kodungaiyur",
+            "Location": "Teachers Colony",
+            "Street": "President Krishnan Street"
+        },
+        {
+            "SNo": "64",
+            "Zone": "4",
+            "Ward": "35",
+            "Area": "Kodungaiyur",
+            "Location": "Muthamil Nagar",
+            "Street": "Muthamil Nagar I Block 17th  Street"
+        },
+        {
+            "SNo": "65",
+            "Zone": "4",
+            "Ward": "36",
+            "Area": "Kodungaiyur",
+            "Location": "T.V.Nagar",
+            "Street": "T.V.Nagar 1st Main Road 6th St"
+        },
+        {
+            "SNo": "66",
+            "Zone": "4",
+            "Ward": "36",
+            "Area": "Vyasarpadi",
+            "Location": "S.A. Colony",
+            "Street": "S.A. Colony 9th Street Ii Cross Lane"
+        },
+        {
+            "SNo": "67",
+            "Zone": "4",
+            "Ward": "36",
+            "Area": "Vyasarpadi",
+            "Location": "Sharma Nagar",
+            "Street": "Salaima Nagar I Street"
+        },
+        {
+            "SNo": "68",
+            "Zone": "4",
+            "Ward": "39",
+            "Area": "Old Washermenpet",
+            "Location": "Nagooran Thottam",
+            "Street": "14stblock"
+        },
+        {
+            "SNo": "69",
+            "Zone": "4",
+            "Ward": "39",
+            "Area": "New Washermen Pet",
+            "Location": "New Washermen Pet",
+            "Street": "K.K.Scheme Road M.P.T Qts"
+        },
+        {
+            "SNo": "70",
+            "Zone": "4",
+            "Ward": "39",
+            "Area": "New Washermen Pet",
+            "Location": "New Washermen Pet",
+            "Street": "M.D.L.B. COLONY"
+        },
+        {
+            "SNo": "71",
+            "Zone": "4",
+            "Ward": "40",
+            "Area": "Tondiarpet",
+            "Location": "Tondiarpet",
+            "Street": "New Vaidyanathan Street Or Vaidyanathan Lane"
+        },
+        {
+            "SNo": "72",
+            "Zone": "4",
+            "Ward": "40",
+            "Area": "Tondiarpet",
+            "Location": "Tondiarpet",
+            "Street": "SIVAGAMI AMMAIYAR NAGAR"
+        },
+        {
+            "SNo": "73",
+            "Zone": "4",
+            "Ward": "47",
+            "Area": "Korukkupet",
+            "Location": "Korukkupet",
+            "Street": "Egappan Street"
+        },
+        {
+            "SNo": "74",
+            "Zone": "4",
+            "Ward": "48",
+            "Area": "Old Washermenpet",
+            "Location": "T.H.Road",
+            "Street": "Ramanujakudam Street"
+        },
+        {
+            "SNo": "75",
+            "Zone": "4",
+            "Ward": "48",
+            "Area": "Old Washermenpet",
+            "Location": "T.H.Road",
+            "Street": "Solaiappan 2nd Lane"
+        },
+        {
+            "SNo": "76",
+            "Zone": "5",
+            "Ward": "49",
+            "Area": "Old Washermenpet",
+            "Location": "Old Washermenpet",
+            "Street": "Rajagopal Naidu Street"
+        },
+        {
+            "SNo": "77",
+            "Zone": "5",
+            "Ward": "49",
+            "Area": "Old Washermenpet",
+            "Location": "Old Washermenpet",
+            "Street": "Appasamy Lane"
+        },
+        {
+            "SNo": "78",
+            "Zone": "5",
+            "Ward": "50",
+            "Area": "Royapuram",
+            "Location": "Royapuram",
+            "Street": "West Madha Chruch Street"
+        },
+        {
+            "SNo": "79",
+            "Zone": "5",
+            "Ward": "50",
+            "Area": "Royapuram",
+            "Location": "Royapuram",
+            "Street": "Muniappa Chetty  Lane"
+        },
+        {
+            "SNo": "80",
+            "Zone": "5",
+            "Ward": "51",
+            "Area": "Old Washermenpet",
+            "Location": "Old Washermenpet",
+            "Street": "Manikandan 5th Lane"
+        },
+        {
+            "SNo": "81",
+            "Zone": "5",
+            "Ward": "51",
+            "Area": "Old Washermenpet",
+            "Location": "Old Washermenpet",
+            "Street": "Kalingarayan 1st Lane"
+        },
+        {
+            "SNo": "82",
+            "Zone": "5",
+            "Ward": "51",
+            "Area": "Old Washermenpet",
+            "Location": "Old Washermenpet",
+            "Street": "Selvavinayagar Koil Street"
+        },
+        {
+            "SNo": "83",
+            "Zone": "5",
+            "Ward": "51",
+            "Area": "Old Washermenpet",
+            "Location": "Old Washermenpet",
+            "Street": "Narasaiya Street"
+        },
+        {
+            "SNo": "84",
+            "Zone": "5",
+            "Ward": "52",
+            "Area": "Old Washermenpet",
+            "Location": "Old Washermenpet",
+            "Street": "Andiyappan Street"
+        },
+        {
+            "SNo": "85",
+            "Zone": "5",
+            "Ward": "52",
+            "Area": "Old Washermenpet",
+            "Location": "Old Washermenpet",
+            "Street": "Velauthapandiyan Street"
+        },
+        {
+            "SNo": "86",
+            "Zone": "5",
+            "Ward": "52",
+            "Area": "Royapuram",
+            "Location": "Royapuram",
+            "Street": "Adam Sahib Street"
+        },
+        {
+            "SNo": "87",
+            "Zone": "5",
+            "Ward": "53",
+            "Area": "Old Washermenpet",
+            "Location": "Old Washermenpet",
+            "Street": "Pensioners Labour Colony 3rd Lane"
+        },
+        {
+            "SNo": "88",
+            "Zone": "5",
+            "Ward": "54",
+            "Area": "Kondithoppu",
+            "Location": "Vallalar Nagar",
+            "Street": "Peddu  Street"
+        },
+        {
+            "SNo": "89",
+            "Zone": "5",
+            "Ward": "54",
+            "Area": "Kondithoppu",
+            "Location": "Kondithoppu",
+            "Street": "Sundaram Street 3rd Lane"
+        },
+        {
+            "SNo": "90",
+            "Zone": "5",
+            "Ward": "55",
+            "Area": "George Town",
+            "Location": "Seven Wells",
+            "Street": "Varadamuthiyappan Street"
+        },
+        {
+            "SNo": "91",
+            "Zone": "5",
+            "Ward": "55",
+            "Area": "George Town",
+            "Location": "Seven Wells",
+            "Street": "Old Jail Road"
+        },
+        {
+            "SNo": "92",
+            "Zone": "5",
+            "Ward": "55",
+            "Area": "George Town",
+            "Location": "George Town",
+            "Street": "Parrys Venkatachalam Iyyar Street"
+        },
+        {
+            "SNo": "93",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "George Town",
+            "Location": "Broadway",
+            "Street": "Venkatesa Naiken Street"
+        },
+        {
+            "SNo": "94",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "George Town",
+            "Location": "Broadway",
+            "Street": "Shanmugarayan Street"
+        },
+        {
+            "SNo": "95",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "George Town",
+            "Location": "Muthial Pet",
+            "Street": "Kachaleeswarar Garden"
+        },
+        {
+            "SNo": "96",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "George Town",
+            "Location": "Muthial Pet",
+            "Street": "Ebrahim Sahib Street"
+        },
+        {
+            "SNo": "97",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "Broadway",
+            "Location": "Broadway",
+            "Street": "Pedariyar Koil Street"
+        },
+        {
+            "SNo": "98",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "George Town",
+            "Location": "Muthial Pet",
+            "Street": "Sovarimuthu Street"
+        },
+        {
+            "SNo": "99",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "Broadway",
+            "Location": "Broadway",
+            "Street": "St.Xavier Street"
+        },
+        {
+            "SNo": "100",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "Broadway",
+            "Location": "Broadway",
+            "Street": "Pedariyar Koil 1st Lane"
+        },
+        {
+            "SNo": "101",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "George Town",
+            "Location": "Broadway",
+            "Street": "Thaiyappa Mudali Street"
+        },
+        {
+            "SNo": "102",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "George Town",
+            "Location": "Muthial Pet",
+            "Street": "Salai Vinayakar Koil Street"
+        },
+        {
+            "SNo": "103",
+            "Zone": "5",
+            "Ward": "56",
+            "Area": "Broadway",
+            "Location": "George Town",
+            "Street": "Amman Koil Street"
+        },
+        {
+            "SNo": "104",
+            "Zone": "5",
+            "Ward": "57",
+            "Area": "Sowcarpet",
+            "Location": "Kothaval Chavadi",
+            "Street": "Thatha Muthiappan Street"
+        },
+        {
+            "SNo": "105",
+            "Zone": "5",
+            "Ward": "57",
+            "Area": "Sowcarpet",
+            "Location": "Kothaval Chavadi",
+            "Street": "Hanumantharayan Koil Street"
+        },
+        {
+            "SNo": "106",
+            "Zone": "5",
+            "Ward": "57",
+            "Area": "Sowcarpet",
+            "Location": "Voc Nagar",
+            "Street": "Ela Kandhappan  Street"
+        },
+        {
+            "SNo": "107",
+            "Zone": "5",
+            "Ward": "57",
+            "Area": "Sowcarpet",
+            "Location": "Kothaval Chavadi",
+            "Street": "Davidson Street"
+        },
+        {
+            "SNo": "108",
+            "Zone": "5",
+            "Ward": "57",
+            "Area": "Sowcarpet",
+            "Location": "Voc Nagar",
+            "Street": "Vinayaga Street"
+        },
+        {
+            "SNo": "109",
+            "Zone": "5",
+            "Ward": "58",
+            "Area": "Choolai",
+            "Location": "Choolai",
+            "Street": "Avadhana Papaier Road"
+        },
+        {
+            "SNo": "110",
+            "Zone": "5",
+            "Ward": "58",
+            "Area": "Vepery",
+            "Location": "Vepery",
+            "Street": "Vepery High Road"
+        },
+        {
+            "SNo": "111",
+            "Zone": "5",
+            "Ward": "58",
+            "Area": "Vepery",
+            "Location": "Vepery",
+            "Street": "Periyar E.V.R Salai"
+        },
+        {
+            "SNo": "112",
+            "Zone": "5",
+            "Ward": "59",
+            "Area": "Edapalayam",
+            "Location": "Edapalayam",
+            "Street": "Nsc Bose Road"
+        },
+        {
+            "SNo": "113",
+            "Zone": "5",
+            "Ward": "59",
+            "Area": "Edapalayam",
+            "Location": "Edapalayam",
+            "Street": "Evr Salai"
+        },
+        {
+            "SNo": "114",
+            "Zone": "5",
+            "Ward": "59",
+            "Area": "Chepauk",
+            "Location": "Chepauk",
+            "Street": "Balamuthu Street"
+        },
+        {
+            "SNo": "115",
+            "Zone": "5",
+            "Ward": "59",
+            "Area": "Edapalayam",
+            "Location": "Edapalayam",
+            "Street": "Samuthra M Street"
+        },
+        {
+            "SNo": "116",
+            "Zone": "5",
+            "Ward": "60",
+            "Area": "George Town",
+            "Location": "George Town",
+            "Street": "Mannadi Street"
+        },
+        {
+            "SNo": "117",
+            "Zone": "5",
+            "Ward": "60",
+            "Area": "George Town",
+            "Location": "George Town",
+            "Street": "Jones Street"
+        },
+        {
+            "SNo": "118",
+            "Zone": "5",
+            "Ward": "60",
+            "Area": "George Town",
+            "Location": "George Town",
+            "Street": "Sembudoss Street"
+        },
+        {
+            "SNo": "119",
+            "Zone": "5",
+            "Ward": "61",
+            "Area": "Egmore",
+            "Location": "Egmore High Road",
+            "Street": "Egmore Highroad Ii Street Lane, Pre No 78"
+        },
+        {
+            "SNo": "120",
+            "Zone": "5",
+            "Ward": "61",
+            "Area": "Egmore",
+            "Location": "Egmore High Road",
+            "Street": "Nainian Street"
+        },
+        {
+            "SNo": "121",
+            "Zone": "5",
+            "Ward": "61",
+            "Area": "Egmore",
+            "Location": "Egmore",
+            "Street": "Police Commissioner Office Road"
+        },
+        {
+            "SNo": "122",
+            "Zone": "5",
+            "Ward": "61",
+            "Area": "Egmore",
+            "Location": "Egmore",
+            "Street": "Halls Road"
+        },
+        {
+            "SNo": "123",
+            "Zone": "5",
+            "Ward": "62",
+            "Area": "Chindatripet",
+            "Location": "Chindatripet",
+            "Street": "Mangapathy Street"
+        },
+        {
+            "SNo": "124",
+            "Zone": "5",
+            "Ward": "62",
+            "Area": "Chindatripet",
+            "Location": "Chindatripet",
+            "Street": "Kalavai Street"
+        },
+        {
+            "SNo": "125",
+            "Zone": "5",
+            "Ward": "62",
+            "Area": "Chindatripet",
+            "Location": "Chindatripet",
+            "Street": "SAMY N STREET"
+        },
+        {
+            "SNo": "126",
+            "Zone": "5",
+            "Ward": "63",
+            "Area": "Chepauk",
+            "Location": "Anna Salai",
+            "Street": "Hussain Mulk Street"
+        },
+        {
+            "SNo": "127",
+            "Zone": "5",
+            "Ward": "63",
+            "Area": "Chepauk",
+            "Location": "Anna Salai",
+            "Street": "Bobegum 1st Street"
+        },
+        {
+            "SNo": "128",
+            "Zone": "5",
+            "Ward": "63",
+            "Area": "Chepauk",
+            "Location": "Anna Salai",
+            "Street": "Abdul Kadar Street"
+        },
+        {
+            "SNo": "129",
+            "Zone": "6",
+            "Ward": "64",
+            "Area": "Kolathur",
+            "Location": "Gangaiamman Koil Street",
+            "Street": "Gangai Amman Koil Street"
+        },
+        {
+            "SNo": "130",
+            "Zone": "6",
+            "Ward": "64",
+            "Area": "Kolathur",
+            "Location": "Thenpalani Nagar",
+            "Street": "Anna Street Thenpalani Nagar"
+        },
+        {
+            "SNo": "131",
+            "Zone": "6",
+            "Ward": "64",
+            "Area": "Kolathur",
+            "Location": "Thirupathi Nagar",
+            "Street": "Thirupathi Nagar 3rd Main Road"
+        },
+        {
+            "SNo": "132",
+            "Zone": "6",
+            "Ward": "64",
+            "Area": "Kolathur",
+            "Location": "Anusuya Nagar",
+            "Street": "Anusuya Nagar"
+        },
+        {
+            "SNo": "133",
+            "Zone": "6",
+            "Ward": "64",
+            "Area": "Kolathur",
+            "Location": "Mangali Neethiman Nagar",
+            "Street": "Mangali Neethimaan I Street"
+        },
+        {
+            "SNo": "134",
+            "Zone": "6",
+            "Ward": "64",
+            "Area": "Kolathur",
+            "Location": "Thenpalani Nagar",
+            "Street": "Vinayagar Koil Street Thenpalani Nagar"
+        },
+        {
+            "SNo": "135",
+            "Zone": "6",
+            "Ward": "65",
+            "Area": "Kolathur",
+            "Location": "G.K.M Colony",
+            "Street": "G.K.M Colony 25th street"
+        },
+        {
+            "SNo": "136",
+            "Zone": "6",
+            "Ward": "65",
+            "Area": "Kolathur",
+            "Location": "G.K.M Colony",
+            "Street": "G.K.M Colony 30th street"
+        },
+        {
+            "SNo": "137",
+            "Zone": "6",
+            "Ward": "65",
+            "Area": "Kolathur",
+            "Location": "Kolathur",
+            "Street": "K. K. NAGAR EXTN."
+        },
+        {
+            "SNo": "138",
+            "Zone": "6",
+            "Ward": "66",
+            "Area": "Peravallur",
+            "Location": "Vetri Nagar",
+            "Street": "Andal Avenue 1st Street"
+        },
+        {
+            "SNo": "139",
+            "Zone": "6",
+            "Ward": "66",
+            "Area": "Peravallur",
+            "Location": "Vetri Nagar",
+            "Street": "Devakiammal Street"
+        },
+        {
+            "SNo": "140",
+            "Zone": "6",
+            "Ward": "66",
+            "Area": "Peravallur",
+            "Location": "Vetri Nagar",
+            "Street": "Andal Avenue 3rd Street"
+        },
+        {
+            "SNo": "141",
+            "Zone": "6",
+            "Ward": "68",
+            "Area": "Sembium",
+            "Location": "Anbazhagan Nagar",
+            "Street": "Anbazhagan Nagar 4th Street"
+        },
+        {
+            "SNo": "142",
+            "Zone": "6",
+            "Ward": "68",
+            "Area": "Sembium",
+            "Location": "Teeds Garden",
+            "Street": "Teeds Garden 3rd Cross Street"
+        },
+        {
+            "SNo": "143",
+            "Zone": "6",
+            "Ward": "68",
+            "Area": "Sembium",
+            "Location": "Sembium",
+            "Street": "Thiru-Vi-Ka Nagar 37 Roads"
+        },
+        {
+            "SNo": "144",
+            "Zone": "6",
+            "Ward": "68",
+            "Area": "Sembium",
+            "Location": "Sembium",
+            "Street": "Sabapathy Street"
+        },
+        {
+            "SNo": "145",
+            "Zone": "6",
+            "Ward": "68",
+            "Area": "Sembium",
+            "Location": "Sembium",
+            "Street": "Kennedy Square Cross Street"
+        },
+        {
+            "SNo": "146",
+            "Zone": "6",
+            "Ward": "68",
+            "Area": "Sembium",
+            "Location": "Sembium",
+            "Street": "Watkin Street"
+        },
+        {
+            "SNo": "147",
+            "Zone": "6",
+            "Ward": "69",
+            "Area": "Ayanavaram",
+            "Location": "Nagammaiyar Nagar",
+            "Street": "Pilkingtoan Road"
+        },
+        {
+            "SNo": "148",
+            "Zone": "6",
+            "Ward": "70",
+            "Area": "Perambur",
+            "Location": "Perambur",
+            "Street": "School Road"
+        },
+        {
+            "SNo": "149",
+            "Zone": "6",
+            "Ward": "71",
+            "Area": "Ayanavaram",
+            "Location": "Railway Colony",
+            "Street": "Duncan Road 5th Street"
+        },
+        {
+            "SNo": "150",
+            "Zone": "6",
+            "Ward": "75",
+            "Area": "Kosapet",
+            "Location": "Kosapet",
+            "Street": "Venkadathri Street"
+        },
+        {
+            "SNo": "151",
+            "Zone": "6",
+            "Ward": "75",
+            "Area": "Otteri",
+            "Location": "S.S.Puram Slum",
+            "Street": "S.S.Puram `A Block 3rd Street"
+        },
+        {
+            "SNo": "152",
+            "Zone": "6",
+            "Ward": "77",
+            "Area": "Choolai",
+            "Location": "Choolai",
+            "Street": "Avadi Srinivasa Street"
+        },
+        {
+            "SNo": "153",
+            "Zone": "6",
+            "Ward": "78",
+            "Area": "Purasaiwakkam",
+            "Location": "Purasaiwakkam",
+            "Street": "Venkatachalam Street"
+        },
+        {
+            "SNo": "154",
+            "Zone": "6",
+            "Ward": "78",
+            "Area": "Kosapet",
+            "Location": "Kosapet",
+            "Street": "Venkatesha N Street"
+        },
+        {
+            "SNo": "155",
+            "Zone": "7",
+            "Ward": "79",
+            "Area": "ORAGADAM",
+            "Location": "ORAGADAM CSI CHURCH",
+            "Street": "GANDHI MAIN ROAD"
+        },
+        {
+            "SNo": "156",
+            "Zone": "7",
+            "Ward": "79",
+            "Area": "LENIN NAGAR",
+            "Location": "RAKKI THEATRE",
+            "Street": "SEETHA RAMAN STREET"
+        },
+        {
+            "SNo": "157",
+            "Zone": "7",
+            "Ward": "79",
+            "Area": "AMBATTUR",
+            "Location": "AMBEDKAR STATUE",
+            "Street": "M G R STREET"
+        },
+        {
+            "SNo": "158",
+            "Zone": "7",
+            "Ward": "79",
+            "Area": "ORAGADAM",
+            "Location": "ORAGADAM CSI CHURCH",
+            "Street": "NADAMUNI STREET"
+        },
+        {
+            "SNo": "159",
+            "Zone": "7",
+            "Ward": "80",
+            "Area": "VIJAYALAKSHMIPURAM",
+            "Location": "REDHILLS ROAD",
+            "Street": "PATEL STREET"
+        },
+        {
+            "SNo": "160",
+            "Zone": "7",
+            "Ward": "80",
+            "Area": "VIJAYALAKSHMIPURAM",
+            "Location": "REDHILLS ROAD",
+            "Street": "ANNA SALAI"
+        },
+        {
+            "SNo": "161",
+            "Zone": "7",
+            "Ward": "80",
+            "Area": "VIJAYALAKSHMIPURAM",
+            "Location": "REDHILLS ROAD",
+            "Street": "ANBU NAYAGAM STREET"
+        },
+        {
+            "SNo": "162",
+            "Zone": "7",
+            "Ward": "80",
+            "Area": "VIJAYALAKSHMIPURAM",
+            "Location": "REDHILLS ROAD",
+            "Street": "PILLAYAR KOIL STREET"
+        },
+        {
+            "SNo": "163",
+            "Zone": "7",
+            "Ward": "80",
+            "Area": "BANU NAGAR",
+            "Location": "PUDUR",
+            "Street": "BANU NAGAR 18TH AVENUE"
+        },
+        {
+            "SNo": "164",
+            "Zone": "7",
+            "Ward": "80",
+            "Area": "PUDUR",
+            "Location": "REDHILLS ROAD",
+            "Street": "M.G.R. STREET"
+        },
+        {
+            "SNo": "165",
+            "Zone": "7",
+            "Ward": "81",
+            "Area": "VENKATAPURAM",
+            "Location": "NEAR O T BUS STAND",
+            "Street": "NORTH PARK STREET"
+        },
+        {
+            "SNo": "166",
+            "Zone": "7",
+            "Ward": "81",
+            "Area": "VENKATAPURAM",
+            "Location": "NEAR MAHA GANESA SCHOOL",
+            "Street": "GANAPATHY STREET"
+        },
+        {
+            "SNo": "167",
+            "Zone": "7",
+            "Ward": "81",
+            "Area": "VENKATAPURAM",
+            "Location": "NEAR STATION ROAD",
+            "Street": "MAYA STREET"
+        },
+        {
+            "SNo": "168",
+            "Zone": "7",
+            "Ward": "81",
+            "Area": "VENKATAPURAM",
+            "Location": "NEAR RAILWAY STATION",
+            "Street": "K.K.LANE 4TH STREET"
+        },
+        {
+            "SNo": "169",
+            "Zone": "7",
+            "Ward": "83",
+            "Area": "KORATTUR",
+            "Location": "SRINIVASAPURAM",
+            "Street": "ERIKARAI PILLAIAR KOIL STREET"
+        },
+        {
+            "SNo": "170",
+            "Zone": "7",
+            "Ward": "83",
+            "Area": "KORATTUR",
+            "Location": "ELLAIAMMAN NAGAR",
+            "Street": "ELLAIAMMAN NAGAR"
+        },
+        {
+            "SNo": "171",
+            "Zone": "7",
+            "Ward": "84",
+            "Area": "KORATTUR",
+            "Location": "RADHA THEATRE BACK SIDE",
+            "Street": "POTHI AMMAN KOIL STREET"
+        },
+        {
+            "SNo": "172",
+            "Zone": "7",
+            "Ward": "85",
+            "Area": "VARADHARAJAPURAM",
+            "Location": "MUNICIPAL SCHOOL",
+            "Street": "STATION ROAD"
+        },
+        {
+            "SNo": "173",
+            "Zone": "7",
+            "Ward": "85",
+            "Area": "VARADHARAJAPURAM",
+            "Location": "MURUGAN THEATRE",
+            "Street": "O.V.ALAGESAN NAGAR"
+        },
+        {
+            "SNo": "174",
+            "Zone": "7",
+            "Ward": "85",
+            "Area": "AMBATTUR",
+            "Location": "AMBATTUR LAKE",
+            "Street": "SIVANANDA NAGAR HARICHANDRAN KOIL"
+        },
+        {
+            "SNo": "175",
+            "Zone": "7",
+            "Ward": "87",
+            "Area": "PADI",
+            "Location": "BRITANIA BUS STOP",
+            "Street": "ELANGO STREET"
+        },
+        {
+            "SNo": "176",
+            "Zone": "7",
+            "Ward": "87",
+            "Area": "PADI",
+            "Location": "MTH ROAD MUVAR SILAI BACK SIDE",
+            "Street": "RAJA STREET PADI"
+        },
+        {
+            "SNo": "177",
+            "Zone": "7",
+            "Ward": "88",
+            "Area": "A.N.W.EXTN",
+            "Location": "SBOA.MATRIC.SCHOOL MAIN ROAD",
+            "Street": "JEMI COMPOUND.U.R.NAGAR.EXTN"
+        },
+        {
+            "SNo": "178",
+            "Zone": "7",
+            "Ward": "89",
+            "Area": "A.N.W.EXTN",
+            "Location": "COLLECTOR NAGAR BUS STOP",
+            "Street": "ANNA NAGAR WEST EXTN"
+        },
+        {
+            "SNo": "179",
+            "Zone": "7",
+            "Ward": "89",
+            "Area": "A.N.W.EXTN",
+            "Location": "ELANGO NAGAR",
+            "Street": "OFFICERS COLONY EXTN"
+        },
+        {
+            "SNo": "180",
+            "Zone": "7",
+            "Ward": "90",
+            "Area": "A.N.W.EXTN",
+            "Location": "NEAR T N H B COMPLEX",
+            "Street": "ASIAD COLONY"
+        },
+        {
+            "SNo": "181",
+            "Zone": "7",
+            "Ward": "90",
+            "Area": "A.N.W.EXTN",
+            "Location": "PADI KUPPAM MAIN ROAD",
+            "Street": "PADI KUPPAM MAIN ROAD"
+        },
+        {
+            "SNo": "182",
+            "Zone": "7",
+            "Ward": "90",
+            "Area": "A.N.W.EXTN",
+            "Location": "PADI KUPPAM MAIN ROAD",
+            "Street": "BALAJI STREET"
+        },
+        {
+            "SNo": "183",
+            "Zone": "7",
+            "Ward": "91",
+            "Area": "MUGAPPAIR WEST",
+            "Location": "WEST BUS STAND",
+            "Street": "BLOCK 7  1ST STREET"
+        },
+        {
+            "SNo": "184",
+            "Zone": "7",
+            "Ward": "93",
+            "Area": "MUGAPPAIR EAST",
+            "Location": "NEAR ONGC APPT",
+            "Street": "JORGE RATHINAM ST"
+        },
+        {
+            "SNo": "185",
+            "Zone": "7",
+            "Ward": "93",
+            "Area": "MUGAPPAIR EAST",
+            "Location": "MUGAPPAIR EAST",
+            "Street": "RANGASAMY STREET"
+        },
+        {
+            "SNo": "186",
+            "Zone": "7",
+            "Ward": "93",
+            "Area": "MUGAPPAIR EAST",
+            "Location": "NEAR MMM HOSPITAL",
+            "Street": "MOGAPPAIR EAST 1 BLOCK"
+        },
+        {
+            "SNo": "187",
+            "Zone": "7",
+            "Ward": "93",
+            "Area": "MUGAPPAIR EAST",
+            "Location": "MUGAPPAIR EAST",
+            "Street": "VEERAMAMUNI STREET"
+        },
+        {
+            "SNo": "188",
+            "Zone": "8",
+            "Ward": "94",
+            "Area": "Villivakkam",
+            "Location": "Villivakkam",
+            "Street": "M T H ROAD"
+        },
+        {
+            "SNo": "189",
+            "Zone": "8",
+            "Ward": "94",
+            "Area": "Villivakkam",
+            "Location": "Villivakkam",
+            "Street": "Sidco Nagar 30th Street"
+        },
+        {
+            "SNo": "190",
+            "Zone": "8",
+            "Ward": "94",
+            "Area": "Villivakkam",
+            "Location": "Thathan Kuppam",
+            "Street": "Thathan Kuppam"
+        },
+        {
+            "SNo": "191",
+            "Zone": "8",
+            "Ward": "94",
+            "Area": "Villivakkam",
+            "Location": "Rajamangalam",
+            "Street": "Rajamangalam 3rd Street"
+        },
+        {
+            "SNo": "192",
+            "Zone": "8",
+            "Ward": "94",
+            "Area": "Villivakkam",
+            "Location": "Rajamangalam",
+            "Street": "Rajamangalam Main Road"
+        },
+        {
+            "SNo": "193",
+            "Zone": "8",
+            "Ward": "95",
+            "Area": "Anna Nagar West",
+            "Location": "I Block",
+            "Street": "I-Block 41st Street"
+        },
+        {
+            "SNo": "194",
+            "Zone": "8",
+            "Ward": "95",
+            "Area": "Villivakkam",
+            "Location": "Villivakkam",
+            "Street": "Mannadi Othavadai Street"
+        },
+        {
+            "SNo": "195",
+            "Zone": "8",
+            "Ward": "95",
+            "Area": "Thirumangalam",
+            "Location": "Thirumangalam Road",
+            "Street": "Post Office Road"
+        },
+        {
+            "SNo": "196",
+            "Zone": "8",
+            "Ward": "95",
+            "Area": "Villivakkam",
+            "Location": "Villivakkam",
+            "Street": "Thirumalai Complex"
+        },
+        {
+            "SNo": "197",
+            "Zone": "8",
+            "Ward": "95",
+            "Area": "Anna Nagar West",
+            "Location": "Anna Nagar (W)",
+            "Street": "Ganga Kavery Flats"
+        },
+        {
+            "SNo": "198",
+            "Zone": "8",
+            "Ward": "95",
+            "Area": "Villivakkam",
+            "Location": "Villivakkam",
+            "Street": "Perumal Koil South Maada Veethi"
+        },
+        {
+            "SNo": "199",
+            "Zone": "8",
+            "Ward": "95",
+            "Area": "Villivakkam",
+            "Location": "Villivakkam",
+            "Street": "Chennai Battai Main Road"
+        },
+        {
+            "SNo": "200",
+            "Zone": "8",
+            "Ward": "95",
+            "Area": "Villivakkam",
+            "Location": "Villivakkam",
+            "Street": "Seeyalam Street"
+        },
+        {
+            "SNo": "201",
+            "Zone": "8",
+            "Ward": "95",
+            "Area": "Villivakkam",
+            "Location": "Villivakkam",
+            "Street": "Thiru.V.K. 2nd Street"
+        },
+        {
+            "SNo": "202",
+            "Zone": "8",
+            "Ward": "96",
+            "Area": "Ayanavaram",
+            "Location": "Icf Colony",
+            "Street": "ICF EAST COLONY"
+        },
+        {
+            "SNo": "203",
+            "Zone": "8",
+            "Ward": "96",
+            "Area": "Ayanavaram",
+            "Location": "Konnur High Road",
+            "Street": "Konnur High Road"
+        },
+        {
+            "SNo": "204",
+            "Zone": "8",
+            "Ward": "96",
+            "Area": "Ayanavaram",
+            "Location": "V.P. Colony",
+            "Street": "Venkatesapuram Colony 2nd Cross Street"
+        },
+        {
+            "SNo": "205",
+            "Zone": "8",
+            "Ward": "96",
+            "Area": "Ayanavaram",
+            "Location": "Ayanavaram",
+            "Street": "Palayakkaran Street"
+        },
+        {
+            "SNo": "206",
+            "Zone": "8",
+            "Ward": "97",
+            "Area": "Ayanavaram",
+            "Location": "Ayanavaram",
+            "Street": "Thirupacheeswaran Street"
+        },
+        {
+            "SNo": "207",
+            "Zone": "8",
+            "Ward": "97",
+            "Area": "Ayanavaram",
+            "Location": "Ayanavaram",
+            "Street": "Veerasamy 1st Street"
+        },
+        {
+            "SNo": "208",
+            "Zone": "8",
+            "Ward": "97",
+            "Area": "Ayanavaram",
+            "Location": "Ayanavaram",
+            "Street": "P. E. KOIL 2ND CROSS LANE"
+        },
+        {
+            "SNo": "209",
+            "Zone": "8",
+            "Ward": "97",
+            "Area": "Ayanavaram",
+            "Location": "Ayanavaram",
+            "Street": "Parasurama Easwaran Koil North Mada Veedhi"
+        },
+        {
+            "SNo": "210",
+            "Zone": "8",
+            "Ward": "97",
+            "Area": "Ayanavaram",
+            "Location": "Ayanavaram",
+            "Street": "Vellala Street"
+        },
+        {
+            "SNo": "211",
+            "Zone": "8",
+            "Ward": "97",
+            "Area": "Ayanavaram",
+            "Location": "Ayanavaram",
+            "Street": "Thiru-Vi-Ka Street"
+        },
+        {
+            "SNo": "212",
+            "Zone": "8",
+            "Ward": "97",
+            "Area": "Ayanavaram",
+            "Location": "Ayanavaram",
+            "Street": "PATTACHARI STREET"
+        },
+        {
+            "SNo": "213",
+            "Zone": "8",
+            "Ward": "99",
+            "Area": "Anna Nagar West",
+            "Location": "G Block",
+            "Street": "Sangam Apartments Main St"
+        },
+        {
+            "SNo": "214",
+            "Zone": "8",
+            "Ward": "99",
+            "Area": "Anna Nagar West",
+            "Location": "G Block",
+            "Street": "G-Block 12th Street"
+        },
+        {
+            "SNo": "215",
+            "Zone": "8",
+            "Ward": "101",
+            "Area": "Anna Nagar East",
+            "Location": "J Block",
+            "Street": "J-Block 2nd Street"
+        },
+        {
+            "SNo": "216",
+            "Zone": "8",
+            "Ward": "101",
+            "Area": "Anna Nagar",
+            "Location": "Anna Nagar",
+            "Street": "Vith  Avenue"
+        },
+        {
+            "SNo": "217",
+            "Zone": "8",
+            "Ward": "101",
+            "Area": "Anna Nagar East",
+            "Location": "K-Block",
+            "Street": "K-Block 12th Street"
+        },
+        {
+            "SNo": "218",
+            "Zone": "8",
+            "Ward": "102",
+            "Area": "Anna Nagar East",
+            "Location": "Anna Nagar East",
+            "Street": "V.O.C Colony"
+        },
+        {
+            "SNo": "219",
+            "Zone": "8",
+            "Ward": "102",
+            "Area": "Aminjikarai",
+            "Location": "Shenoy Nagar (East)",
+            "Street": "East Park Road"
+        },
+        {
+            "SNo": "220",
+            "Zone": "8",
+            "Ward": "102",
+            "Area": "Kilpauk",
+            "Location": "Kilpauk",
+            "Street": "Gujji Main Road"
+        },
+        {
+            "SNo": "221",
+            "Zone": "8",
+            "Ward": "102",
+            "Area": "Kilpauk",
+            "Location": "K.G. Colony",
+            "Street": "N Street"
+        },
+        {
+            "SNo": "222",
+            "Zone": "8",
+            "Ward": "102",
+            "Area": "Aminjikarai",
+            "Location": "Shenoy Nagar (East)",
+            "Street": "Gajapathy Street"
+        },
+        {
+            "SNo": "223",
+            "Zone": "8",
+            "Ward": "102",
+            "Area": "Kilpauk",
+            "Location": "Kilpauk",
+            "Street": "police quarters street"
+        },
+        {
+            "SNo": "224",
+            "Zone": "8",
+            "Ward": "102",
+            "Area": "Shenoy Nagar",
+            "Location": "T.P. Chatiram",
+            "Street": "Thandavaraya Pillai Chatiram 27thcross Street"
+        },
+        {
+            "SNo": "225",
+            "Zone": "8",
+            "Ward": "103",
+            "Area": "Kilpauk",
+            "Location": "E.V.R.Salai",
+            "Street": "Periyar Evr Salai"
+        },
+        {
+            "SNo": "226",
+            "Zone": "8",
+            "Ward": "105",
+            "Area": "Arumbakkam",
+            "Location": "Rani Anna Nagar",
+            "Street": "Navalar Street"
+        },
+        {
+            "SNo": "227",
+            "Zone": "8",
+            "Ward": "105",
+            "Area": "Arumbakkam",
+            "Location": "Arumbakkam",
+            "Street": "Sri Venkatesa Perumal Nagar"
+        },
+        {
+            "SNo": "228",
+            "Zone": "8",
+            "Ward": "105",
+            "Area": "Arumbakkam",
+            "Location": "Bala Vinayagar Nagar",
+            "Street": "Balavinayagar Nagar 3rd Street"
+        },
+        {
+            "SNo": "229",
+            "Zone": "8",
+            "Ward": "105",
+            "Area": "Arumbakkam",
+            "Location": "Mmda Colony",
+            "Street": "Muthamizh Kavalar Street"
+        },
+        {
+            "SNo": "230",
+            "Zone": "8",
+            "Ward": "105",
+            "Area": "Arumbakkam",
+            "Location": "Amaravathy Nagar",
+            "Street": "Thiruvalluvar St"
+        },
+        {
+            "SNo": "231",
+            "Zone": "8",
+            "Ward": "105",
+            "Area": "Arumbakkam",
+            "Location": "Rani Anna Nagar",
+            "Street": "Poompugar Street"
+        },
+        {
+            "SNo": "232",
+            "Zone": "8",
+            "Ward": "105",
+            "Area": "Arumbakkam",
+            "Location": "Mmda Colony",
+            "Street": "Nalvaravoo Street"
+        },
+        {
+            "SNo": "233",
+            "Zone": "8",
+            "Ward": "106",
+            "Area": "Aminjikarai",
+            "Location": "Muthirulandi Colony",
+            "Street": "Muthirulandi Colony Iii Cross Street"
+        },
+        {
+            "SNo": "234",
+            "Zone": "8",
+            "Ward": "106",
+            "Area": "Aminjikarai",
+            "Location": "Collectorate Colony",
+            "Street": "Collectorate Colony Iii Cross Street"
+        },
+        {
+            "SNo": "235",
+            "Zone": "8",
+            "Ward": "106",
+            "Area": "Aminjikarai",
+            "Location": "Kakkan Nagar",
+            "Street": "Kakkan Nagar"
+        },
+        {
+            "SNo": "236",
+            "Zone": "8",
+            "Ward": "106",
+            "Area": "Aminjikarai",
+            "Location": "Aminjikarai",
+            "Street": "Sabapathy Street"
+        },
+        {
+            "SNo": "237",
+            "Zone": "8",
+            "Ward": "106",
+            "Area": "Aminjikarai",
+            "Location": "Raja Ram Metha Nagar",
+            "Street": "Rajeswari Street"
+        },
+        {
+            "SNo": "238",
+            "Zone": "8",
+            "Ward": "106",
+            "Area": "Aminjikarai",
+            "Location": "Aminjikarai",
+            "Street": "Periyr E.V.R Salai Alias Poonnamallee High Road"
+        },
+        {
+            "SNo": "239",
+            "Zone": "8",
+            "Ward": "107",
+            "Area": "Chetpet",
+            "Location": "Srinivasa Nagar",
+            "Street": "Venkatasamy Street"
+        },
+        {
+            "SNo": "240",
+            "Zone": "9",
+            "Ward": "109",
+            "Area": "Choolaimedu",
+            "Location": "Choolaimedu",
+            "Street": "Khan Street"
+        },
+        {
+            "SNo": "241",
+            "Zone": "9",
+            "Ward": "109",
+            "Area": "Choolaimedu",
+            "Location": "West Namachivayapuram",
+            "Street": "West Namachivayapuram 2nd Link Street"
+        },
+        {
+            "SNo": "242",
+            "Zone": "9",
+            "Ward": "109",
+            "Area": "Choolaimedu",
+            "Location": "Choolaimedu",
+            "Street": "Bajanai Koil 1st Street"
+        },
+        {
+            "SNo": "243",
+            "Zone": "9",
+            "Ward": "109",
+            "Area": "Choolaimedu",
+            "Location": "Vada Agaram",
+            "Street": "Vada Agaram 1st Street"
+        },
+        {
+            "SNo": "244",
+            "Zone": "9",
+            "Ward": "109",
+            "Area": "Choolaimedu",
+            "Location": "Choolaimedu",
+            "Street": "Bajanai Koil 4th  Street"
+        },
+        {
+            "SNo": "245",
+            "Zone": "9",
+            "Ward": "111",
+            "Area": "Thousand Lights",
+            "Location": "Thousand Lights",
+            "Street": "Gulam Abbas Alikhan Viii Street"
+        },
+        {
+            "SNo": "246",
+            "Zone": "9",
+            "Ward": "111",
+            "Area": "Thousand Lights",
+            "Location": "Thousand Lights",
+            "Street": "Greams Road"
+        },
+        {
+            "SNo": "247",
+            "Zone": "9",
+            "Ward": "111",
+            "Area": "Thousand Lights",
+            "Location": "Thousand Lights",
+            "Street": "Gulam Abbas Alikhan I Street"
+        },
+        {
+            "SNo": "248",
+            "Zone": "9",
+            "Ward": "111",
+            "Area": "Nungambakkam",
+            "Location": "Nungambakkam",
+            "Street": "Moors Road"
+        },
+        {
+            "SNo": "249",
+            "Zone": "9",
+            "Ward": "111",
+            "Area": "Nungambakkam",
+            "Location": "Nungambakkam",
+            "Street": "Haddows Road"
+        },
+        {
+            "SNo": "250",
+            "Zone": "9",
+            "Ward": "112",
+            "Area": "Kodambakkam",
+            "Location": "Trustpuram",
+            "Street": "Trustpuram 9th Cross Street"
+        },
+        {
+            "SNo": "251",
+            "Zone": "9",
+            "Ward": "112",
+            "Area": "Kodambakkam",
+            "Location": "Trustpuram",
+            "Street": "Trustpuram 7th Cross Street"
+        },
+        {
+            "SNo": "252",
+            "Zone": "9",
+            "Ward": "113",
+            "Area": "T.Nagar",
+            "Location": "T.Nagar",
+            "Street": "Prakasam Street"
+        },
+        {
+            "SNo": "253",
+            "Zone": "9",
+            "Ward": "113",
+            "Area": "Nungambakkam",
+            "Location": "Nungambakkam",
+            "Street": "Kumarappa Street"
+        },
+        {
+            "SNo": "254",
+            "Zone": "9",
+            "Ward": "114",
+            "Area": "Triplicane",
+            "Location": "Triplicane",
+            "Street": "Pulibone Bazaar 3rd Lane"
+        },
+        {
+            "SNo": "255",
+            "Zone": "9",
+            "Ward": "114",
+            "Area": "Chepauk",
+            "Location": "Chepauk",
+            "Street": "Office Venkatachala Street"
+        },
+        {
+            "SNo": "256",
+            "Zone": "9",
+            "Ward": "114",
+            "Area": "Chepauk",
+            "Location": "Chepauk",
+            "Street": "Subramaniya Street"
+        },
+        {
+            "SNo": "257",
+            "Zone": "9",
+            "Ward": "114",
+            "Area": "Chepauk",
+            "Location": "Chepauk",
+            "Street": "Thyipoon Ali Khan   Street"
+        },
+        {
+            "SNo": "258",
+            "Zone": "9",
+            "Ward": "115",
+            "Area": "Royapettah",
+            "Location": "Royapettah",
+            "Street": "Perumal M Street"
+        },
+        {
+            "SNo": "259",
+            "Zone": "9",
+            "Ward": "115",
+            "Area": "Royapettah",
+            "Location": "Royapettah",
+            "Street": "Thalayari Street"
+        },
+        {
+            "SNo": "260",
+            "Zone": "9",
+            "Ward": "115",
+            "Area": "Royapettah",
+            "Location": "Allthottam",
+            "Street": "R.O.B V Street"
+        },
+        {
+            "SNo": "261",
+            "Zone": "9",
+            "Ward": "115",
+            "Area": "Royapettah",
+            "Location": "Royapettah",
+            "Street": "Jani Johankhan Road"
+        },
+        {
+            "SNo": "262",
+            "Zone": "9",
+            "Ward": "116",
+            "Area": "Triplicane",
+            "Location": "Triplicane",
+            "Street": "Sivarajapuram Slum Area"
+        },
+        {
+            "SNo": "263",
+            "Zone": "9",
+            "Ward": "116",
+            "Area": "Triplicane",
+            "Location": "Triplicane",
+            "Street": "Ulagappa Chetty Street"
+        },
+        {
+            "SNo": "264",
+            "Zone": "9",
+            "Ward": "116",
+            "Area": "Triplicane",
+            "Location": "Triplicane",
+            "Street": "Nagoji Street"
+        },
+        {
+            "SNo": "265",
+            "Zone": "9",
+            "Ward": "116",
+            "Area": "Triplicane",
+            "Location": "Mattan Kuppam",
+            "Street": "Palani Amman Koil 6th Street"
+        },
+        {
+            "SNo": "266",
+            "Zone": "9",
+            "Ward": "116",
+            "Area": "Chepauk",
+            "Location": "Chepauk",
+            "Street": "Thope Venkatachala Street"
+        },
+        {
+            "SNo": "267",
+            "Zone": "9",
+            "Ward": "116",
+            "Area": "Chepauk",
+            "Location": "Chepauk",
+            "Street": "SAMY STREET"
+        },
+        {
+            "SNo": "268",
+            "Zone": "9",
+            "Ward": "116",
+            "Area": "Triplicane",
+            "Location": "Triplicane",
+            "Street": "Kasim Ali 2nd Street"
+        },
+        {
+            "SNo": "269",
+            "Zone": "9",
+            "Ward": "116",
+            "Area": "Triplicane",
+            "Location": "Mattan Kuppam",
+            "Street": "New Fire Wood Street"
+        },
+        {
+            "SNo": "270",
+            "Zone": "9",
+            "Ward": "117",
+            "Area": "T.Nagar",
+            "Location": "T.Nagar",
+            "Street": "Dr.Thomas Road"
+        },
+        {
+            "SNo": "271",
+            "Zone": "9",
+            "Ward": "117",
+            "Area": "T.Nagar",
+            "Location": "T.Nagar",
+            "Street": "Valmigi Street"
+        },
+        {
+            "SNo": "272",
+            "Zone": "9",
+            "Ward": "118",
+            "Area": "Gopalapuram",
+            "Location": "Gopalapuram",
+            "Street": "Ganapathy Street"
+        },
+        {
+            "SNo": "273",
+            "Zone": "9",
+            "Ward": "118",
+            "Area": "Teynampet",
+            "Location": "Poes Garden",
+            "Street": "Binny Road"
+        },
+        {
+            "SNo": "274",
+            "Zone": "9",
+            "Ward": "118",
+            "Area": "Royapettah",
+            "Location": "Royapettah",
+            "Street": "Ponnusamy Street"
+        },
+        {
+            "SNo": "275",
+            "Zone": "9",
+            "Ward": "118",
+            "Area": "Teynampet",
+            "Location": "Venus Colony",
+            "Street": "Poes Road Ivth Street"
+        },
+        {
+            "SNo": "276",
+            "Zone": "9",
+            "Ward": "118",
+            "Area": "Teynampet",
+            "Location": "Teynampet",
+            "Street": "Mudaliandan Street"
+        },
+        {
+            "SNo": "277",
+            "Zone": "9",
+            "Ward": "119",
+            "Area": "Royapettah",
+            "Location": "Royapettah",
+            "Street": "Nallanna Mudali Street"
+        },
+        {
+            "SNo": "278",
+            "Zone": "9",
+            "Ward": "119",
+            "Area": "Royapettah",
+            "Location": "Dr.Ambedkar Nagar",
+            "Street": "Thiruvalluvar Street"
+        },
+        {
+            "SNo": "279",
+            "Zone": "9",
+            "Ward": "119",
+            "Area": "Royapettah",
+            "Location": "Royapettah",
+            "Street": "Mavadi Vinayagar Koil Street"
+        },
+        {
+            "SNo": "280",
+            "Zone": "9",
+            "Ward": "120",
+            "Area": "Royapettah",
+            "Location": "Royapettah",
+            "Street": "Muthiah Mudali  Street"
+        },
+        {
+            "SNo": "281",
+            "Zone": "9",
+            "Ward": "122",
+            "Area": "R.A.Puram",
+            "Location": "Boatclub Road",
+            "Street": "Adyar Club Gate Road"
+        },
+        {
+            "SNo": "282",
+            "Zone": "9",
+            "Ward": "123",
+            "Area": "Teynampet",
+            "Location": "Teynampet",
+            "Street": "Kamaraj Street"
+        },
+        {
+            "SNo": "283",
+            "Zone": "9",
+            "Ward": "124",
+            "Area": "Mylapore",
+            "Location": "Mylapore",
+            "Street": "Chitrakulam West Street"
+        },
+        {
+            "SNo": "284",
+            "Zone": "9",
+            "Ward": "124",
+            "Area": "Mylapore",
+            "Location": "Mylapore",
+            "Street": "Adam Street"
+        },
+        {
+            "SNo": "285",
+            "Zone": "9",
+            "Ward": "124",
+            "Area": "Mylapore",
+            "Location": "Mylapore",
+            "Street": "Thengur Selva Vinayakar Koil Street"
+        },
+        {
+            "SNo": "286",
+            "Zone": "9",
+            "Ward": "124",
+            "Area": "Mylapore",
+            "Location": "Pillayarkoil Thottam",
+            "Street": "Rama Thottam Pillayar Koil Thottam"
+        },
+        {
+            "SNo": "287",
+            "Zone": "9",
+            "Ward": "125",
+            "Area": "Mylapore",
+            "Location": "Santhome",
+            "Street": "Santhome High Road"
+        },
+        {
+            "SNo": "288",
+            "Zone": "9",
+            "Ward": "125",
+            "Area": "Mylapore",
+            "Location": "Karaneeswararpuram",
+            "Street": "Karaneeswarar Koil Street"
+        },
+        {
+            "SNo": "289",
+            "Zone": "9",
+            "Ward": "125",
+            "Area": "Mylapore",
+            "Location": "Nochikuppam",
+            "Street": "Nochikuppam Nagar Slum Board, Teynampet"
+        },
+        {
+            "SNo": "290",
+            "Zone": "9",
+            "Ward": "126",
+            "Area": "Mandavelipakkam",
+            "Location": "Mandavelipakkam",
+            "Street": "Thiruvalluvarpet"
+        },
+        {
+            "SNo": "291",
+            "Zone": "10",
+            "Ward": "127",
+            "Area": "Koyambedu",
+            "Location": "Saf Games Village",
+            "Street": "SAF GAMES VILLAGE"
+        },
+        {
+            "SNo": "292",
+            "Zone": "10",
+            "Ward": "127",
+            "Area": "Koyambedu",
+            "Location": "Koyambedu",
+            "Street": "P H ROAD NEW COLONY RIVER SIDE"
+        },
+        {
+            "SNo": "293",
+            "Zone": "10",
+            "Ward": "127",
+            "Area": "Koyambedu",
+            "Location": "Kumaran Nagar",
+            "Street": "1 Main Road - Kumaran Nagar"
+        },
+        {
+            "SNo": "294",
+            "Zone": "10",
+            "Ward": "128",
+            "Area": "Virugambakkam",
+            "Location": "Virugambakkam",
+            "Street": "Arcot Roadi 1ststreet"
+        },
+        {
+            "SNo": "295",
+            "Zone": "10",
+            "Ward": "128",
+            "Area": "Virugambakkam",
+            "Location": "Virugambakkam",
+            "Street": "Arcot Road"
+        },
+        {
+            "SNo": "296",
+            "Zone": "10",
+            "Ward": "128",
+            "Area": "Virugambakkam",
+            "Location": "Venkateshwara Nagar",
+            "Street": "Rathna Nagar Main Road"
+        },
+        {
+            "SNo": "297",
+            "Zone": "10",
+            "Ward": "128",
+            "Area": "Virugambakkam",
+            "Location": "Virugambakkam",
+            "Street": "Mariamman Koil Street"
+        },
+        {
+            "SNo": "298",
+            "Zone": "10",
+            "Ward": "128",
+            "Area": "Nesapakkam",
+            "Location": "Nesapakkam",
+            "Street": "Anna Lane"
+        },
+        {
+            "SNo": "299",
+            "Zone": "10",
+            "Ward": "129",
+            "Area": "Saligramam",
+            "Location": "Nehru Nagar",
+            "Street": "Nehru Nagar Sasthri Thiruvalluvar Street"
+        },
+        {
+            "SNo": "300",
+            "Zone": "10",
+            "Ward": "129",
+            "Area": "Saligramam",
+            "Location": "Arcot Salai",
+            "Street": "Arcot Salai"
+        },
+        {
+            "SNo": "301",
+            "Zone": "10",
+            "Ward": "129",
+            "Area": "Saligramam",
+            "Location": "Ponniamman Koil",
+            "Street": "Janakiraman Street"
+        },
+        {
+            "SNo": "302",
+            "Zone": "10",
+            "Ward": "130",
+            "Area": "Vadapalani",
+            "Location": "Vadapalani",
+            "Street": "North Mada Street"
+        },
+        {
+            "SNo": "303",
+            "Zone": "10",
+            "Ward": "130",
+            "Area": "Vadapalani",
+            "Location": "Alagiri Nagar",
+            "Street": "Alagiri Nagar Iv Street"
+        },
+        {
+            "SNo": "304",
+            "Zone": "10",
+            "Ward": "130",
+            "Area": "Vadapalani",
+            "Location": "Vadapalani",
+            "Street": "Gangai Amman Koil Street Vadapalani"
+        },
+        {
+            "SNo": "305",
+            "Zone": "10",
+            "Ward": "130",
+            "Area": "Vadapalani",
+            "Location": "Alagiri Nagar",
+            "Street": "Alagiri Nagar Main  Road"
+        },
+        {
+            "SNo": "306",
+            "Zone": "10",
+            "Ward": "130",
+            "Area": "Vadapalani",
+            "Location": "Vannier Street",
+            "Street": "Othavadai Street"
+        },
+        {
+            "SNo": "307",
+            "Zone": "10",
+            "Ward": "132",
+            "Area": "Ashok Nagar",
+            "Location": "Pudur",
+            "Street": "Pudur 12th Street"
+        },
+        {
+            "SNo": "308",
+            "Zone": "10",
+            "Ward": "132",
+            "Area": "Ashok Nagar",
+            "Location": "Pudur",
+            "Street": "Pudur 13th Street"
+        },
+        {
+            "SNo": "309",
+            "Zone": "10",
+            "Ward": "132",
+            "Area": "Ashok Nagar",
+            "Location": "Ashok Nagar",
+            "Street": "82th Street"
+        },
+        {
+            "SNo": "310",
+            "Zone": "10",
+            "Ward": "132",
+            "Area": "Ashok Nagar",
+            "Location": "Pudur",
+            "Street": "37th Street"
+        },
+        {
+            "SNo": "311",
+            "Zone": "10",
+            "Ward": "132",
+            "Area": "Ashok Nagar",
+            "Location": "Pudur",
+            "Street": "35th Street"
+        },
+        {
+            "SNo": "312",
+            "Zone": "10",
+            "Ward": "132",
+            "Area": "Ashok Nagar",
+            "Location": "Ashok Nagar",
+            "Street": "J.S. Kannappa  Salai"
+        },
+        {
+            "SNo": "313",
+            "Zone": "10",
+            "Ward": "132",
+            "Area": "Ashok Nagar",
+            "Location": "Ashok Nagar",
+            "Street": "Soundara Pandian Salai"
+        },
+        {
+            "SNo": "314",
+            "Zone": "10",
+            "Ward": "132",
+            "Area": "Ashok Nagar",
+            "Location": "Pudur",
+            "Street": "Pudur Iind Street"
+        },
+        {
+            "SNo": "315",
+            "Zone": "10",
+            "Ward": "132",
+            "Area": "Ashok Nagar",
+            "Location": "Ashok Nagar",
+            "Street": "1st Avenue"
+        },
+        {
+            "SNo": "316",
+            "Zone": "10",
+            "Ward": "133",
+            "Area": "Kodambakkam",
+            "Location": "Vedhachalam  Nagar",
+            "Street": "Vadachalam Nagar Ii Street"
+        },
+        {
+            "SNo": "317",
+            "Zone": "10",
+            "Ward": "133",
+            "Area": "West Mambalam",
+            "Location": "West Mambalam",
+            "Street": "Kavarai Street"
+        },
+        {
+            "SNo": "318",
+            "Zone": "10",
+            "Ward": "134",
+            "Area": "Kodambakkam",
+            "Location": "Kodambakkam",
+            "Street": "Dhanakottiammal Street"
+        },
+        {
+            "SNo": "319",
+            "Zone": "10",
+            "Ward": "134",
+            "Area": "Kodambakkam",
+            "Location": "Kodambakkam",
+            "Street": "Chinnaraju Pillai Thottam I Street"
+        },
+        {
+            "SNo": "320",
+            "Zone": "10",
+            "Ward": "134",
+            "Area": "Kodambakkam",
+            "Location": "Rangarajapuram",
+            "Street": "Rangaraja Puram Main Road"
+        },
+        {
+            "SNo": "321",
+            "Zone": "10",
+            "Ward": "135",
+            "Area": "West Mambalam",
+            "Location": "West Mambalam",
+            "Street": "Umapathy Street"
+        },
+        {
+            "SNo": "322",
+            "Zone": "10",
+            "Ward": "135",
+            "Area": "West Mambalam",
+            "Location": "West Mambalam",
+            "Street": "Subbah Street"
+        },
+        {
+            "SNo": "323",
+            "Zone": "10",
+            "Ward": "135",
+            "Area": "West Mambalam",
+            "Location": "West Mambalam",
+            "Street": "Brindavan Street T.N.S.C.B. Tenements 1to 13 Lanes"
+        },
+        {
+            "SNo": "324",
+            "Zone": "10",
+            "Ward": "135",
+            "Area": "West Mambalam",
+            "Location": "West Mambalam",
+            "Street": "Baroda Street"
+        },
+        {
+            "SNo": "325",
+            "Zone": "10",
+            "Ward": "136",
+            "Area": "T.Nagar",
+            "Location": "T.Nagar",
+            "Street": "Sarojini Street"
+        },
+        {
+            "SNo": "326",
+            "Zone": "10",
+            "Ward": "136",
+            "Area": "T.Nagar",
+            "Location": "T.Nagar",
+            "Street": "Mahalakshmi Street"
+        },
+        {
+            "SNo": "327",
+            "Zone": "10",
+            "Ward": "136",
+            "Area": "T.Nagar",
+            "Location": "T.Nagar",
+            "Street": "Jagadeeswaran Street"
+        },
+        {
+            "SNo": "328",
+            "Zone": "10",
+            "Ward": "139",
+            "Area": "West Mambalam",
+            "Location": "West Mambalam",
+            "Street": "Pillaiyar Koil Street"
+        },
+        {
+            "SNo": "329",
+            "Zone": "10",
+            "Ward": "139",
+            "Area": "Saidapet",
+            "Location": "Sarathy Nagar",
+            "Street": "Murahari Salai"
+        },
+        {
+            "SNo": "330",
+            "Zone": "10",
+            "Ward": "140",
+            "Area": "West Mambalam",
+            "Location": "West Mambalam",
+            "Street": "South Kavarai Street"
+        },
+        {
+            "SNo": "331",
+            "Zone": "10",
+            "Ward": "140",
+            "Area": "West Mambalam",
+            "Location": "West Mambalam",
+            "Street": "Sambangi Street"
+        },
+        {
+            "SNo": "332",
+            "Zone": "10",
+            "Ward": "140",
+            "Area": "West Mambalam",
+            "Location": "Panneerselvam Nagar",
+            "Street": "Vandikaran Street"
+        },
+        {
+            "SNo": "333",
+            "Zone": "10",
+            "Ward": "140",
+            "Area": "West Mambalam",
+            "Location": "Panneerselvam Nagar",
+            "Street": "Palmore Street"
+        },
+        {
+            "SNo": "334",
+            "Zone": "10",
+            "Ward": "140",
+            "Area": "Saidapet",
+            "Location": "West Saidapet",
+            "Street": "Old Mambalam Road"
+        },
+        {
+            "SNo": "335",
+            "Zone": "10",
+            "Ward": "140",
+            "Area": "Saidapet",
+            "Location": "West Saidapet",
+            "Street": "Karani Garden I Street"
+        },
+        {
+            "SNo": "336",
+            "Zone": "10",
+            "Ward": "142",
+            "Area": "Saidapet",
+            "Location": "West Saidapet",
+            "Street": "Jones Road"
+        },
+        {
+            "SNo": "337",
+            "Zone": "10",
+            "Ward": "142",
+            "Area": "West Mambalam",
+            "Location": "West Mambalam",
+            "Street": "Thiruvalluvar Street"
+        },
+        {
+            "SNo": "338",
+            "Zone": "10",
+            "Ward": "142",
+            "Area": "Saidapet",
+            "Location": "West Saidapet",
+            "Street": "Ramapuram Ramasamy Street"
+        },
+        {
+            "SNo": "339",
+            "Zone": "10",
+            "Ward": "142",
+            "Area": "Saidapet",
+            "Location": "West Saidapet",
+            "Street": "Kothaval Chavadi Street"
+        },
+        {
+            "SNo": "340",
+            "Zone": "11",
+            "Ward": "143",
+            "Area": "NOLAMBUR",
+            "Location": "4TH BLOCK",
+            "Street": "4TH BLOCK"
+        },
+        {
+            "SNo": "341",
+            "Zone": "11",
+            "Ward": "143",
+            "Area": "NOLAMBUR",
+            "Location": "NOLAMBUR",
+            "Street": "VGN LEPARIZON"
+        },
+        {
+            "SNo": "342",
+            "Zone": "11",
+            "Ward": "143",
+            "Area": "NOLAMBUR",
+            "Location": "NOLAMBUR",
+            "Street": "GAJALAKSHMI NAGAR 5TH  STREET"
+        },
+        {
+            "SNo": "343",
+            "Zone": "11",
+            "Ward": "144",
+            "Area": "MADURAVOYAL",
+            "Location": "AYYAVU NAGAR",
+            "Street": "AYYAVU NAGAR 3RD MAIN ROAD"
+        },
+        {
+            "SNo": "344",
+            "Zone": "11",
+            "Ward": "144",
+            "Area": "MADURAVOYAL",
+            "Location": "Maduravoyal",
+            "Street": "MMDA Colony 31st Street"
+        },
+        {
+            "SNo": "345",
+            "Zone": "11",
+            "Ward": "144",
+            "Area": "MADURAVOYAL",
+            "Location": "Maduravoyal",
+            "Street": "MMDA Colony 2nd Street"
+        },
+        {
+            "SNo": "346",
+            "Zone": "11",
+            "Ward": "144",
+            "Area": "MADURAVOYAL",
+            "Location": "VENKATESWARA NAGAR",
+            "Street": "POLICE LANE, TN POLICE QUARTERS"
+        },
+        {
+            "SNo": "347",
+            "Zone": "11",
+            "Ward": "145",
+            "Area": "NERKUNDRAM",
+            "Location": "MALLIGAI AVENUE",
+            "Street": "MALLIGAI AVENUE"
+        },
+        {
+            "SNo": "348",
+            "Zone": "11",
+            "Ward": "145",
+            "Area": "NERKUNDRAM",
+            "Location": "MOOGAMBIGAI NAGAR",
+            "Street": "MOOGAMBIGAI NAGAR 9TH STREET"
+        },
+        {
+            "SNo": "349",
+            "Zone": "11",
+            "Ward": "145",
+            "Area": "NERKUNDRAM",
+            "Location": "PALLAVAN NAGAR",
+            "Street": "RADDY STREET"
+        },
+        {
+            "SNo": "350",
+            "Zone": "11",
+            "Ward": "145",
+            "Area": "NERKUNDRAM",
+            "Location": "N.T. PATTEL ROAD",
+            "Street": "N.T. PATTEL ROAD MANTHAIVELI"
+        },
+        {
+            "SNo": "351",
+            "Zone": "11",
+            "Ward": "145",
+            "Area": "NERKUNDRAM",
+            "Location": "MOOGAMBIGAI  NAGAR",
+            "Street": "MOKANBIKAINAGAR 2ND MAIN ROAD"
+        },
+        {
+            "SNo": "352",
+            "Zone": "11",
+            "Ward": "145",
+            "Area": "NERKUNDRAM",
+            "Location": "MADA KOIL STREET",
+            "Street": "MADA KOIL STREET"
+        },
+        {
+            "SNo": "353",
+            "Zone": "11",
+            "Ward": "146",
+            "Area": "MADURAVOYAL",
+            "Location": "GANGAIAMMAN NAGAR",
+            "Street": "GANGAIAMMAN NAGAR 1ST STREET 2ND CROSS STREET"
+        },
+        {
+            "SNo": "354",
+            "Zone": "11",
+            "Ward": "146",
+            "Area": "MADURAVOYAL",
+            "Location": "SOUTH MADA STREET",
+            "Street": "SOUTH MADA IST CROSS STREET"
+        },
+        {
+            "SNo": "355",
+            "Zone": "11",
+            "Ward": "148",
+            "Area": "NERKUNDRAM",
+            "Location": "GOVARTHANA NAGAR",
+            "Street": "GOVARTHANA NAGAR 2ND STREET"
+        },
+        {
+            "SNo": "356",
+            "Zone": "11",
+            "Ward": "148",
+            "Area": "NERKUNDRAM",
+            "Location": "JAYARAM NAGAR",
+            "Street": "2ND MAIN ROAD"
+        },
+        {
+            "SNo": "357",
+            "Zone": "11",
+            "Ward": "148",
+            "Area": "NERKUNDRAM",
+            "Location": "JAYARAM NAGAR",
+            "Street": "19TH STREET"
+        },
+        {
+            "SNo": "358",
+            "Zone": "11",
+            "Ward": "148",
+            "Area": "NERKUNDRAM",
+            "Location": "SRILAKSHMI NAGAR",
+            "Street": "SRILAKSHMI NAGAR 1ST MAIN ROAD"
+        },
+        {
+            "SNo": "359",
+            "Zone": "11",
+            "Ward": "149",
+            "Area": "VALASARAVAKKAM",
+            "Location": "RAMAKRISHNA NAGAR",
+            "Street": "C.V. RAMAN STREET"
+        },
+        {
+            "SNo": "360",
+            "Zone": "11",
+            "Ward": "150",
+            "Area": "KARAMBAKKAM",
+            "Location": "SAMAYAPURAM NAGAR",
+            "Street": "4TH STREET"
+        },
+        {
+            "SNo": "361",
+            "Zone": "11",
+            "Ward": "150",
+            "Area": "KARAMBAKKAM",
+            "Location": "MARUTHI NAGAR",
+            "Street": "MARUTHI NAGAR NEHRU STREET"
+        },
+        {
+            "SNo": "362",
+            "Zone": "11",
+            "Ward": "150",
+            "Area": "KARAMBAKKAM",
+            "Location": "RAJESWARAI NAGAR",
+            "Street": "3RD STREET"
+        },
+        {
+            "SNo": "363",
+            "Zone": "11",
+            "Ward": "150",
+            "Area": "KARAMBAKKAM",
+            "Location": "KARAMBAKKAM",
+            "Street": "VISWANATHAN 2ND STREET"
+        },
+        {
+            "SNo": "364",
+            "Zone": "11",
+            "Ward": "150",
+            "Area": "KARAMBAKKAM",
+            "Location": "RAJESWARI NAGAR",
+            "Street": "RAJESWARI NAGAR MAIN ROAD"
+        },
+        {
+            "SNo": "365",
+            "Zone": "11",
+            "Ward": "150",
+            "Area": "KARAMBAKKAM",
+            "Location": "THUNDALAM ANNA NAGAR",
+            "Street": "SANATHI STREET"
+        },
+        {
+            "SNo": "366",
+            "Zone": "11",
+            "Ward": "150",
+            "Area": "KARAMBAKKAM",
+            "Location": "THUNDALAM",
+            "Street": "APPADURAI PILLAI STREET"
+        },
+        {
+            "SNo": "367",
+            "Zone": "11",
+            "Ward": "151",
+            "Area": "PORUR",
+            "Location": "CHINNA PORUR",
+            "Street": "CHINNA PORUR ANNA SALAI"
+        },
+        {
+            "SNo": "368",
+            "Zone": "11",
+            "Ward": "152",
+            "Area": "VALASARAVAKKAM",
+            "Location": "INDIRA NAGAR",
+            "Street": "KARAIKAL AMMAYAR 2ND CROSS ST"
+        },
+        {
+            "SNo": "369",
+            "Zone": "11",
+            "Ward": "152",
+            "Area": "VALASARAVAKKAM",
+            "Location": "JANAKI NAGAR",
+            "Street": "PRAKASAM STREET"
+        },
+        {
+            "SNo": "370",
+            "Zone": "11",
+            "Ward": "152",
+            "Area": "VALASARAVAKKAM",
+            "Location": "SUBRAMANIASWAMY NAGAR",
+            "Street": "SUBRAMANIASWAMY NAGAR 3RD STREET"
+        },
+        {
+            "SNo": "371",
+            "Zone": "11",
+            "Ward": "155",
+            "Area": "RAMAPURAM",
+            "Location": "GANDHI NAGAR",
+            "Street": "GANDHI NAGAR 4TH STREET"
+        },
+        {
+            "SNo": "372",
+            "Zone": "11",
+            "Ward": "155",
+            "Area": "RAMAPURAM",
+            "Location": "THIRUMALAI NAGAR",
+            "Street": "THIRUMALAI NAGAR 2ND STREET"
+        },
+        {
+            "SNo": "373",
+            "Zone": "11",
+            "Ward": "155",
+            "Area": "RAMAPURAM",
+            "Location": "RAMAPURAM",
+            "Street": "BHARATHI SALAI"
+        },
+        {
+            "SNo": "374",
+            "Zone": "11",
+            "Ward": "155",
+            "Area": "RAMAPURAM",
+            "Location": "THIRUMALAI NAGAR",
+            "Street": "THIRUMALAI NAGAR NATRAJAN SALAI"
+        },
+        {
+            "SNo": "375",
+            "Zone": "12",
+            "Ward": "156",
+            "Area": "MUGALIVAKKAM",
+            "Location": "MUGALIVAKKAM",
+            "Street": "A.G.S. COLONY SABARI NAGAR EXTENSION"
+        },
+        {
+            "SNo": "376",
+            "Zone": "12",
+            "Ward": "156",
+            "Area": "MUGALIVAKKAM",
+            "Location": "MUGALIVAKKAM",
+            "Street": "SUBHASHREE NAGAR EXTN-II, 6TH CROSS STREET"
+        },
+        {
+            "SNo": "377",
+            "Zone": "12",
+            "Ward": "156",
+            "Area": "MUGALIVAKKAM",
+            "Location": "MUGALIVAKKAM",
+            "Street": "PADASALAI STREET"
+        },
+        {
+            "SNo": "378",
+            "Zone": "12",
+            "Ward": "156",
+            "Area": "MUGALIVAKKAM",
+            "Location": "MUGALIVAKKAM",
+            "Street": "SUBHASHREE NAGAR EXTN-6"
+        },
+        {
+            "SNo": "379",
+            "Zone": "12",
+            "Ward": "156",
+            "Area": "MUGALIVAKKAM",
+            "Location": "MUGALIVAKKAM",
+            "Street": "AGS COLONY PHASEÂ¿III 2ND AVENUE CROSS SOUTH STREET"
+        },
+        {
+            "SNo": "380",
+            "Zone": "12",
+            "Ward": "156",
+            "Area": "MUGALIVAKKAM",
+            "Location": "MUGALIVAKKAM",
+            "Street": "ANNAI VELANKANNI NAGAR 9TH STREET"
+        },
+        {
+            "SNo": "381",
+            "Zone": "12",
+            "Ward": "157",
+            "Area": "MANAPAKKAM",
+            "Location": "MANAPAKKAM",
+            "Street": "M.G.R.NAGAR"
+        },
+        {
+            "SNo": "382",
+            "Zone": "12",
+            "Ward": "157",
+            "Area": "MANAPAKKAM",
+            "Location": "MANAPAKKAM",
+            "Street": "C.R.R. PURAM Â¿ 1ST MAIN ROAD"
+        },
+        {
+            "SNo": "383",
+            "Zone": "12",
+            "Ward": "157",
+            "Area": "MANAPAKKAM",
+            "Location": "MANAPAKKAM",
+            "Street": "SATHIYA NAGAR"
+        },
+        {
+            "SNo": "384",
+            "Zone": "12",
+            "Ward": "157",
+            "Area": "MANAPAKKAM",
+            "Location": "MANAPAKKAM",
+            "Street": "CHAMBER ROAD"
+        },
+        {
+            "SNo": "385",
+            "Zone": "12",
+            "Ward": "157",
+            "Area": "MANAPAKKAM",
+            "Location": "MANAPAKKAM",
+            "Street": "VALEESWARAN KOIL STREET"
+        },
+        {
+            "SNo": "386",
+            "Zone": "12",
+            "Ward": "158",
+            "Area": "NANDAMBAKKAM",
+            "Location": "BURMA COLONY",
+            "Street": "BURMA COLONY 4TH STREET"
+        },
+        {
+            "SNo": "387",
+            "Zone": "12",
+            "Ward": "158",
+            "Area": "NANDAMBAKKAM",
+            "Location": "I.D.P.L. COLONY",
+            "Street": "I.D.P.L. COLONY"
+        },
+        {
+            "SNo": "388",
+            "Zone": "12",
+            "Ward": "161",
+            "Area": "ADAMBAKKAM",
+            "Location": "ADAMBAKKAM",
+            "Street": "VALLALAR STREET"
+        },
+        {
+            "SNo": "389",
+            "Zone": "12",
+            "Ward": "161",
+            "Area": "ALANDUR",
+            "Location": "ALANDUR",
+            "Street": "MKN ROAD"
+        },
+        {
+            "SNo": "390",
+            "Zone": "12",
+            "Ward": "162",
+            "Area": "ALANDUR",
+            "Location": "ALANDUR",
+            "Street": "KANNAN COLONY 1ST STREET"
+        },
+        {
+            "SNo": "391",
+            "Zone": "12",
+            "Ward": "162",
+            "Area": "ALANDUR",
+            "Location": "ALANDUR",
+            "Street": "KANNAN COLONY 5TH STREET"
+        },
+        {
+            "SNo": "392",
+            "Zone": "12",
+            "Ward": "162",
+            "Area": "ALANDUR",
+            "Location": "M.K.N.ROAD",
+            "Street": "MORRISON 3RD STREET"
+        },
+        {
+            "SNo": "393",
+            "Zone": "12",
+            "Ward": "162",
+            "Area": "THILLAI GANGANAGAR",
+            "Location": "NANGANALLUR",
+            "Street": "THILLAIGANGA NAGAR 38TH STREET"
+        },
+        {
+            "SNo": "394",
+            "Zone": "12",
+            "Ward": "165",
+            "Area": "ADAMBAKKAM",
+            "Location": "ADAMBAKKAM",
+            "Street": "BHARATHIDASAN 1ST STREET"
+        },
+        {
+            "SNo": "395",
+            "Zone": "12",
+            "Ward": "165",
+            "Area": "ADAMBAKKAM",
+            "Location": "ADAMBAKKAM",
+            "Street": "VEL NAGAR EXTN"
+        },
+        {
+            "SNo": "396",
+            "Zone": "12",
+            "Ward": "165",
+            "Area": "NANGANALLUR",
+            "Street": "SUNDARA MURTHY STREET"
+        },
+        {
+            "SNo": "397",
+            "Zone": "12",
+            "Ward": "167",
+            "Area": "NANGANALLUR",
+            "Location": "NEAR HINDU COLONY",
+            "Street": "MMTC COLONY MAIN ROAD"
+        },
+        {
+            "SNo": "398",
+            "Zone": "13",
+            "Ward": "170",
+            "Area": "Ekkattuthangal",
+            "Location": "Gandhi Nagar",
+            "Street": "Lakshmi Vinayagar Street"
+        },
+        {
+            "SNo": "399",
+            "Zone": "13",
+            "Ward": "170",
+            "Area": "Ekkattuthangal",
+            "Location": "Ekkattuthangal",
+            "Street": "Jawaharlal Nehru Road"
+        },
+        {
+            "SNo": "400",
+            "Zone": "13",
+            "Ward": "170",
+            "Area": "Guindy",
+            "Location": "Labour Colony",
+            "Street": "Labour Colony Main Road"
+        },
+        {
+            "SNo": "401",
+            "Zone": "13",
+            "Ward": "171",
+            "Area": "Saidapet",
+            "Location": "Todhunter Nagar",
+            "Street": "PWD QUARTERS"
+        },
+        {
+            "SNo": "402",
+            "Zone": "13",
+            "Ward": "171",
+            "Area": "Guindy",
+            "Location": "Rajbhavan",
+            "Street": "Sardar Patel Road"
+        },
+        {
+            "SNo": "403",
+            "Zone": "13",
+            "Ward": "172",
+            "Area": "Kottur",
+            "Location": "Kottur",
+            "Street": "Sardar Patel Road"
+        },
+        {
+            "SNo": "404",
+            "Zone": "13",
+            "Ward": "172",
+            "Area": "Kottur",
+            "Location": "Kottur",
+            "Street": "Naidu Street"
+        },
+        {
+            "SNo": "405",
+            "Zone": "13",
+            "Ward": "172",
+            "Area": "Kottur",
+            "Location": "Kottur",
+            "Street": "Perumal Koil Lane"
+        },
+        {
+            "SNo": "406",
+            "Zone": "13",
+            "Ward": "174",
+            "Area": "Velachery",
+            "Location": "Nehru Nagar",
+            "Street": "Govindasamy Street"
+        },
+        {
+            "SNo": "407",
+            "Zone": "13",
+            "Ward": "174",
+            "Area": "Velachery",
+            "Location": "Velachery",
+            "Street": "Five Furlong Road"
+        },
+        {
+            "SNo": "408",
+            "Zone": "13",
+            "Ward": "174",
+            "Area": "Velachery",
+            "Location": "Mosque Colony",
+            "Street": "Mosque Colony 5th Street"
+        },
+        {
+            "SNo": "409",
+            "Zone": "13",
+            "Ward": "176",
+            "Area": "Besant Nagar",
+            "Location": "Kakkan Colony",
+            "Street": "Kakkan Colony"
+        },
+        {
+            "SNo": "410",
+            "Zone": "13",
+            "Ward": "177",
+            "Area": "Velachery West",
+            "Location": "Dr. Ambedkar Nagar",
+            "Street": "Dr. Ambedkar Nagar  1st Main Road"
+        },
+        {
+            "SNo": "411",
+            "Zone": "13",
+            "Ward": "178",
+            "Area": "Velachery East",
+            "Location": "Lakshmipuram",
+            "Street": "Lakshmipuram Main Road"
+        },
+        {
+            "SNo": "412",
+            "Zone": "13",
+            "Ward": "180",
+            "Area": "Taramani",
+            "Location": "Thanthai Periyar Nagar",
+            "Street": "Ramasamy Street"
+        },
+        {
+            "SNo": "413",
+            "Zone": "13",
+            "Ward": "180",
+            "Area": "Tharamani",
+            "Location": "Bharathi Nagar",
+            "Street": "Gangai Cross Street"
+        },
+        {
+            "SNo": "414",
+            "Zone": "13",
+            "Ward": "181",
+            "Area": "Thiruvanmiyur",
+            "Location": "Lakshmipuram",
+            "Street": "Irusappan Street"
+        },
+        {
+            "SNo": "415",
+            "Zone": "13",
+            "Ward": "181",
+            "Area": "Thiruvanmiyur",
+            "Location": "Lakshimipuram",
+            "Street": "Kumaraguru 2nd Street"
+        },
+        {
+            "SNo": "416",
+            "Zone": "14",
+            "Ward": "168",
+            "Area": "Ullagaram",
+            "Location": "MATHIYAZHAGAN STREET",
+            "Street": "MATHIYAZHAGAN STREET"
+        },
+        {
+            "SNo": "417",
+            "Zone": "14",
+            "Ward": "168",
+            "Area": "Ullagaram",
+            "Location": "KAMARAJ STREET",
+            "Street": "KAMARAJ STREET"
+        },
+        {
+            "SNo": "418",
+            "Zone": "14",
+            "Ward": "168",
+            "Area": "Ullagaram",
+            "Location": "M.G.R.MAIN ROAD",
+            "Street": "M.G.R.MAIN ROAD"
+        },
+        {
+            "SNo": "419",
+            "Zone": "14",
+            "Ward": "168",
+            "Area": "Ullagaram",
+            "Location": "AMBEDKAR 1st CROSS STREET",
+            "Street": "AMBEDKAR 1st CROSS STREET"
+        },
+        {
+            "SNo": "420",
+            "Zone": "14",
+            "Ward": "168",
+            "Area": "Ullagaram",
+            "Location": "RAMALINGAM STREET",
+            "Street": "RAMALINGAM STREET"
+        },
+        {
+            "SNo": "421",
+            "Zone": "14",
+            "Ward": "168",
+            "Area": "Ullagaram",
+            "Location": "Balammal Nagar",
+            "Street": "BALAMMAL NAGAR 1ST STREET"
+        },
+        {
+            "SNo": "422",
+            "Zone": "14",
+            "Ward": "169",
+            "Area": "Puzhuthivakkam",
+            "Location": "Jaya Nagar",
+            "Street": "JAYA NAGAR"
+        },
+        {
+            "SNo": "423",
+            "Zone": "14",
+            "Ward": "169",
+            "Area": "Puzhuthivakkam",
+            "Location": "Balaji Nagar",
+            "Street": "BALAJI NAGAR EAST EXTN. 2ND 30TH STREET"
+        },
+        {
+            "SNo": "424",
+            "Zone": "14",
+            "Ward": "169",
+            "Area": "Ullagaram",
+            "Location": "VIGNESWARA NAGAR",
+            "Street": "VIGNESWARA NAGAR CROSS STREET"
+        },
+        {
+            "SNo": "425",
+            "Zone": "14",
+            "Ward": "184",
+            "Area": "Perungudi",
+            "Location": "Perungudi",
+            "Street": "Jagajeevanram Street"
+        },
+        {
+            "SNo": "426",
+            "Zone": "14",
+            "Ward": "185",
+            "Area": "Palavakkam",
+            "Location": "Palkalai ngr",
+            "Street": "Palkalai nagar 2nd  link street"
+        },
+        {
+            "SNo": "427",
+            "Zone": "14",
+            "Ward": "185",
+            "Area": "Palavakkam",
+            "Location": "East Coast Road",
+            "Street": "Panchayat  street"
+        },
+        {
+            "SNo": "428",
+            "Zone": "14",
+            "Ward": "185",
+            "Area": "Palavakkam",
+            "Location": "Palavakkam Kuppam",
+            "Street": "Palavakkam Kuppam"
+        },
+        {
+            "SNo": "429",
+            "Zone": "14",
+            "Ward": "187",
+            "Area": "Madipakkam",
+            "Location": "Easwaran Koil 2nd Cross St.",
+            "Street": "Easwaran Koil 2nd Cross St."
+        },
+        {
+            "SNo": "430",
+            "Zone": "14",
+            "Ward": "187",
+            "Area": "Madipakkam",
+            "Location": "New Kubera Nagar",
+            "Street": "New Kubera Nagar 4st Street"
+        },
+        {
+            "SNo": "431",
+            "Zone": "14",
+            "Ward": "188",
+            "Area": "Madipakkam",
+            "Location": "Balaiyah Garden",
+            "Street": "Balaiyah Garden"
+        },
+        {
+            "SNo": "432",
+            "Zone": "14",
+            "Ward": "190",
+            "Area": "Pallikaranai",
+            "Location": "Pallikaranai",
+            "Street": "Vivekanantha Street"
+        },
+        {
+            "SNo": "433",
+            "Zone": "14",
+            "Ward": "190",
+            "Area": "Pallikaranai",
+            "Location": "Lakshmi Narayana Perumal Koil Street",
+            "Street": "Lakshmi Narayana Perumal Koil Street"
+        },
+        {
+            "SNo": "434",
+            "Zone": "14",
+            "Ward": "190",
+            "Area": "Pallikaranai",
+            "Location": "Vallal Pari Nagar",
+            "Street": "Vallal Pari Nagar 9th Street"
+        },
+        {
+            "SNo": "435",
+            "Zone": "14",
+            "Ward": "191",
+            "Area": "Jaladianpet",
+            "Location": "Nesavalar Nagar",
+            "Street": "RajeevGandhi Street"
+        },
+        {
+            "SNo": "436",
+            "Zone": "15",
+            "Ward": "192",
+            "Area": "NEELANGARAI",
+            "Location": "NEELANGARAI",
+            "Street": "SHYAMALA STREET"
+        },
+        {
+            "SNo": "437",
+            "Zone": "15",
+            "Ward": "192",
+            "Area": "NEELANGARAI",
+            "Location": "NEELANGARAI",
+            "Street": "PILLAIYAR KOIL STREET"
+        },
+        {
+            "SNo": "438",
+            "Zone": "15",
+            "Ward": "192",
+            "Area": "NEELANGARAI",
+            "Location": "BHARATHIYAR NAGAR",
+            "Street": "BHARATHIYAR NAGAR   3RD STREET"
+        },
+        {
+            "SNo": "439",
+            "Zone": "15",
+            "Ward": "193",
+            "Area": "THORAIPAKKAM",
+            "Location": "GANESH NAGAR",
+            "Street": "GANESH NAGAR 2ND ST"
+        },
+        {
+            "SNo": "440",
+            "Zone": "15",
+            "Ward": "193",
+            "Area": "THORAIPAKKAM",
+            "Location": "THORAIPAKKAM",
+            "Street": "KULAKKARAI STREET"
+        },
+        {
+            "SNo": "441",
+            "Zone": "15",
+            "Ward": "194",
+            "Area": "THORAIPAKKAM",
+            "Location": "METTU KUPPAM",
+            "Street": "METTUKUPPAM"
+        },
+        {
+            "SNo": "442",
+            "Zone": "15",
+            "Ward": "194",
+            "Area": "THORAIPAKKAM",
+            "Location": "METTU KUPPAM",
+            "Street": "METTU KUPPAM PILLAYARKOIL ST"
+        },
+        {
+            "SNo": "443",
+            "Zone": "15",
+            "Ward": "194",
+            "Area": "THORAIPAKKAM",
+            "Location": "VENKATESWARA NAGAR",
+            "Street": "VENKATESWARA NAGAR ROAD"
+        },
+        {
+            "SNo": "444",
+            "Zone": "15",
+            "Ward": "196",
+            "Area": "INJAMBAKKAM",
+            "Location": "INJAMBAKKAM",
+            "Street": "CHOZHAMANDALA DEVI VI STREET"
+        },
+        {
+            "SNo": "445",
+            "Zone": "15",
+            "Ward": "197",
+            "Area": "KARAPAKKAM",
+            "Location": "THENDRAL NAGAR",
+            "Street": "KCG COLLEGE SALAI"
+        },
+        {
+            "SNo": "446",
+            "Zone": "15",
+            "Ward": "200",
+            "Area": "SEMMANCHERY",
+            "Location": "SEMMANCHERY",
+            "Street": "THULLUKANATHAMMAN KOIL STREET"
+        },
+        {
+            "SNo": "447",
+            "Zone": "15",
+            "Ward": "200",
+            "Area": "SEMMANCHERI",
+            "Location": "SEMMANCHERI",
+            "Street": "TNSCB 11TH CROSS STREET"
+        }
+    ]
+}
