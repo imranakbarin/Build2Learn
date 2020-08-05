@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png')}}">
     <link rel="manifest" href="{{ url_for('static', filename='images/site.webmanifest')}}">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/css/sortable-theme-bootstrap.min.css" integrity="sha512-l4chbxj3b7jYgOu1K4jjYscdqLL9zrVYnqMJcKTjpePcj5yc/7QWFBP9x/mp2IcX+ilWi+Tr915vLC4D7RxCtg==" crossorigin="anonymous" />
 
    </head>
 
@@ -235,7 +235,7 @@
 
 <div class="container text-center">
 <div class="table-responsive">  
-<table class="table table-hover table-sm" data-sortable id="covidTable">
+<table class="sortable-theme-light table table-hover table-sm" data-sortable id="covidTable">
   <thead class="thead-light">
     <tr>
       <th scope="col">District</th>
@@ -265,6 +265,9 @@
 		  <p><strong>Note: </strong>Recovered data is subject to further verification.</p>
 		</div>
   </div>
+
+<a href="">Test</a>
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -272,5 +275,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/js/sortable.min.js" integrity="sha256-gCtdA1cLK2EhQZCMhhvGzUsWM/fsxtJ2IImUJ+4UOP8=" crossorigin="anonymous"></script>
+  
   </body>
 </html>
