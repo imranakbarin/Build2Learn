@@ -234,12 +234,12 @@
 
 
 <div class="container text-center">
-
-<table class="sortable-theme-light" data-sortable id="covidTable">
+<div class="table-responsive">  
+<table class="js-sort-table table table-hover table-sm">
   <thead class="thead-light">
     <tr>
-      <th scope="col">District</th>
-      <th class="" scope="col">Active</th>
+      <th scope="col" class="js-sort-string">District</th>
+      <th class="js-sort-number" scope="col">Active</th>
       <th class="" scope="col">Confirmed</th>
       <th class="" scope="col">Deceased</th>
       <th class="" scope="col">Recovered</th>
@@ -260,7 +260,7 @@
    </tbody>
  </table>
 </div>
-
+</div>
 		<div class="alert alert-primary pb-0 align-left" role="alert">
 		  <p><strong>Note: </strong>Recovered data is subject to further verification.</p>
 		</div>
@@ -275,6 +275,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/js/sortable.min.js" integrity="sha256-gCtdA1cLK2EhQZCMhhvGzUsWM/fsxtJ2IImUJ+4UOP8=" crossorigin="anonymous"></script>
-  
+    <script  src="{{ url_for('static', filename='js/sort-table.js')}}" />
   </body>
 </html>
