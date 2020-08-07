@@ -51,4 +51,6 @@ For News API to work, get api key from https://newsapi.org/
 
 #### Thank you :)
 
+### If you are willing to contribute, we would love it!
+
 ### Thanks to Covid19 India for APIs https://api.covid19india.org/
