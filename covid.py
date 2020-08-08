@@ -70,7 +70,7 @@ class covid():
 #Chennai Zonal Wise Data
 
     def getChennaizones(self):
-        url = "https://v2-api.sheety.co/be53bea9995480777df56e14adcfd93b/covid19Chennai/cases"
+        url = "https://v2-api.sheety.co/9b810596b61530e455e40ea4e0b5a1a1/chennaiCovid19/cases"
         data = self.callApi(url,None)
         #Sorting data using date
         sorted_data = sorted(data['cases'], key=lambda x: datetime.strptime(x['date'].strip(), '%Y-%m-%d'), reverse = True)
