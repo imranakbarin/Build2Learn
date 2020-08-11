@@ -158,8 +158,8 @@
         datasetB = {{deceased_list1}}
       }
         var case_type = flag.charAt(0).toUpperCase() + flag.slice(1)
-		    myChart.config.data.datasets[0].data = datasetA;
-        myChart.config.data.datasets[1].data = datasetB;
+		    myChart.config.data.datasets[0].data = datasetB;
+        myChart.config.data.datasets[1].data = datasetA;
         myChart.config.data.datasets[0].label = case_type + " cases"
         myChart.config.options.title.text = "Last 2 days Chennai zone wise "+ case_type +" cases"
 				myChart.update();
