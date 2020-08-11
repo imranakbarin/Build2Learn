@@ -4,7 +4,7 @@
         {% endblock %}
         {% block content %}
         
-<h5 class="display-6 mt-1 text-center">Chennai Streets reporting with Corona Positive Cases(11-08-2020)</h5>
+<h5 class="display-6 mt-1 text-center">{{datetitle}}</h5>
 
 <div class="alert alert-warning text-center" role="alert">
  <small>Data contains for Street level reporting of corona positive cases in chennai shared by Chennai Corporation, use the search below to instantly search your area</small>
@@ -31,9 +31,9 @@
   <tbody>
   {% for street in chennailist  %}
     <tr>
-      <td>{{street['Area'] | capitalize}}</td>
-      <td>{{street['Location'] | capitalize}}</td>
-      <td>{{street['Street'] | capitalize}}</td>
+      <td>{{street['area'] | capitalize}}</td>
+      <td>{{street['location'] | capitalize}}</td>
+      <td>{{street['street'] | capitalize}}</td>
     </tr>
      {% endfor %}
    </tbody>
