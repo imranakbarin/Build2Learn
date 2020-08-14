@@ -117,7 +117,7 @@ def chennaizonalreport():
         FormattedDate = datetime.strptime(response[0]['date'].strip(), "%Y-%m-%d").strftime("%A, %d %b %Y")
         zones_chennai = response[:16]
         zones_chennaiOneday = response[16:32]
-        Last_twentydays = response[:16*20]
+        Last_twentydays = response[:16*30]
         #Chennai Data Charts
         Chennai_dict = {}
         chennai_date = []

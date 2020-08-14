@@ -97,7 +97,7 @@ function plotChennaiChartSeries(dict_Chennai) {
             },
             title: {
                 display: true,
-                text: 'Chennai Last 20 days'
+                text: 'Chennai Last 30 days'
             },
             elements: {
                 point: {
