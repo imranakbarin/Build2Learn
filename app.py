@@ -232,7 +232,7 @@ def newspage():
 #Chennai Street wise
 @app.route("/chennaicovidlist")
 def chennaistreetwise():
-     StreetChennaiCovid = covid(None, None)
+     StreetChennaiCovid = covid(None, None) 
      try:
         # with codecs.open('static/json/chennai_data_11.json','r', 'utf-8-sig') as f:
         #     chennaidata = json.load(f)

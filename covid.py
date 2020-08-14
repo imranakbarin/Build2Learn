@@ -79,7 +79,7 @@ class covid():
     def getChennaiStreet(self):
         url = "https://v2-api.sheety.co/9b810596b61530e455e40ea4e0b5a1a1/chennaiCovid19/chennaidata"
         data = self.callApi(url,None)
-        #Sorting data using date
+        #Sorting data using date 
         return data['chennaidata']
 
 #really dont want the title to be stored in separate Json, Need to find a way
