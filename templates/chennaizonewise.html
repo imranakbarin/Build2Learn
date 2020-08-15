@@ -30,9 +30,9 @@
         
       </tr>
       <tr class="">
-        <td><b>{{ onlychennai_data['hospitalized'][19] | safe | comafy}}<b></td>
-        <td><b> {{onlychennai_data['recovered'][19] | safe | comafy}} </b></div></td>
-        <td><b>{{onlychennai_data['deceased'][19] | safe | comafy}} </b> </td>
+        <td><b>{{ onlychennai_data['hospitalized'][-1] | safe | comafy}}<b></td>
+        <td><b> {{onlychennai_data['recovered'][-1] | safe | comafy}} </b></div></td>
+        <td><b>{{onlychennai_data['deceased'][-1] | safe | comafy}} </b> </td>
       </tr>
       </tbody>
   </table>

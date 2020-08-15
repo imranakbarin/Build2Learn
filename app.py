@@ -163,7 +163,6 @@ def chennaizonalreport():
         recovered_list1 = [recovered_list1['recovered'] for recovered_list1 in zones_chennaiOneday]
         deceased_list1 =  [deceased_list1['deceased'] for deceased_list1 in zones_chennaiOneday]
         
-        
         return render_template('chennaizonewise.html', onlychennai_data = Chennai_dict,chennaidata = zones_chennai, formatteddate = FormattedDate,
                                zones_list=zones_list,active_list=active_list,recovered_list=recovered_list,
                                deceased_list=deceased_list,fivedaysstat = dict_list, active_list1 = active_list1, 
