@@ -3,7 +3,8 @@
         {{State}} Covid-19 India
         {% endblock %}
         {% block content %}
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="{{ url_for('static', filename='js/india_chart.js') }}"></script>
 <!--<div>
 <img src="{{ url_for('static', filename='images/india-flag-button-round-icon-64.png')}}" class ="img-fluid" alt="India Flag"> 
 </div> -->
@@ -71,9 +72,42 @@
 
    </tbody>
  </table>
-
+<hr>
+<div class="alert alert-secondary align-center">
+<button type="button" class="btn btn-link" onclick="chartChange('confirm')">C </button> |
+<button type="button" class="btn btn-link" onclick="chartChange('active')">A</button> |
+<button type="button" class="btn btn-link" onclick="chartChange('recovered')">R</button> |
+<button type="button" class="btn btn-link" onclick="chartChange('death')">D</button> 
+ <canvas id="indiaChart" width="400" height="250"></canvas>
+ </div>
+<hr>
 	<div class="alert alert-primary align-center">
 		  <small><strong> Note:  </strong>Recovered data is subject to further verification.</small>
  	</div>
+
+<script>
+
+var india_data = {{ statedatalist | safe }}
+   var indiastate_list = [];
+   var india_confirmedlist = [];
+   var india_activelist = [];
+   var india_deceasedlist = [];
+   var india_recoveredlist = [];
+
+    for (var key in india_data) {
+        // arr.push(test[key]['date']);
+        if(india_data[key]['statecode'] != 'TT'){
+        india_confirmedlist.push(india_data[key]['confirmed'])
+        india_activelist.push(india_data[key]['active']);
+        india_deceasedlist.push(india_data[key]['deaths']);
+        india_recoveredlist.push(india_data[key]['recovered']);
+        indiastate_list.push(india_data[key]['state'])
+        }
+    }
+    plotIndiaChart();
+
+
+</script>
+
 
          {% endblock %}
