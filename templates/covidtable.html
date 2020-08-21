@@ -113,7 +113,7 @@
 
 <div class="container">
 <div class="table-responsive">  
-<table class="table table-striped table-sm text-md-center text-lg-center">
+<table class="table table-striped table-sm text-md-center text-lg-center display" id="myTable">
   <thead class="thead-light">
     <tr>
       <th scope="col">District</th>
@@ -152,4 +152,5 @@
 		<div class="alert alert-primary align-center" role="alert">
 		  <small><strong> Note:  </strong>Recovered data is subject to further verification.</small>
 		</div>
+    <script  src="{{ url_for('static', filename='js/tablescript.js')}}" > </script>
         {% endblock %}
