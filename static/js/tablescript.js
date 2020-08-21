@@ -4,7 +4,7 @@ $(document).ready(function() {
         "searching": false,
         "info": false,
         "order": [
-            [1, "desc"]
+            [2, "desc"]
         ]
     });
 });
