@@ -235,25 +235,25 @@
 
 <div class="container text-center">
 <div class="table-responsive">  
-<table class="js-sort-table table table-hover table-sm">
+<table class="table table-hover table-sm display" id="myTable">
   <thead class="thead-light">
     <tr>
-      <th scope="col" class="js-sort-string">District</th>
-      <th class="js-sort-number" scope="col">Active</th>
-      <th class="" scope="col">Confirmed</th>
-      <th class="" scope="col">Deceased</th>
-      <th class="" scope="col">Recovered</th>
+      <th scope="col" onclick="" style="cursor:pointer">District</th>
+      <th onclick="" style="cursor:pointer">Active</th>
+      <th class="" scope="col" onclick="" style="cursor:pointer">Confirmed</th>
+      <th class="" scope="col" onclick="" style="cursor:pointer">Deceased</th>
+      <th class="" scope="col" onclick="" style="cursor:pointer">Recovered</th>
     </tr>
   </thead>
   <tbody>
   {% for District in Statedata %}
   {% set Dataval = District %}
-      <tr>
-      <th scope="row" class="text-sm-left">{{District}}</th>
-      <td>{{Statedata[District]['active']}}</td>
-      <td>{{Statedata[District]['confirmed']}}</td>
-      <td class="text-danger">{{Statedata[District]['deceased']}}</td>
-      <td class="text-success">{{Statedata[District]['recovered']}}</td>
+      <tr class="item">
+      <th scope="row" class="text-sm-left">{{District | safe }}</th>
+      <td>{{Statedata[District]['active'] | safe}}</td>
+      <td>{{Statedata[District]['confirmed'] | safe}}</td>
+      <td class="text-danger">{{Statedata[District]['deceased']| safe}}</td>
+      <td class="text-success">{{Statedata[District]['recovered'] | safe}}</td>
        </tr>
      {% endfor %}
 
@@ -270,11 +270,23 @@
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
    <!-- <script src="{{ url_for('static', filename='js/jquery.countup.js')}}"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/js/sortable.min.js" integrity="sha256-gCtdA1cLK2EhQZCMhhvGzUsWM/fsxtJ2IImUJ+4UOP8=" crossorigin="anonymous"></script>
-    <script  src="{{ url_for('static', filename='js/sort-table.js')}}" />
+    <script  src="{{ url_for('static', filename='js/sort-table.js')}}" > </script>
+    <script  src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+ <script>
+ $(document).ready(function() {
+    $('#myTable').DataTable({ "paging":   false,
+       "searching": false,
+        "info":     false,
+        "order": [[ 1, "desc" ]]});
+} );
+</script>
+ 
   </body>
 </html>
