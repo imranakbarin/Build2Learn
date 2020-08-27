@@ -46,11 +46,29 @@ pip install -r requirements.txt
 flask run
 ```
 
+### API Available for Chennai Covid-19 Cases, that can be consumed
+
+### Chennai Covid-19 Zone-wise Timeseries(Updated Everyday)
+
+```
+https://v2-api.sheety.co/9b810596b61530e455e40ea4e0b5a1a1/chennaiCovid19/cases
+```
+
+### Chennai Street-Wise Report(Everyday or based on the updates from Chennai Corporation)
+
+```
+https://v2-api.sheety.co/9b810596b61530e455e40ea4e0b5a1a1/chennaiCovid19/chennaidata
+
+For now have to rely on separte API for getting the date for Street-Wise from below End point
+
+https://v2-api.sheety.co/9b810596b61530e455e40ea4e0b5a1a1/chennaiCovid19/title
+```
+
+
 For News API to work, get api key from https://newsapi.org/ 
-
-
-#### Thank you :)
 
 ### If you are willing to contribute, we would love it!
 
 ### Thanks to Covid19 India for APIs https://api.covid19india.org/
+
+#### Thank you :)
