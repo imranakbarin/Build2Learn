@@ -7,7 +7,7 @@
 <h5 class="display-6 mt-1 text-center">{{datetitle}}</h5>
 
 <div class="alert alert-warning text-center" role="alert">
- <small>Data contains for Street level reporting of corona positive cases in chennai shared by Chennai Corporation, use the search below to instantly search your area</small>
+ <small>Data contains for Street level reporting of corona positive cases in chennai shared by Chennai Corporation, use the search below to find cases in your area</small>
 </div>
    
 <small class="text-muted mt-1 text-center">Chennai Zonal Stats <a href="{{ url_for('chennaizonalreport') }}">report</a></small>
@@ -20,7 +20,7 @@
 </div>
 
 <div class="table-responsive">    
- <table class="table table-striped order-table table-sm">
+ <table class="table table-striped order-table table-sm display" id="myChennaiTable">
   <thead class="thead-light">
     <tr>
       <th scope="col">Area</th>
@@ -43,5 +43,17 @@
 <div class="alert alert-info" role="alert">
   <small>Data extracted from <a href="https://www.chennaicorporation.gov.in/images/POSITIVECASES.pdf" target="_blank" rel="noopener noreferrer"> Greater Chennai Corporation </a> Page 
 </div>
+
+<script>
+$(document).ready(function() {
+    $('#myChennaiTable').DataTable({
+        "paging": false,
+        "searching": false,
+        "info": false
+        
+    });
+});
+
+</script>
 
 {% endblock %}
