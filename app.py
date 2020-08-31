@@ -241,6 +241,32 @@ def chennaistreetwise():
      except Exception as e:
         print(e)
         return render_template("error-404.html")
+    
+    
+#Chennai API Section
+
+@app.route('/api/chennaizones/cases', methods = ['GET']) 
+def ChennaiZoneCases(): 
+     covid19 = covid(None,None)
+     try:
+        response = covid19.getChennaizones()
+        return jsonify({"success": True, "cases":response})
+     except Exception as e:
+        print(e)
+        return jsonify({"success": False})
+
+@app.route('/api/chennaiStreet/daily', methods = ['GET']) 
+def ChennaiStreetwiseCases(): 
+     covid19 = covid(None,None)
+     try:
+        response = covid19.getChennaiStreet()
+        titledata = covid19.getDatetitle()
+        return jsonify({"success": True, "title": titledata[0]['title'], "chennaidata":response})
+     except Exception as e:
+        print(e)
+        return jsonify({"success": False})
+
+
 
 if __name__ == "__main__":
     app.run(threaded=True,host='0.0.0.0')
