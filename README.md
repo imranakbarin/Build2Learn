@@ -51,17 +51,14 @@ flask run
 ### Chennai Covid-19 Zone-wise Timeseries(Updated Everyday)
 
 ```
-https://v2-api.sheety.co/9b810596b61530e455e40ea4e0b5a1a1/chennaiCovid19/cases
+http://www.buildnlearn.in/api/chennaizones/cases
 ```
 
 ### Chennai Street-Wise Report(Everyday or based on the updates from Chennai Corporation)
 
 ```
-https://v2-api.sheety.co/9b810596b61530e455e40ea4e0b5a1a1/chennaiCovid19/chennaidata
+http://www.buildnlearn.in/api/chennaiStreet/daily
 
-For now have to rely on separte API for getting the date for Street-Wise from below end point
-
-https://v2-api.sheety.co/9b810596b61530e455e40ea4e0b5a1a1/chennaiCovid19/title
 ```
 
 
