@@ -235,9 +235,11 @@ def chennaistreetwise():
      try:
         # with codecs.open('static/json/chennai_data_11.json','r', 'utf-8-sig') as f:
         #     chennaidata = json.load(f)
-        chennaiStreetData = StreetChennaiCovid.getChennaiStreet();
-        Datetitle = StreetChennaiCovid.getDatetitle();
-        return render_template('chennaicovidlist.html', chennailist = chennaiStreetData, datetitle = Datetitle[0]['title'])      
+        Chennai_Data = StreetChennaiCovid.getChennaiStreet()
+        chennaiStreetData = Chennai_Data['chennaidata'];
+       # print(chennaiStreetData)
+        Datetitle = Chennai_Data['title'];
+        return render_template('chennaicovidlist.html', chennailist = chennaiStreetData, datetitle = Datetitle)      
      except Exception as e:
         print(e)
         return render_template("error-404.html")
@@ -260,8 +262,9 @@ def ChennaiStreetwiseCases():
      covid19 = covid(None,None)
      try:
         response = covid19.getChennaiStreet()
-        titledata = covid19.getDatetitle()
-        return jsonify({"success": True, "title": titledata[0]['title'], "chennaidata":response})
+        
+     
+        return jsonify({"success": True, "title": response['title'], "chennaidata":response['chennaidata']})
      except Exception as e:
         print(e)
         return jsonify({"success": False})
