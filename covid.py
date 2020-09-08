@@ -70,7 +70,7 @@ class covid():
 #Chennai Zonal Wise Data
 
     def getChennaizones(self):
-        url = "https://v2-api.sheety.co/be53bea9995480777df56e14adcfd93b/covid19Chennai/cases"
+        url = "https://imranakbarin.github.io/api_covid/chennaicases_daily.json"
         data = self.callApi(url,None)
         # print(data)
         #Sorting data using date
